@@ -66,20 +66,20 @@ const days: Day[] = [
     id: "day1",
     number: "01",
     title: "Arrival & First Taste of Paradise",
-    subtitle: "Ka'anapali Beach · Resort Check-In · Sunset Stroll",
+    subtitle: "Ka'anapali Beach · Westin Villa Check-In · Sunset Stroll",
     plans: [
       {
         label: "Recommended Plan",
         tag: "Relaxed",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.hero,
-        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. Pick up your rental SUV and make the scenic 45-minute drive along the coast to Ka'anapali. Check in to your resort, let the kids splash in the pool, and end the day watching one of Maui's legendary sunsets from the beach.",
+        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. Pick up your rental SUV and make the scenic 45-minute drive along the coast to Ka'anapali. Check in to your 1-bedroom ocean-view villa at the Westin Ka'anapali Ocean Resort Villas, let the kids splash in the pool, and end the day watching one of Maui's legendary sunsets from your private lanai.",
         activities: [
           {
-            title: "Resort Check-In & Pool Time",
-            detail: "Arrive at your resort — either the OUTRIGGER Honua Kai or the Westin Maui. Both sit directly on Ka'anapali Beach. Let the kids decompress in the pool while you unpack.",
-            tip: "Ask for a room with a partial ocean view — worth the small upgrade.",
-            image: IMAGES.honuaKai,
+            title: "Westin Villa Check-In & Pool Time",
+            detail: "Your Premium Villa at the Westin Ka'anapali Ocean Resort Villas has a king bed + sofa bed, full kitchen, in-unit washer/dryer, and a private ocean-view lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is free for guests.",
+            tip: "Request an upper-floor unit for the best unobstructed ocean views. The lanai is perfect for morning coffee and evening sunsets.",
+            image: IMAGES.westinMaui,
           },
           {
             title: "Ka'anapali Beach Sunset Walk",
@@ -88,15 +88,15 @@ const days: Day[] = [
             image: IMAGES.hero,
           },
         ],
-        logistics: "Arrive OGG → Pick up rental car → Drive ~45 min to Ka'anapali → Check in → Beach",
-        budget: "$0 activities (resort pool is free)",
+        logistics: "Arrive OGG → Pick up rental car → Drive ~45 min to Ka'anapali → Westin check-in → Beach walk → Sunset from lanai",
+        budget: "$0 activities today (villa & resort pool are included)",
       },
       {
         label: "Alternative: Explore Paia Town",
         tag: "Adventurous",
         tagColor: "#E8714A",
         heroImage: IMAGES.lahainaTown,
-        description: "If you land early, skip the highway and take the scenic Hana Highway through Paia — Maui's funky surf town. Browse boutique shops, grab fish tacos at Milagros, and let the kids run on the famous Paia Bay beach before heading to Ka'anapali for the night.",
+        description: "If you land early, skip the highway and take the scenic Hana Highway through Paia — Maui's funky surf town. Browse boutique shops, grab fish tacos at Milagros, and stop at Waikomo Shave Ice in Paia for your first taste of Maui's legendary shave ice before heading to Ka'anapali.",
         activities: [
           {
             title: "Paia Town Stroll & Lunch",
@@ -105,14 +105,14 @@ const days: Day[] = [
             image: IMAGES.lahainaStreet,
           },
           {
-            title: "Ho'okipa Beach Lookout",
-            detail: "Just east of Paia, Ho'okipa Beach is world-famous for windsurfing. You can't swim here (too rough), but the lookout above the beach offers spectacular views of surfers and often Hawaiian green sea turtles resting on the sand below.",
-            tip: "Turtles are most reliably seen on the beach in the late afternoon.",
+            title: "Waikomo Shave Ice — Paia",
+            detail: "Tucked behind a green building in the heart of Paia, Waikomo Shave Ice is a beloved local spot known for its ultra-fine ice and natural fruit syrups. A perfect first-day treat for the kids before the drive to Ka'anapali.",
+            tip: "Try the lilikoi (passion fruit) and mango combo — a classic Maui flavor pairing.",
             image: IMAGES.kaanapaliKids,
           },
         ],
-        logistics: "Land OGG → Drive through Paia (Hana Hwy) → Lunch in Paia → Ho'okipa lookout → Drive to Ka'anapali (~1.5 hrs)",
-        budget: "~$40–60 for lunch",
+        logistics: "Land OGG → Drive through Paia (Hana Hwy) → Lunch in Paia → Waikomo Shave Ice → Drive to Ka'anapali (~1.5 hrs)",
+        budget: "~$40–60 for lunch + shave ice",
       },
     ],
   },
@@ -120,14 +120,14 @@ const days: Day[] = [
     id: "day2",
     number: "02",
     title: "Kapalua Bay Morning",
-    subtitle: "Kapalua Bay · Napili Bay · Resort Pool Afternoon",
+    subtitle: "Kapalua Bay · Napili Bay · Hula Grill Dinner at Whalers Village",
     plans: [
       {
         label: "Recommended Plan",
         tag: "Beach Day",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.kapaluaAerial,
-        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Spend the morning here, then head to nearby Napili Bay for a change of scenery before a relaxed resort pool afternoon.",
+        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Spend the morning here, then head to nearby Napili Bay for a change of scenery, and end the evening with dinner at Hula Grill right on Ka'anapali Beach at Whalers Village.",
         activities: [
           {
             title: "Kapalua Bay",
@@ -136,21 +136,21 @@ const days: Day[] = [
             image: IMAGES.kapaluaFamily,
           },
           {
-            title: "Napili Bay",
-            detail: "Just 5 minutes south of Kapalua, Napili Bay is a quieter crescent beach with excellent beginner snorkeling right off the shore. Sea turtles are frequently spotted here. The Napili Kai Beach Resort has a casual beachside café for lunch.",
-            tip: "Look for sea turtles grazing on the reef near the right side of the bay.",
-            image: IMAGES.napaliBay,
+            title: "Hula Grill Ka'anapali — Dinner",
+            detail: "End the day at Hula Grill, right on the sand at Whalers Village. The open-air Barefoot Bar is legendary — tables are literally on the beach. Fresh island fish, great mai tais, and a fantastic kids' menu. Live Hawaiian music most evenings. Reservations recommended.",
+            tip: "Request a Barefoot Bar table on the sand for the best experience. Arrive at sunset for the view.",
+            image: IMAGES.resortAerial,
           },
         ],
-        logistics: "Morning: Kapalua Bay (8:30am–noon) → Lunch at Napili Bay → Afternoon: Resort pool",
-        budget: "~$20–40 for snorkel gear rental (optional)",
+        logistics: "Morning: Kapalua Bay (8:30am–noon) → Lunch at Napili Bay → Afternoon: Resort pool → Evening: Hula Grill dinner",
+        budget: "~$80–120 for dinner at Hula Grill",
       },
       {
         label: "Alternative: Kā'anapali Beach Day",
         tag: "Easy & Close",
         tagColor: "#E8714A",
         heroImage: IMAGES.kaanapaliKids,
-        description: "Skip the drive and spend the whole day right at your doorstep. Ka'anapali Beach is one of Maui's most iconic stretches of sand — 3 miles of golden beach with calm morning conditions, beach chair rentals, and the Whalers Village shopping center steps away for lunch and ice cream.",
+        description: "Skip the drive and spend the whole day right at your doorstep. Ka'anapali Beach is one of Maui's most iconic stretches of sand — 3 miles of golden beach with calm morning conditions, beach chair rentals, and Whalers Village steps away for lunch at Leilani's on the Beach with its sweeping ocean views.",
         activities: [
           {
             title: "Ka'anapali Beach Morning",
@@ -159,14 +159,14 @@ const days: Day[] = [
             image: IMAGES.heroBeach,
           },
           {
-            title: "Whalers Village & Afternoon",
-            detail: "Whalers Village is an open-air shopping center right on the beach. Grab lunch at one of the casual restaurants, browse the free whale museum, and pick up any beach supplies you need. Afternoon back at the resort pool.",
-            tip: "Leilani's on the Beach has a great kids' menu and ocean views.",
+            title: "Leilani's on the Beach — Lunch",
+            detail: "Leilani's is the crown jewel of Whalers Village — open-air dining right on Ka'anapali Beach with sweeping ocean views. Award-winning Hawaii Regional Cuisine featuring long-line caught fresh fish. The kids' menu is excellent and the Aloha Hour (3–4:30pm Mon/Thu/Sat/Sun) has great deals. After lunch, browse the free whale museum and pick up beach supplies.",
+            tip: "Book a table online in advance — it's popular. Ask for a table on the lower deck closest to the beach.",
             image: IMAGES.resortAerial,
           },
         ],
-        logistics: "All day at Ka'anapali → Lunch at Whalers Village → Resort pool afternoon",
-        budget: "~$30–50 for lunch + beach chair rental",
+        logistics: "All day at Ka'anapali → Lunch at Leilani's on the Beach (Whalers Village) → Resort pool afternoon",
+        budget: "~$80–120 for lunch at Leilani's + beach chair rental",
       },
     ],
   },
@@ -174,7 +174,7 @@ const days: Day[] = [
     id: "day3",
     number: "03",
     title: "Maui Ocean Center & Lāhainā Town",
-    subtitle: "Maui Ocean Center · Lāhainā Historic Town · Waterfront Dinner",
+    subtitle: "Maui Ocean Center · Lāhainā Historic Town · Ululani's Shave Ice",
     plans: [
       {
         label: "Recommended Plan",
@@ -191,14 +191,14 @@ const days: Day[] = [
             cost: "~$55/adult · Under 3 free",
           },
           {
-            title: "Lāhainā Historic Town",
-            detail: "Stroll down Front Street, lined with art galleries, boutique shops, and restaurants. Visit the famous 150-year-old Banyan Tree — the largest in the US — which covers an entire city block. Stop for shave ice at Ululani's, a local institution.",
-            tip: "Parking can be tricky. Use the public lot on Prison Street (~$1/hour).",
+            title: "Lāhainā Town, Banyan Tree & Ululani's Shave Ice",
+            detail: "Stroll down Front Street, lined with art galleries, boutique shops, and restaurants. Visit the famous 150-year-old Banyan Tree — the largest in the US. Then head to Ululani's Hawaiian Shave Ice — the gold standard on Maui. Ultra-fine ice, natural syrups, and add-ons like mochi, azuki beans, and ice cream inside. The Ma'alaea location is right at the Ocean Center; the Lahaina location is on Front Street.",
+            tip: "Order the 'full experience' — shave ice with ice cream inside and mochi on top. Kids will lose their minds.",
             image: IMAGES.lahainaStreet,
           },
         ],
-        logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & stroll → Dinner on the waterfront",
-        budget: "~$110–130 for Ocean Center (2 adults) + dining",
+        logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & Banyan Tree stroll → Ululani's shave ice → Waterfront dinner",
+        budget: "~$110–130 for Ocean Center (2 adults) + dining + shave ice",
       },
       {
         label: "Alternative: Maui Tropical Plantation",
@@ -229,56 +229,57 @@ const days: Day[] = [
   {
     id: "day4",
     number: "04",
-    title: "Molokini Crater Snorkel Cruise",
-    subtitle: "Morning Boat Tour · Molokini Crater · Turtle Town",
+    title: "Mama's Fish House & North Shore",
+    subtitle: "Mama's Fish House Lunch · Paia Town · Ho'okipa Lookout",
     plans: [
       {
         label: "Recommended Plan",
-        tag: "Big Adventure",
+        tag: "Special Lunch",
         tagColor: "#0A4A5C",
-        heroImage: IMAGES.molokiniAerial,
-        description: "Board a catamaran from Ma'alaea Harbor for a morning snorkel cruise to Molokini Crater — a submerged volcanic caldera teeming with over 250 species of tropical fish. The water visibility can reach 150 feet. Most operators also stop at 'Turtle Town' on the return trip for guaranteed sea turtle encounters.",
+        heroImage: IMAGES.lahainaTown,
+        description: "Today is built around the most iconic restaurant on Maui — Mama's Fish House on the North Shore. Set in a stunning oceanfront coconut grove in Paia, it's consistently ranked one of the top restaurants in the entire United States. The menu changes daily based on what the fishermen catch that morning. Book months in advance — this is the meal of the trip.",
         activities: [
           {
-            title: "Molokini Crater Snorkel",
-            detail: "The crescent-shaped crater sits 3 miles offshore and is a protected marine sanctuary. The inside of the crater is perfectly calm — ideal even for nervous snorkelers. The reef walls drop dramatically, and the fish density is unlike anywhere else in Hawaii. Most boats provide full gear, breakfast, and a deli lunch.",
-            tip: "Book Pride of Maui or Trilogy Excursions — both are excellent and welcome toddlers. Book 4–6 weeks ahead for summer.",
-            image: IMAGES.molokiniSnorkel,
-            cost: "~$120–150/adult · ~$70–90/child (3+) · Under 2 free",
+            title: "Mama's Fish House — Lunch",
+            detail: "Located in Paia on the North Shore, Mama's Fish House is a legendary oceanfront restaurant where the menu lists the name of the fisherman who caught each fish. The setting — a 1940s beach house surrounded by tropical gardens and coconut palms — is magical. Lunch is slightly easier to book than dinner. The whole fish, fresh catch, and coconut shrimp are standouts. Dress code: resort casual.",
+            tip: "Book 2–3 months in advance online at mamasfishhouse.com. Request a window or garden table. Lunch is easier to get than dinner.",
+            image: IMAGES.lahainaStreet,
+            cost: "~$80–120/person · Reserve well in advance",
           },
           {
-            title: "Turtle Town",
-            detail: "On the return trip, the boat stops at a shallow reef area near Mākena known as Turtle Town. Hawaiian green sea turtles (honu) are almost always present, grazing on the reef. It's a magical, calm snorkel for the whole family.",
-            tip: "Bring reef-safe sunscreen — it's required on most boats and protects the coral.",
-            image: IMAGES.napiliSnorkel,
+            title: "Paia Town & Ho'okipa Lookout",
+            detail: "After lunch, stroll through Paia — Maui's charming surf town with boutique shops, art galleries, and great people-watching. Then drive 2 minutes east to the Ho'okipa Beach lookout to watch world-class windsurfers and spot Hawaiian green sea turtles resting on the sand below.",
+            tip: "Turtles are most reliably seen on Ho'okipa beach in the late afternoon. The lookout is free and takes just 15 minutes.",
+            image: IMAGES.kahekili,
           },
         ],
-        logistics: "Depart Ma'alaea Harbor 7:30am → Return ~12:30pm → Afternoon: beach/nap time at resort",
-        budget: "~$300–360 for 2 adults + 1 child (4yo)",
+        logistics: "Drive to Paia (~45 min from Ka'anapali) → Mama's Fish House lunch (noon) → Paia stroll → Ho'okipa lookout → Return to resort",
+        budget: "~$200–280 for 2 adults at Mama's Fish House",
       },
       {
-        label: "Alternative: Mākena (Big Beach) & Snorkel",
+        label: "Alternative: Mākena (Big Beach) Day",
         tag: "Scenic & Free",
         tagColor: "#E8714A",
         heroImage: IMAGES.kapaluaAerial,
-        description: "If the boat tour feels like too much with young toddlers, Mākena State Park (Big Beach) is one of Maui's most spectacular beaches — a wide, dramatic crescent of golden sand backed by a cinder cone. Swim in the calmer north end, then snorkel at the adjacent Little Beach cove.",
+        description: "If you'd rather save Mama's for dinner or want a pure beach day, Mākena State Park (Big Beach) is one of Maui's most spectacular beaches — a wide, dramatic crescent of golden sand backed by a cinder cone. The north end is calm and perfect for families. Pair it with a stop at Kihei for shave ice at Ululani's on the way back.",
         activities: [
           {
             title: "Big Beach (Oneloa Beach)",
-            detail: "One of Maui's largest and most beautiful beaches. The north end near the rock is calmer and great for families. Note: the main beach has shore break that can be powerful — stay in the shallow areas with the toddlers and watch the waves from a safe distance.",
-            tip: "Arrive early — the parking lot fills up fast. Bring all your own food and water as there are no vendors.",
+            detail: "One of Maui's largest and most beautiful beaches — a half-mile of golden sand with dramatic scenery. The north end near the lava rock is calmer and great for families with toddlers. Note: the main beach has shore break that can be powerful — stay in the shallow areas and watch the waves from a safe distance.",
+            tip: "Arrive early — the parking lot fills up fast. Bring all your own food and water as there are no vendors on the beach.",
             image: IMAGES.kapaluaFamily,
             cost: "Free (state park)",
           },
           {
-            title: "Little Beach Snorkel",
-            detail: "A short scramble over the lava rock at the north end of Big Beach leads to Little Beach — a smaller, more sheltered cove with excellent snorkeling along the rocky edges. Sea turtles are common here. The water is much calmer than Big Beach.",
-            tip: "The snorkeling is best in the morning before the wind picks up.",
-            image: IMAGES.napiliSnorkel,
+            title: "Ululani's Shave Ice — Kihei",
+            detail: "On the drive back from Mākena, stop at Ululani's Hawaiian Shave Ice in Kihei — the gold standard of Maui shave ice. Ultra-fine ice (not crushed ice), natural fruit syrups made from real fruit, and premium add-ons like mochi, azuki beans, and ice cream inside. Multiple flavors and combinations — the kids will love it.",
+            tip: "Get the 'full experience': shave ice with ice cream inside and mochi on top. The lilikoi (passion fruit) and strawberry combo is a classic.",
+            image: IMAGES.kaanapaliKids,
+            cost: "~$8–12 per shave ice",
           },
         ],
-        logistics: "Drive to Mākena State Park (~30 min from Ka'anapali) → Beach morning → Snorkel at Little Beach → Lunch in Kihei → Resort afternoon",
-        budget: "~$20–40 for lunch (beach is free)",
+        logistics: "Drive to Mākena State Park (~30 min from Ka'anapali) → Beach morning → Ululani's shave ice in Kihei → Lunch → Resort afternoon",
+        budget: "~$30–50 for lunch + shave ice (beach is free)",
       },
     ],
   },
@@ -302,21 +303,21 @@ const days: Day[] = [
             image: IMAGES.kahekili2,
           },
           {
-            title: "Napili Bay Afternoon",
-            detail: "Return to Napili Bay for a relaxed afternoon. The kids can play in the calm shallows while you snorkel along the reef. Pick up fresh poke bowls from a nearby grocery store for a beach picnic.",
-            tip: "Foodland Farms in Lahaina has excellent poke — grab it on your way back from the drive.",
+            title: "Napili Bay Afternoon & Poke Picnic",
+            detail: "Return to Napili Bay for a relaxed afternoon. The kids can play in the calm, shallow water while you relax on the sand. Stop at Foodland Farms in Lahaina on the way back to pick up fresh poke bowls, local chips, and drinks for a beach picnic — one of the best value meals on Maui.",
+            tip: "Foodland Farms in Lahaina has some of the best poke on the island — grab the ahi shoyu and spicy ahi. Get there by noon for the freshest selection.",
             image: IMAGES.napaliBay,
           },
         ],
-        logistics: "Morning: Kahekili Highway drive (depart 8am) → Lunch in Lahaina → Afternoon: Napili Bay",
-        budget: "~$30–50 for lunch/poke bowls (scenic drive is free)",
+        logistics: "Morning: Kahekili Highway drive (depart 8am) → Foodland Farms poke stop → Afternoon: Napili Bay picnic",
+        budget: "~$30–50 for poke bowls and snacks (scenic drive is free)",
       },
       {
         label: "Alternative: Road to Hana (Half Day)",
         tag: "Iconic",
         tagColor: "#E8714A",
         heroImage: IMAGES.kahekili2,
-        description: "The Road to Hana is one of the world's most famous scenic drives — 52 miles of winding road through lush rainforest, past waterfalls, bamboo groves, and black sand beaches. You don't need to drive the whole thing — even the first 30 miles to Twin Falls and Wailua Falls is spectacular and manageable with toddlers.",
+        description: "The Road to Hana is one of the world's most famous scenic drives — 52 miles of winding road through lush rainforest, past waterfalls, bamboo groves, and black sand beaches. You don't need to drive the whole thing — even the first 30 miles to Twin Falls and Wailua Falls is spectacular and manageable with toddlers. Stop at a roadside stand for legendary Maui banana bread on the way.",
         activities: [
           {
             title: "Twin Falls & Wailua Falls",
@@ -423,42 +424,43 @@ const days: Day[] = [
         budget: "~$20–30 for shave ice and snacks",
       },
       {
-        label: "Alternative: Morning Snorkel at Honolua Bay",
-        tag: "One Last Adventure",
+        label: "Alternative: Kapalua Bay & Shave Ice Farewell",
+        tag: "Easy & Sweet",
         tagColor: "#E8714A",
-        heroImage: IMAGES.molokiniSnorkel,
-        description: "If you have a late afternoon flight, squeeze in one final snorkel at Honolua Bay — a marine preserve just north of Kapalua that many locals consider the best snorkeling on the island. The bay is accessed via a short jungle trail and rewards you with pristine coral and abundant fish.",
+        heroImage: IMAGES.kapaluaAerial,
+        description: "If you have a late afternoon flight, spend your last morning at Kapalua Bay — the most beautiful and calm beach on Maui. Let the kids get their feet wet one last time in those impossibly clear waters, then stop for a final shave ice before the drive to OGG. The perfect, unhurried goodbye to Maui.",
         activities: [
           {
-            title: "Honolua Bay Snorkel",
-            detail: "Honolua Bay is a protected marine preserve with some of the most pristine coral in Maui. The snorkeling is best on the right side of the bay along the rocky reef. Spinner dolphins are sometimes spotted here. Access is via a short dirt path through the jungle.",
-            tip: "The bay can have surge — best in calm morning conditions. Check surf reports before going.",
-            image: IMAGES.napiliSnorkel,
-            cost: "Free (marine preserve)",
-          },
-          {
-            title: "Kapalua Bay Farewell",
-            detail: "After Honolua, swing by Kapalua Bay one last time for a final swim in those impossibly calm, clear waters. It's the perfect bookend to your trip — you likely started your beach days here on Day 2.",
-            tip: "Grab a coffee and pastry from the Kapalua Village Center on your way out.",
+            title: "Kapalua Bay Final Morning",
+            detail: "Kapalua Bay is the perfect farewell beach — calm, clear, and beautiful. The kids can wade in the shallow water one last time while you soak in the scenery. It's a 15-minute drive north of the Westin. Arrive early before it fills up.",
+            tip: "Take a family photo at the water's edge — the turquoise water and golden sand make for an unforgettable shot.",
             image: IMAGES.kapaluaFamily,
           },
+          {
+            title: "Ululani's Shave Ice — Final Treat",
+            detail: "Stop at Ululani's on the way to the airport for one last shave ice. The Kahului location (333 Dairy Rd) is the most convenient on the way to OGG — just 5 minutes from the airport. A sweet, colorful send-off for the whole family.",
+            tip: "The Kahului location is open early and is the most convenient stop on the way to the airport. Don't skip it!",
+            image: IMAGES.kaanapaliKids,
+            cost: "~$8–12 per shave ice",
+          },
         ],
-        logistics: "7am: Honolua Bay snorkel → 9:30am: Kapalua Bay farewell swim → Checkout → OGG Airport",
-        budget: "~$10–20 for coffee/snacks (snorkeling is free)",
+        logistics: "7am: Kapalua Bay final swim → 9:30am: Checkout → Ululani's shave ice (Kahului) → OGG Airport",
+        budget: "~$20–30 for shave ice and coffee",
       },
     ],
   },
 ];
 
 const budgetRows = [
-  { item: "Flights (SFO → OGG, 4 pax, round-trip)", cost: "$1,800" },
-  { item: "Accommodation (7 nights @ ~$850/night)", cost: "$5,950" },
-  { item: "Car Rental (7 days, SUV)", cost: "$700" },
-  { item: "Food & Dining (~$200/day)", cost: "$1,400" },
-  { item: "Molokini Snorkel Cruise (2 adults + 1 child)", cost: "$350" },
-  { item: "Maui Ocean Center (2 adults)", cost: "$110" },
-  { item: "Old Lāhainā Lūʻau (2 adults)", cost: "$460" },
-  { item: "Misc. (gas, tips, shave ice, parking)", cost: "$280" },
+  { item: "Flights (SFO → OGG, 4 pax, round-trip — summer dates)", cost: "~$2,200" },
+  { item: "Westin Ka'anapali Ocean Resort Villas (7 nights via RedWeek)", cost: "$3,077" },
+  { item: "Hawaii state occupancy fees (~$28/night)", cost: "~$196" },
+  { item: "Car Rental (7 days, SUV)", cost: "~$700" },
+  { item: "Groceries & villa meals (full kitchen saves on dining)", cost: "~$400–500" },
+  { item: "Dining out (Mama's Fish House, Hula Grill, Leilani's, etc.)", cost: "~$600–800" },
+  { item: "Maui Ocean Center (2 adults · kids under 3 free)", cost: "~$110" },
+  { item: "Old Lāhainā Lūʻau (2 adults · 4yo · 2yo free)", cost: "~$460" },
+  { item: "Shave ice, snacks, activities & misc.", cost: "~$300" },
 ];
 
 function useScrollReveal() {
@@ -656,16 +658,16 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,20,30,0.75) 0%, rgba(10,20,30,0.2) 60%, transparent 100%)" }} />
         <div className="relative z-10 container pb-16 md:pb-24">
           <p className="text-sm tracking-[0.25em] uppercase mb-3" style={{ color: "#F4A07A", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            Summer 2026 · Family of 4 · SFO → OGG
+            Summer 2026 · Westin Ka'anapali · Family of 4 · SFO → OGG
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#FDFAF5" }}>
             Aloha, Maui.
           </h1>
           <p className="text-xl md:text-2xl max-w-xl" style={{ color: "#F5E6C8", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            A 7-day family escape to Ka'anapali — beaches, adventures, and memories that last a lifetime.
+            A 7-day family escape at the Westin Ka'anapali Ocean Resort Villas — beaches, great food, and memories that last a lifetime.
           </p>
           <div className="mt-8 flex gap-6 flex-wrap">
-            {[["7","Nights"],["4","Travelers"],["~$11k","Est. Budget"]].map(([val, label]) => (
+            {[["7","Nights"],["4","Travelers"],["~$8–9k","Est. Budget"]].map(([val, label]) => (
               <div key={label} className="text-center">
                 <div className="text-3xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>{val}</div>
                 <div className="text-xs tracking-widest uppercase" style={{ color: "#F5E6C8" }}>{label}</div>
@@ -756,7 +758,7 @@ export default function Home() {
                 style={{ background: "rgba(232,113,74,0.2)", borderTop: "2px solid rgba(232,113,74,0.5)" }}
               >
                 <span className="text-base font-bold" style={{ color: "#FDFAF5", fontFamily: "'Playfair Display', serif" }}>Total Estimated Cost</span>
-                <span className="text-2xl font-bold" style={{ color: "#F4A07A", fontFamily: "'Playfair Display', serif" }}>~$11,050</span>
+                <span className="text-2xl font-bold" style={{ color: "#F4A07A", fontFamily: "'Playfair Display', serif" }}>~$8,000–9,100</span>
               </div>
             </div>
             <p className="text-xs text-center mt-6" style={{ color: "rgba(245,230,200,0.5)" }}>
@@ -777,12 +779,12 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
-              { icon: "🏠", title: "Book a Suite with a Kitchen", body: "Saves money on dining and lets you manage toddler meal schedules without stress. Honua Kai's 1-bedroom suites are perfect for this." },
+              { icon: "🏠", title: "Your Westin Villa Has a Full Kitchen", body: "The Westin Ka'anapali 1BR villa has a full kitchen — fridge, oven, stovetop, dishwasher. Stock it on arrival and save $400–600 on dining costs over the week." },
               { icon: "🔊", title: "Pack a White Noise Machine", body: "Essential for nap time in a new hotel environment. A portable speaker with a white noise app works just as well." },
               { icon: "🛒", title: "Order Groceries on Arrival", body: "Use Instacart or Foodland delivery to stock milk, snacks, fruit, and easy lunch items the day you arrive." },
               { icon: "🛺", title: "Bring a Beach Wagon", body: "A foldable beach wagon is a game-changer for hauling gear for two toddlers across soft sand." },
               { icon: "✈️", title: "Book Nap-Time Flights", body: "A 10am or 1pm SFO departure means kids may sleep through much of the 5.5-hour flight." },
-              { icon: "📅", title: "Book Luau & Snorkel Early", body: "The Old Lāhainā Lūʻau and popular snorkel tours sell out 6–8 weeks ahead in summer. Book immediately." },
+              { icon: "📅", title: "Book Mama's & the Lūʻau Early", body: "Mama's Fish House and the Old Lāhainā Lūʻau both sell out months in advance. Book Mama's 2–3 months ahead and the Lūʻau 6–8 weeks out. Don't wait." },
             ].map((tip, i) => (
               <div key={i} className="fade-in-up p-6 rounded-sm" style={{ background: "#FDFAF5" }}>
                 <div className="text-3xl mb-3">{tip.icon}</div>
@@ -804,7 +806,7 @@ export default function Home() {
                 May 29 – June 5 Option
               </h2>
               <p className="text-base mb-6" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-                A 7-night stay at the Westin Ka'anapali Ocean Resort Villas via RedWeek — 1BR ocean-view villa with full kitchen, in-unit laundry, and free parking. Late May means fewer crowds and ~$2,700 in total savings vs. the summer option.
+                A 7-night stay at the same Westin Ka'anapali Ocean Resort Villas — 1BR ocean-view villa with full kitchen, in-unit laundry, and free parking. May 29–June 5 means fewer crowds, lower airfare, and ~$2,700 in total savings vs. summer dates.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 {[
