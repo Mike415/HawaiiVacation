@@ -1,62 +1,151 @@
 /**
  * DayMap — Maui Family Trip
- * Uses Google Maps embed (maps.google.com/maps?saddr=...&daddr=...) to show
- * a driving route between waypoints. All place names must include ", Maui, HI"
- * to ensure Google Maps resolves them to the correct Hawaii locations.
- * A "View Full Route" button opens Google Maps Directions in a new tab.
+ * Uses Leaflet.js + OpenStreetMap tiles with hardcoded lat/lng coordinates
+ * for every waypoint. OSRM public routing API draws the real driving route.
+ * No API key required. Always zooms correctly to Maui.
  */
+
+import { useEffect, useRef, useState } from "react";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
 export interface Waypoint {
   label: string;
-  /** Unambiguous place name including ", Maui, HI" for reliable resolution */
-  address: string;
+  address: string; // kept for "View Full Route" Google Maps link
   note?: string;
   driveTime?: string;
   driveDist?: string;
+  lat: number;
+  lng: number;
 }
 
 interface DayMapProps {
   waypoints: Waypoint[];
-  center?: { lat: number; lng: number };
-  zoom?: number;
 }
 
-const COLORS = ["#E8714A", "#0A4A5C", "#7B9E6B", "#C4873A", "#5B7FA6", "#A0522D", "#2E8B57"];
+const MARKER_COLORS = ["#E8714A", "#0A4A5C", "#7B9E6B", "#C4873A", "#5B7FA6", "#A0522D", "#2E8B57"];
 
-/**
- * Build a Google Maps embed URL using saddr/daddr for routing.
- * We pass the first waypoint as saddr and chain the rest as daddr with "to:" prefix.
- * All addresses include ", Maui, HI" to prevent ambiguous resolution.
- */
-function buildEmbedUrl(waypoints: Waypoint[]): string {
-  if (waypoints.length === 0) return "https://maps.google.com/maps?q=Maui+Hawaii&output=embed";
-  if (waypoints.length === 1) {
-    return `https://maps.google.com/maps?q=${encodeURIComponent(waypoints[0].address)}&output=embed`;
+function createNumberedIcon(index: number, color: string) {
+  return L.divIcon({
+    className: "",
+    html: `<div style="
+      width: 28px; height: 28px;
+      background: ${color};
+      border: 2px solid white;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-weight: 700; font-size: 12px;
+      font-family: Lato, sans-serif;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    ">${index + 1}</div>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+    popupAnchor: [0, -16],
+  });
+}
+
+async function fetchOSRMRoute(coords: [number, number][]): Promise<[number, number][] | null> {
+  try {
+    const coordStr = coords.map(([lat, lng]) => `${lng},${lat}`).join(";");
+    const url = `https://router.project-osrm.org/route/v1/driving/${coordStr}?overview=full&geometries=geojson`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (data.code !== "Ok" || !data.routes?.[0]) return null;
+    // GeoJSON coords are [lng, lat] — swap to [lat, lng] for Leaflet
+    return data.routes[0].geometry.coordinates.map(([lng, lat]: [number, number]) => [lat, lng]);
+  } catch {
+    return null;
   }
-
-  const origin = encodeURIComponent(waypoints[0].address);
-  const destination = encodeURIComponent(waypoints[waypoints.length - 1].address);
-
-  // Build waypoints string for intermediate stops
-  const stops = waypoints.slice(1, -1).map((w) => encodeURIComponent(w.address)).join("+to:");
-  const waypointsParam = stops ? `+to:${stops}+to:` : "+to:";
-
-  return `https://maps.google.com/maps?saddr=${origin}&daddr=${waypointsParam}${destination}&dirflg=d&output=embed`;
 }
 
-/**
- * Build a Google Maps Directions URL for opening in a new tab.
- */
 function buildDirectionsUrl(waypoints: Waypoint[]): string {
-  if (waypoints.length === 0) return "https://maps.google.com/maps?q=Maui,Hawaii";
   const parts = waypoints.map((w) => encodeURIComponent(w.address));
   return `https://www.google.com/maps/dir/${parts.join("/")}`;
 }
 
 export function DayMap({ waypoints }: DayMapProps) {
+  const mapRef = useRef<HTMLDivElement>(null);
+  const leafletMap = useRef<L.Map | null>(null);
+  const [routeLoaded, setRouteLoaded] = useState(false);
+
+  useEffect(() => {
+    if (!mapRef.current || !waypoints || waypoints.length === 0) return;
+
+    // Clean up any existing map instance
+    if (leafletMap.current) {
+      leafletMap.current.remove();
+      leafletMap.current = null;
+    }
+    setRouteLoaded(false);
+
+    const coords: [number, number][] = waypoints.map((w) => [w.lat, w.lng]);
+
+    // Initialize map
+    const map = L.map(mapRef.current, {
+      zoomControl: true,
+      scrollWheelZoom: false,
+      attributionControl: true,
+    });
+    leafletMap.current = map;
+
+    // OpenStreetMap tiles
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Add numbered markers with popups
+    waypoints.forEach((wp, i) => {
+      const icon = createNumberedIcon(i, MARKER_COLORS[i % MARKER_COLORS.length]);
+      L.marker([wp.lat, wp.lng], { icon })
+        .addTo(map)
+        .bindPopup(
+          `<div style="font-family: Lato, sans-serif; min-width: 140px;">
+            <strong style="color: #2C1A0E;">${wp.label}</strong>
+            ${wp.note ? `<br/><span style="color: #8B7355; font-size: 12px;">${wp.note}</span>` : ""}
+            ${wp.driveTime ? `<br/><span style="color: #0A4A5C; font-size: 12px;">🚗 ${wp.driveTime}${wp.driveDist ? ` · ${wp.driveDist}` : ""}</span>` : ""}
+          </div>`
+        );
+    });
+
+    // Fit map to markers first (instant feedback)
+    const bounds = L.latLngBounds(coords);
+    map.fitBounds(bounds, { padding: [40, 40] });
+
+    // Fetch OSRM route and draw polyline
+    fetchOSRMRoute(coords).then((routeCoords) => {
+      if (!leafletMap.current) return;
+      if (routeCoords && routeCoords.length > 1) {
+        L.polyline(routeCoords, {
+          color: "#E8714A",
+          weight: 4,
+          opacity: 0.85,
+          lineJoin: "round",
+        }).addTo(leafletMap.current);
+      } else {
+        // Fallback: straight lines between waypoints
+        L.polyline(coords, {
+          color: "#E8714A",
+          weight: 3,
+          opacity: 0.7,
+          dashArray: "6 6",
+        }).addTo(leafletMap.current);
+      }
+      setRouteLoaded(true);
+    });
+
+    return () => {
+      if (leafletMap.current) {
+        leafletMap.current.remove();
+        leafletMap.current = null;
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [waypoints]);
+
   if (!waypoints || waypoints.length === 0) return null;
 
-  const embedUrl = buildEmbedUrl(waypoints);
   const directionsUrl = buildDirectionsUrl(waypoints);
 
   return (
@@ -70,15 +159,12 @@ export function DayMap({ waypoints }: DayMapProps) {
           <div key={i} className="flex items-center gap-2">
             <div
               className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white"
-              style={{ background: COLORS[i % COLORS.length], fontFamily: "'Lato', sans-serif" }}
+              style={{ background: MARKER_COLORS[i % MARKER_COLORS.length], fontFamily: "'Lato', sans-serif" }}
             >
               {i + 1}
             </div>
             <div>
-              <span
-                className="text-xs font-semibold"
-                style={{ color: "#2C1A0E", fontFamily: "'Lato', sans-serif" }}
-              >
+              <span className="text-xs font-semibold" style={{ color: "#2C1A0E", fontFamily: "'Lato', sans-serif" }}>
                 {wp.label}
               </span>
               {wp.note && (
@@ -91,18 +177,28 @@ export function DayMap({ waypoints }: DayMapProps) {
         ))}
       </div>
 
-      {/* Google Maps iframe */}
-      <div style={{ height: "320px", background: "#EDE8DF", position: "relative" }}>
-        <iframe
-          title="Day route map"
-          src={embedUrl}
-          width="100%"
-          height="100%"
-          style={{ border: 0, display: "block" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+      {/* Leaflet map */}
+      <div style={{ position: "relative" }}>
+        <div ref={mapRef} style={{ height: "320px", width: "100%", background: "#EDE8DF" }} />
+        {!routeLoaded && (
+          <div
+            style={{
+              position: "absolute",
+              top: 8,
+              left: "50%",
+              transform: "translateX(-50%)",
+              background: "rgba(255,255,255,0.85)",
+              padding: "4px 12px",
+              borderRadius: "12px",
+              fontSize: "11px",
+              fontFamily: "Lato, sans-serif",
+              color: "#8B7355",
+              pointerEvents: "none",
+            }}
+          >
+            Loading route…
+          </div>
+        )}
         {/* View Full Route button */}
         <a
           href={directionsUrl}
@@ -122,7 +218,7 @@ export function DayMap({ waypoints }: DayMapProps) {
             textDecoration: "none",
             boxShadow: "0 2px 8px rgba(0,0,0,0.25)",
             letterSpacing: "0.03em",
-            zIndex: 10,
+            zIndex: 1000,
           }}
         >
           🗺 View Full Route →
@@ -137,11 +233,7 @@ export function DayMap({ waypoints }: DayMapProps) {
         >
           {waypoints.slice(0, -1).map((wp, i) =>
             wp.driveTime ? (
-              <div
-                key={i}
-                className="flex items-center gap-2 text-xs"
-                style={{ fontFamily: "'Lato', sans-serif" }}
-              >
+              <div key={i} className="flex items-center gap-2 text-xs" style={{ fontFamily: "'Lato', sans-serif" }}>
                 <span style={{ color: "#8B7355" }}>
                   {wp.label} → {waypoints[i + 1].label}
                 </span>
@@ -151,9 +243,7 @@ export function DayMap({ waypoints }: DayMapProps) {
                 >
                   🚗 {wp.driveTime}
                 </span>
-                {wp.driveDist && (
-                  <span style={{ color: "#8B7355" }}>{wp.driveDist}</span>
-                )}
+                {wp.driveDist && <span style={{ color: "#8B7355" }}>{wp.driveDist}</span>}
               </div>
             ) : null
           )}
