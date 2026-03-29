@@ -70,19 +70,19 @@ const days: Day[] = [
     id: "day1",
     number: "01",
     title: "Arrival & First Taste of Paradise",
-    subtitle: "Ka'anapali Beach · Westin Villa Check-In · Sunset Stroll",
+    subtitle: "OGG Arrival · Grocery Stop · Kids' Pool First · Ka'anapali Beach Walk",
     plans: [
       {
         label: "Recommended Plan",
         tag: "Relaxed",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.hero,
-        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. Pick up your rental SUV and make the scenic 45-minute drive along the coast to Ka'anapali. Check in to your 1-bedroom ocean-view villa at the Westin Ka'anapali Ocean Resort Villas, let the kids splash in the pool, and end the day watching one of Maui's legendary sunsets from your private lanai.",
+        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the villa kitchen with milk, fruit, snacks, and easy lunches — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first — after a 5.5-hour flight, the pool lets the toddlers burn energy without the sun and wind of the beach. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
         activities: [
           {
             title: "Westin Villa Check-In & Pool Time",
             detail: "Your Premium Villa at the Westin Ka'anapali Ocean Resort Villas has a king bed + sofa bed, full kitchen, in-unit washer/dryer, and a private ocean-view lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is free for guests.",
-            tip: "Request an upper-floor unit for the best unobstructed ocean views. The lanai is perfect for morning coffee and evening sunsets.",
+            tip: "Request an upper-floor unit for the best unobstructed ocean views. Stock the kitchen on arrival: Costco (275 Ho'okele St, Kahului) is cheapest; Foodland Farms (345 Keawe St, Lahaina) is closer to the resort. Pool first, beach second — toddlers do better after a calm arrival.",
             image: IMAGES.westinMaui,
           },
           {
@@ -92,7 +92,7 @@ const days: Day[] = [
             image: IMAGES.hero,
           },
         ],
-        logistics: "Arrive OGG → Pick up rental car → Drive ~45 min to Ka'anapali → Westin check-in → Beach walk → Sunset from lanai",
+        logistics: "Arrive OGG → Rental car → Grocery stop (Costco/Target in Kahului or Foodland Farms in Lahaina) → Westin check-in → Kids' pool first → Sunset beach walk",
         budget: "$0 activities today (villa & resort pool are included)",
         waypoints: [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival & car rental", driveTime: "45 min", driveDist: "27 mi", lat: 20.8986, lng: -156.4305 },
@@ -147,22 +147,22 @@ const days: Day[] = [
         tag: "Beach Day",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.kapaluaAerial,
-        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Spend the morning here, then head to nearby Napili Bay for a change of scenery, and end the evening with dinner at Hula Grill right on Ka'anapali Beach at Whalers Village.",
+        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Arrive by 8:30am as parking fills by 10am in summer ($10–15/day). Note: if the kids are tired after Kapalua, skip Napili Bay and head back to the resort pool instead — Napili is only 5 minutes from the Westin and can easily be done on another afternoon. End the evening with dinner at Hula Grill.",
         activities: [
           {
             title: "Kapalua Bay",
             detail: "A crescent of golden sand sheltered by lava rock arms on both sides, creating almost zero wave action. The water is crystal clear and shallow near shore — ideal for toddlers. Snorkel gear rentals are available nearby for the adults.",
-            tip: "Arrive by 8:30am to snag a good spot. It fills up by 10am in summer.",
+            tip: "Arrive by 8:30am — parking ($10–15/day) fills by 10am in summer. Bring a small soft cooler as there's limited shade. If kids are tired after Kapalua, skip Napili and head back to the resort pool — Napili is only 5 min away and can be done on another afternoon.",
             image: IMAGES.kapaluaFamily,
           },
           {
             title: "Hula Grill Ka'anapali — Dinner",
             detail: "End the day at Hula Grill, right on the sand at Whalers Village. The open-air Barefoot Bar is legendary — tables are literally on the beach. Fresh island fish, great mai tais, and a fantastic kids' menu. Live Hawaiian music most evenings. Reservations recommended.",
-            tip: "Request a Barefoot Bar table on the sand for the best experience. Arrive at sunset for the view.",
+            tip: "Book for 5:00–5:30pm and request a table on the sand in the Barefoot Bar section. This timing means you're done before the overtired window for toddlers. Reservations recommended.",
             image: IMAGES.resortAerial,
           },
         ],
-        logistics: "Morning: Kapalua Bay (8:30am–noon) → Lunch at Napili Bay → Afternoon: Resort pool → Evening: Hula Grill dinner",
+        logistics: "8:30am: Kapalua Bay (arrive early, parking fills by 10am) → Noon: Resort pool if kids are tired, or Napili Bay picnic → 5:00–5:30pm: Hula Grill Barefoot Bar dinner",
         budget: "~$80–120 for dinner at Hula Grill",
         waypoints: [
           { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9281, lng: -156.6942 },
@@ -223,13 +223,13 @@ const days: Day[] = [
           {
             title: "Maui Ocean Center",
             detail: "Walk through a 54-foot acrylic underwater tunnel surrounded by sharks, rays, and thousands of tropical fish. The Open Ocean exhibit is the centerpiece, but the touch pools and Hawaiian green sea turtle lagoon are the toddler favorites. Plan for 2–2.5 hours.",
-            tip: "Go first thing when it opens (9am) before the tour buses arrive. Kids under 3 are free.",
+            tip: "Arrive right at 9am opening — before the tour buses arrive. Kids under 3 are free; 4yo needs a child ticket (~$25). Allow about 2 hours — the touch pools and turtle lagoon are the toddler highlights.",
             image: IMAGES.oceanCenter2,
             cost: "~$55/adult · Under 3 free",
           },
           {
             title: "Lāhainā Town, Banyan Tree & Ululani's Shave Ice",
-            detail: "Stroll down Front Street, lined with art galleries, boutique shops, and restaurants. Visit the famous 150-year-old Banyan Tree — the largest in the US. Then head to Ululani's Hawaiian Shave Ice — the gold standard on Maui. Ultra-fine ice, natural syrups, and add-ons like mochi, azuki beans, and ice cream inside. The Ma'alaea location is right at the Ocean Center; the Lahaina location is on Front Street.",
+            detail: "Stroll down Front Street, lined with art galleries, boutique shops, and restaurants. Visit the famous 150-year-old Banyan Tree — the largest in the US. Then head to Ululani's Hawaiian Shave Ice — the gold standard on Maui. Ultra-fine ice, natural syrups, and add-ons like mochi, azuki beans, and ice cream inside. Note: Front Street gets hot and crowded by midday. Do the Banyan Tree + shave ice, then head back to the resort — sunset dinners in Lāhainā often mean a late bedtime for toddlers.",
             tip: "Order the 'full experience' — shave ice with ice cream inside and mochi on top. Kids will lose their minds.",
             image: IMAGES.lahainaStreet,
           },
@@ -291,12 +291,12 @@ const days: Day[] = [
         tag: "Special Lunch",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.lahainaTown,
-        description: "Today is built around the most iconic restaurant on Maui — Mama's Fish House on the North Shore. Set in a stunning oceanfront coconut grove in Paia, it's consistently ranked one of the top restaurants in the entire United States. The menu changes daily based on what the fishermen catch that morning. Book months in advance — this is the meal of the trip.",
+        description: "Today is built around the most iconic restaurant on Maui — Mama's Fish House on the North Shore. Set in a stunning oceanfront coconut grove in Paia, it's consistently ranked one of the top restaurants in the entire United States. Important note: this is the hardest day with toddlers — 45 min each way plus a long, pricey lunch (~$80–120/person). Book 2–3 months in advance. Build in a buffer: pack snacks and quiet toys, and plan to be back at the resort by 3pm for pool/nap time.",
         activities: [
           {
             title: "Mama's Fish House — Lunch",
             detail: "Located in Paia on the North Shore, Mama's Fish House is a legendary oceanfront restaurant where the menu lists the name of the fisherman who caught each fish. The setting — a 1940s beach house surrounded by tropical gardens and coconut palms — is magical. Lunch is slightly easier to book than dinner. The whole fish, fresh catch, and coconut shrimp are standouts. Dress code: resort casual.",
-            tip: "Book 2–3 months in advance online at mamasfishhouse.com. Request a window or garden table. Lunch is easier to get than dinner.",
+            tip: "Book 2–3 months in advance online at mamasfishhouse.com. Request a window or garden table. Lunch is easier to get than dinner. Plan to be back at the resort by 3pm for toddler nap — this is a long day.",
             image: IMAGES.lahainaStreet,
             cost: "~$80–120/person · Reserve well in advance",
           },
@@ -308,7 +308,7 @@ const days: Day[] = [
           },
         ],
         logistics: "Drive to Paia (~45 min from Ka'anapali) → Mama's Fish House lunch (noon) → Paia stroll → Ho'okipa lookout → Return to resort",
-        budget: "~$200–280 for 2 adults at Mama's Fish House",
+        budget: "~$200–280 for 2 adults at Mama's Fish House · Plan resort return by 3pm for toddler nap",
         waypoints: [
           { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "45 min", driveDist: "28 mi", lat: 20.9281, lng: -156.6942 },
           { label: "Mama's Fish House", address: "Mama's Fish House, 799 Poho Pl, Paia, Maui, HI", note: "Legendary lunch", driveTime: "5 min", driveDist: "1.5 mi", lat: 20.9284, lng: -156.3630 },
@@ -323,12 +323,12 @@ const days: Day[] = [
         tag: "Scenic & Free",
         tagColor: "#E8714A",
         heroImage: IMAGES.kapaluaAerial,
-        description: "If you'd rather save Mama's for dinner or want a pure beach day, Mākena State Park (Big Beach) is one of Maui's most spectacular beaches — a wide, dramatic crescent of golden sand backed by a cinder cone. The north end is calm and perfect for families. Pair it with a stop at Kihei for shave ice at Ululani's on the way back.",
+        description: "If Mama's Fish House feels like too much with toddlers, or it's sold out, consider lunch at Paia Fish Market instead — casual outdoor tables, fresh fish tacos and plates, no reservations needed, and a fraction of the cost. Then head to Mākena State Park (Big Beach) — one of Maui's most spectacular beaches. The north end is calm and perfect for families. Pair it with a stop at Ululani's on the way back.",
         activities: [
           {
-            title: "Big Beach (Oneloa Beach)",
-            detail: "One of Maui's largest and most beautiful beaches — a half-mile of golden sand with dramatic scenery. The north end near the lava rock is calmer and great for families with toddlers. Note: the main beach has shore break that can be powerful — stay in the shallow areas and watch the waves from a safe distance.",
-            tip: "Arrive early — the parking lot fills up fast. Bring all your own food and water as there are no vendors on the beach.",
+            title: "Paia Fish Market Lunch + Big Beach (Oneloa Beach)",
+            detail: "Start with a casual lunch at Paia Fish Market (outdoor picnic tables, order at the counter, no reservations). Then head to Big Beach — one of Maui's largest and most beautiful beaches. The north end near the lava rock is calmer and great for families with toddlers. Note: the main beach has shore break that can be powerful — stay in the shallow areas.",
+            tip: "Paia Fish Market: order at the counter, eat at outdoor picnic tables — great for kids. Big Beach: arrive early as the parking lot fills fast. Bring all your own food and water as there are no vendors on the beach.",
             image: IMAGES.kapaluaFamily,
             cost: "Free (state park)",
           },
@@ -364,12 +364,12 @@ const days: Day[] = [
         tag: "Scenic Drive",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.kahekili,
-        description: "The Kahekili Highway (Route 340) is a narrow, winding coastal road that hugs the dramatic cliffs of West Maui — often called the 'road nobody tells you about.' It's perfectly manageable in a standard car and rewards you with jaw-dropping ocean views, waterfalls, and zero crowds.",
+        description: "The Kahekili Highway (Route 340) is a narrow, winding coastal road that hugs the dramatic cliffs of West Maui. Important note: the road has sheer drops and very few guardrails, and there are no bathrooms along the route. With two car seats and a 2-year-old, the full loop can be stressful. Recommended approach: drive only to the Kahakuloa Village overlook (30–35 min from Ka'anapali), then turn around. The first few miles past Kapalua give you the dramatic views without the white-knuckle sections.",
         activities: [
           {
             title: "Kahekili Highway Drive",
             detail: "Drive the 20-mile stretch from Ka'anapali northward through Kahakuloa Village — a remote, traditional Hawaiian settlement clinging to the cliffs. Stop at roadside viewpoints for sweeping views of the Pacific and the jagged West Maui Mountains. The road is narrow but paved; just take it slow.",
-            tip: "Drive it in the morning when the light is best and before any afternoon fog rolls in. Allow 2–3 hours for stops.",
+            tip: "Drive to Kahakuloa Village overlook (30–35 min from Ka'anapali) and turn around — this gives you the dramatic scenery without the full narrow loop. No guardrails, no bathrooms on the full route — not ideal with two car seats. Morning light is best.",
             image: IMAGES.kahekili2,
           },
           {
@@ -379,7 +379,7 @@ const days: Day[] = [
             image: IMAGES.napaliBay,
           },
         ],
-        logistics: "Morning: Kahekili Highway drive (depart 8am) → Foodland Farms poke stop → Afternoon: Napili Bay picnic",
+        logistics: "8am: Kahekili Highway to Kahakuloa overlook (turn around there) → Foodland Farms poke stop (go by noon for freshest ahi) → Afternoon: Napili Bay picnic",
         budget: "~$30–50 for poke bowls and snacks (scenic drive is free)",
         waypoints: [
           { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "35 min", driveDist: "18 mi", lat: 20.9281, lng: -156.6942 },
@@ -446,14 +446,14 @@ const days: Day[] = [
           },
           {
             title: "Old Lāhainā Lūʻau",
-            detail: "Gates open at 5:15pm. Arrive early to explore the cultural village, watch artisans weave lauhala, and get your kukui nut lei. The feast includes kalua pig, poi, lomi salmon, haupia, and much more. The hula show tells the story of Hawaii's history from ancient Polynesia to modern times.",
-            tip: "Book 2–3 months ahead — this sells out every night in summer. Children under 3 are free.",
+            detail: "The most authentic luau on Maui, held on the oceanfront in Lāhainā. The feast includes kalua pig, poi, lomi salmon, haupia, and much more. The hula show tells the story of Hawaii's history from ancient Polynesia to modern times. New table-service format means food comes to you — great with toddlers.",
+            tip: "Gates open 5:15pm — arrive right at opening so your kids can explore the cultural village before they get hungry or tired. Children under 3 are free; your 4-year-old needs a child ticket (~$75). Book 6–8 weeks out — it sells out nightly in summer.",
             image: IMAGES.luau,
             cost: "~$230/adult · Under 3 free",
           },
         ],
         logistics: "Morning: Free beach/pool time → 4:30pm: Drive to Lāhainā → 5:15pm: Lūʻau gates open → 9pm: Return to resort",
-        budget: "~$460 for 2 adults (kids under 3 free)",
+        budget: "~$535 for 2 adults + 1 child (4yo) · 2yo free · Arrive at 5:15pm gate opening",
         waypoints: [
           { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Morning beach day", driveTime: "10 min", driveDist: "4 mi", lat: 20.9281, lng: -156.6942 },
           { label: "Old Lāhainā Lūʻau", address: "Old Lahaina Luau, 1251 Front St, Lahaina, Maui, HI", note: "Gates open 5:15pm", driveTime: "10 min", driveDist: "4 mi", lat: 20.8770, lng: -156.6820 },
@@ -510,14 +510,14 @@ const days: Day[] = [
         activities: [
           {
             title: "Final Ka'anapali Beach Walk",
-            detail: "Wake up early for a quiet morning walk along the beach before checkout. The light is golden, the beach is uncrowded, and the ocean is calm. A perfect, peaceful goodbye to Maui.",
+            detail: "Wake up early for a quiet morning walk along the beach before checkout. The light is golden, the beach is uncrowded, and the ocean is calm. A perfect, peaceful goodbye to Maui. Remember: fill up the rental car before heading to OGG — gas stations near the airport charge a significant premium.",
             tip: "Take a family photo at Black Rock (Pu'u Keka'a) — the same spot you saw the cliff divers on Day 1.",
             image: IMAGES.heroBeach,
           },
           {
             title: "Shave Ice & Depart",
             detail: "Stop at Ululani's Hawaiian Shave Ice in Lahaina for one last treat before the drive to OGG. The airport is about 45 minutes from Ka'anapali — allow extra time for car seat return and check-in.",
-            tip: "Return your rental car with a full tank — gas stations near the airport are pricey.",
+            tip: "Fill up at Costco gas (Kahului) or any station in Ka'anapali/Lahaina before heading to OGG — stations right near the airport charge a significant premium.",
             image: IMAGES.kaanapaliKids,
           },
         ],
@@ -911,6 +911,9 @@ export default function Home() {
               { icon: "🛺", title: "Bring a Beach Wagon", body: "A foldable beach wagon is a game-changer for hauling gear for two toddlers across soft sand." },
               { icon: "✈️", title: "Book Nap-Time Flights", body: "A 10am or 1pm SFO departure means kids may sleep through much of the 5.5-hour flight." },
               { icon: "📅", title: "Book Mama's & the Lūʻau Early", body: "Mama's Fish House and the Old Lāhainā Lūʻau both sell out months in advance. Book Mama's 2–3 months ahead and the Lūʻau 6–8 weeks out. Don't wait." },
+              { icon: "🅿️", title: "Parking Notes", body: "Kapalua Bay lot: $10–15/day, fills by 10am in summer — arrive by 8:30am. Napili Bay: street parking only, limited spaces. Baby Beach (Lahaina or Spreckelsville) is a calm backup if Napili is full." },
+              { icon: "😴", title: "Protect the Nap Window", body: "Build 12:30–3pm into every day as a nap/rest window. Toddlers will have much better evenings if you're back at the villa by early afternoon. Don't overschedule mornings." },
+              { icon: "🌧️", title: "Rain & Heat Backups", body: "If it's raining or too hot: Maui Ocean Center (9am, kids under 3 free), Whalers Village shops (free hula show Tue/Thu 5:30pm), or the Westin resort pool. These three cover any bad-weather day on the itinerary." },
             ].map((tip, i) => (
               <div key={i} className="fade-in-up p-6 rounded-sm" style={{ background: "#FDFAF5" }}>
                 <div className="text-3xl mb-3">{tip.icon}</div>
