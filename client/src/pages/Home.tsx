@@ -7,6 +7,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
+import { DayMap, type Waypoint } from "@/components/DayMap";
 
 const CDN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663317271153/ST6JyvESCqw6urLu3fwLqo";
 
@@ -51,6 +52,9 @@ interface DayPlan {
   activities: Activity[];
   logistics: string;
   budget: string;
+  waypoints: Waypoint[];
+  mapCenter: google.maps.LatLngLiteral;
+  mapZoom?: number;
 }
 
 interface Day {
@@ -90,6 +94,13 @@ const days: Day[] = [
         ],
         logistics: "Arrive OGG → Pick up rental car → Drive ~45 min to Ka'anapali → Westin check-in → Beach walk → Sunset from lanai",
         budget: "$0 activities today (villa & resort pool are included)",
+        waypoints: [
+          { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, HI 96732", note: "Arrival & car rental" },
+          { label: "Westin Ka'anapali Ocean Resort Villas", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Check-in" },
+          { label: "Black Rock (Pu'u Keka'a)", address: "Pu'u Keka'a, Ka'anapali, Lahaina, HI 96761", note: "Sunset cliff diving" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6825 },
+        mapZoom: 11,
       },
       {
         label: "Alternative: Explore Paia Town",
@@ -113,6 +124,14 @@ const days: Day[] = [
         ],
         logistics: "Land OGG → Drive through Paia (Hana Hwy) → Lunch in Paia → Waikomo Shave Ice → Drive to Ka'anapali (~1.5 hrs)",
         budget: "~$40–60 for lunch + shave ice",
+        waypoints: [
+          { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, HI 96732", note: "Arrival" },
+          { label: "Paia Town", address: "Baldwin Ave, Paia, HI 96779", note: "Lunch & browse" },
+          { label: "Waikomo Shave Ice", address: "Waikomo Shave Ice, Paia, HI 96779", note: "First shave ice!" },
+          { label: "Westin Ka'anapali Ocean Resort Villas", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Check-in" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.5 },
+        mapZoom: 10,
       },
     ],
   },
@@ -144,6 +163,14 @@ const days: Day[] = [
         ],
         logistics: "Morning: Kapalua Bay (8:30am–noon) → Lunch at Napili Bay → Afternoon: Resort pool → Evening: Hula Grill dinner",
         budget: "~$80–120 for dinner at Hula Grill",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Kapalua Bay Beach", address: "Kapalua Bay, Lahaina, HI 96761", note: "Morning beach" },
+          { label: "Napili Bay", address: "Napili Bay, Lahaina, HI 96761", note: "Lunch picnic" },
+          { label: "Hula Grill Ka'anapali", address: "2435 Kaanapali Pkwy, Lahaina, HI 96761", note: "Barefoot Bar dinner" },
+        ],
+        mapCenter: { lat: 20.9850, lng: -156.6700 },
+        mapZoom: 13,
       },
       {
         label: "Alternative: Kā'anapali Beach Day",
@@ -167,6 +194,13 @@ const days: Day[] = [
         ],
         logistics: "All day at Ka'anapali → Lunch at Leilani's on the Beach (Whalers Village) → Resort pool afternoon",
         budget: "~$80–120 for lunch at Leilani's + beach chair rental",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Black Rock Beach", address: "Pu'u Keka'a, Ka'anapali, Lahaina, HI 96761", note: "Beach morning" },
+          { label: "Leilani's on the Beach", address: "2435 Kaanapali Pkwy Bldg J, Lahaina, HI 96761", note: "Lunch" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6900 },
+        mapZoom: 14,
       },
     ],
   },
@@ -199,6 +233,14 @@ const days: Day[] = [
         ],
         logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & Banyan Tree stroll → Ululani's shave ice → Waterfront dinner",
         budget: "~$110–130 for Ocean Center (2 adults) + dining + shave ice",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Maui Ocean Center", address: "192 Ma'alaea Rd, Wailuku, HI 96793", note: "9am opening" },
+          { label: "Lahaina Banyan Tree", address: "649 Wharf St, Lahaina, HI 96761", note: "Iconic tree + lunch" },
+          { label: "Ululani's Shave Ice Lahaina", address: "790 Front St, Lahaina, HI 96761", note: "Shave ice!" },
+        ],
+        mapCenter: { lat: 20.8893, lng: -156.6600 },
+        mapZoom: 11,
       },
       {
         label: "Alternative: Maui Tropical Plantation",
@@ -223,6 +265,14 @@ const days: Day[] = [
         ],
         logistics: "9:30am: Maui Tropical Plantation (Waikapu) → Lunch at Mill House → 2pm: Lāhainā Banyan Tree → Back to resort",
         budget: "~$80–100 for plantation tour + lunch",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Maui Tropical Plantation", address: "1670 Honoapiilani Hwy, Wailuku, HI 96793", note: "Tram tour + lunch" },
+          { label: "Lahaina Banyan Tree", address: "649 Wharf St, Lahaina, HI 96761", note: "Shave ice & stroll" },
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Return" },
+        ],
+        mapCenter: { lat: 20.8893, lng: -156.6300 },
+        mapZoom: 11,
       },
     ],
   },
@@ -255,6 +305,14 @@ const days: Day[] = [
         ],
         logistics: "Drive to Paia (~45 min from Ka'anapali) → Mama's Fish House lunch (noon) → Paia stroll → Ho'okipa lookout → Return to resort",
         budget: "~$200–280 for 2 adults at Mama's Fish House",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Mama's Fish House", address: "799 Poho Pl, Paia, HI 96779", note: "Legendary lunch" },
+          { label: "Ho'okipa Beach Lookout", address: "Hookipa Beach Park, Paia, HI 96779", note: "Turtles & surfers" },
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Return" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.5200 },
+        mapZoom: 10,
       },
       {
         label: "Alternative: Mākena (Big Beach) Day",
@@ -280,6 +338,14 @@ const days: Day[] = [
         ],
         logistics: "Drive to Mākena State Park (~30 min from Ka'anapali) → Beach morning → Ululani's shave ice in Kihei → Lunch → Resort afternoon",
         budget: "~$30–50 for lunch + shave ice (beach is free)",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Big Beach (Mākena State Park)", address: "Makena State Park, Kihei, HI 96753", note: "Beach morning" },
+          { label: "Ululani's Shave Ice Kihei", address: "61 S Kihei Rd, Kihei, HI 96753", note: "Shave ice stop" },
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Return" },
+        ],
+        mapCenter: { lat: 20.8500, lng: -156.6500 },
+        mapZoom: 10,
       },
     ],
   },
@@ -311,6 +377,14 @@ const days: Day[] = [
         ],
         logistics: "Morning: Kahekili Highway drive (depart 8am) → Foodland Farms poke stop → Afternoon: Napili Bay picnic",
         budget: "~$30–50 for poke bowls and snacks (scenic drive is free)",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Start" },
+          { label: "Kahakuloa Village", address: "Kahakuloa, HI 96793", note: "Scenic drive stop" },
+          { label: "Foodland Farms Lahaina", address: "345 Keawe St, Lahaina, HI 96761", note: "Poke bowls" },
+          { label: "Napili Bay", address: "Napili Bay, Lahaina, HI 96761", note: "Beach picnic" },
+        ],
+        mapCenter: { lat: 21.0000, lng: -156.6500 },
+        mapZoom: 11,
       },
       {
         label: "Alternative: Road to Hana (Half Day)",
@@ -335,6 +409,14 @@ const days: Day[] = [
         ],
         logistics: "Depart Ka'anapali 7am → Twin Falls (mile 2) → Wailua Falls (mile 21) → Ke'anae lookout → Turn around → Back by noon",
         budget: "~$10 parking + $20 for banana bread and snacks",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Depart 7am" },
+          { label: "Twin Falls", address: "Twin Falls, Haiku, HI 96708", note: "Waterfall hike" },
+          { label: "Ke'anae Peninsula", address: "Keanae Peninsula, Hana, HI 96713", note: "Banana bread stand" },
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Return by noon" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.3500 },
+        mapZoom: 10,
       },
     ],
   },
@@ -367,6 +449,12 @@ const days: Day[] = [
         ],
         logistics: "Morning: Free beach/pool time → 4:30pm: Drive to Lāhainā → 5:15pm: Lūʻau gates open → 9pm: Return to resort",
         budget: "~$460 for 2 adults (kids under 3 free)",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Morning beach day" },
+          { label: "Old Lāhainā Lūʻau", address: "1251 Front St, Lahaina, HI 96761", note: "Gates open 5:15pm" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6825 },
+        mapZoom: 13,
       },
       {
         label: "Alternative: Drums of the Pacific Luau",
@@ -391,6 +479,12 @@ const days: Day[] = [
         ],
         logistics: "Morning: Free beach/pool time → 5pm: Walk/drive to Hyatt Ka'anapali → Luau → 9pm: Walk back to resort",
         budget: "~$350–400 for 2 adults + 1 child (4yo)",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Morning beach" },
+          { label: "Hyatt Regency Maui", address: "200 Nohea Kai Dr, Lahaina, HI 96761", note: "Drums of the Pacific Luau" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6900 },
+        mapZoom: 14,
       },
     ],
   },
@@ -422,6 +516,13 @@ const days: Day[] = [
         ],
         logistics: "Morning: Beach walk → Checkout → Shave ice in Lahaina → OGG Airport (depart afternoon)",
         budget: "~$20–30 for shave ice and snacks",
+        waypoints: [
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Final beach walk & checkout" },
+          { label: "Ululani's Shave Ice Lahaina", address: "790 Front St, Lahaina, HI 96761", note: "Last shave ice" },
+          { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, HI 96732", note: "Depart" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6500 },
+        mapZoom: 11,
       },
       {
         label: "Alternative: Kapalua Bay & Shave Ice Farewell",
@@ -446,6 +547,14 @@ const days: Day[] = [
         ],
         logistics: "7am: Kapalua Bay final swim → 9:30am: Checkout → Ululani's shave ice (Kahului) → OGG Airport",
         budget: "~$20–30 for shave ice and coffee",
+        waypoints: [
+          { label: "Kapalua Bay Beach", address: "Kapalua Bay, Lahaina, HI 96761", note: "Final swim" },
+          { label: "Westin Ka'anapali", address: "6 Kai Ala Dr, Lahaina, HI 96761", note: "Checkout" },
+          { label: "Ululani's Shave Ice Kahului", address: "333 Dairy Rd, Kahului, HI 96732", note: "Last shave ice" },
+          { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, HI 96732", note: "Depart" },
+        ],
+        mapCenter: { lat: 20.9281, lng: -156.6500 },
+        mapZoom: 11,
       },
     ],
   },
@@ -602,6 +711,20 @@ function DaySection({ day, idx }: { day: Day; idx: number }) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Map & Logistics */}
+        <div key={`${day.id}-${activePlan}-map`} className="plan-content mt-12">
+          <div className="mb-4 flex items-center gap-3">
+            <div className="h-px flex-1" style={{ background: "#E8D5B0" }} />
+            <p className="text-xs tracking-[0.25em] uppercase" style={{ color: "#0A4A5C", fontFamily: "'Lato', sans-serif" }}>Route & Logistics</p>
+            <div className="h-px flex-1" style={{ background: "#E8D5B0" }} />
+          </div>
+          <DayMap
+            waypoints={plan.waypoints}
+            center={plan.mapCenter}
+            zoom={plan.mapZoom}
+          />
         </div>
 
         {/* Day budget pill */}
