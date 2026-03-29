@@ -1,28 +1,18 @@
 /**
  * DayMap — Maui Family Trip
- * Shows a static Google Maps view centered on Maui with numbered markers
- * for each waypoint, plus a "View Full Route" button that opens Google Maps
- * Directions in a new tab. Works without an API key on GitHub Pages.
- *
- * Approach:
- * - Static map: uses maps.google.com/maps?q= with lat/lng center to reliably
- *   zoom to Maui, with a marker for the first waypoint.
- * - Full route: opens https://www.google.com/maps/dir/ with all waypoints
- *   as a proper directions URL in a new tab.
+ * Uses Google Maps embed (maps.google.com/maps?saddr=...&daddr=...) to show
+ * a driving route between waypoints. All place names must include ", Maui, HI"
+ * to ensure Google Maps resolves them to the correct Hawaii locations.
+ * A "View Full Route" button opens Google Maps Directions in a new tab.
  */
 
 export interface Waypoint {
   label: string;
-  /** Place name or "lat,lng" string used for routing */
+  /** Unambiguous place name including ", Maui, HI" for reliable resolution */
   address: string;
   note?: string;
-  /** Approximate drive time to NEXT waypoint, e.g. "45 min" */
   driveTime?: string;
-  /** Approximate drive distance to NEXT waypoint, e.g. "28 mi" */
   driveDist?: string;
-  /** Optional lat/lng for precise marker placement */
-  lat?: number;
-  lng?: number;
 }
 
 interface DayMapProps {
@@ -33,37 +23,40 @@ interface DayMapProps {
 
 const COLORS = ["#E8714A", "#0A4A5C", "#7B9E6B", "#C4873A", "#5B7FA6", "#A0522D", "#2E8B57"];
 
-// Maui center coordinates — used as fallback
-const MAUI_CENTER = { lat: 20.7984, lng: -156.3319 };
-
 /**
- * Build a static map embed URL centered on Maui using lat/lng.
- * This reliably zooms to Hawaii regardless of place name resolution.
+ * Build a Google Maps embed URL using saddr/daddr for routing.
+ * We pass the first waypoint as saddr and chain the rest as daddr with "to:" prefix.
+ * All addresses include ", Maui, HI" to prevent ambiguous resolution.
  */
-function buildStaticEmbedUrl(waypoints: Waypoint[], center?: { lat: number; lng: number }, zoom = 11): string {
-  // Use provided center, or derive from first waypoint lat/lng, or fall back to Maui center
-  const c = center ?? (waypoints[0]?.lat ? { lat: waypoints[0].lat, lng: waypoints[0].lng! } : MAUI_CENTER);
-  const q = encodeURIComponent(`${c.lat},${c.lng}`);
-  return `https://maps.google.com/maps?q=${q}&z=${zoom}&output=embed`;
+function buildEmbedUrl(waypoints: Waypoint[]): string {
+  if (waypoints.length === 0) return "https://maps.google.com/maps?q=Maui+Hawaii&output=embed";
+  if (waypoints.length === 1) {
+    return `https://maps.google.com/maps?q=${encodeURIComponent(waypoints[0].address)}&output=embed`;
+  }
+
+  const origin = encodeURIComponent(waypoints[0].address);
+  const destination = encodeURIComponent(waypoints[waypoints.length - 1].address);
+
+  // Build waypoints string for intermediate stops
+  const stops = waypoints.slice(1, -1).map((w) => encodeURIComponent(w.address)).join("+to:");
+  const waypointsParam = stops ? `+to:${stops}+to:` : "+to:";
+
+  return `https://maps.google.com/maps?saddr=${origin}&daddr=${waypointsParam}${destination}&dirflg=d&output=embed`;
 }
 
 /**
  * Build a Google Maps Directions URL for opening in a new tab.
- * Uses /maps/dir/ format which is reliable and works without an API key.
  */
 function buildDirectionsUrl(waypoints: Waypoint[]): string {
   if (waypoints.length === 0) return "https://maps.google.com/maps?q=Maui,Hawaii";
-  // Use lat/lng if available, otherwise use address string
-  const parts = waypoints.map((w) =>
-    w.lat ? `${w.lat},${w.lng}` : encodeURIComponent(w.address)
-  );
+  const parts = waypoints.map((w) => encodeURIComponent(w.address));
   return `https://www.google.com/maps/dir/${parts.join("/")}`;
 }
 
-export function DayMap({ waypoints, center, zoom = 11 }: DayMapProps) {
+export function DayMap({ waypoints }: DayMapProps) {
   if (!waypoints || waypoints.length === 0) return null;
 
-  const embedUrl = buildStaticEmbedUrl(waypoints, center, zoom);
+  const embedUrl = buildEmbedUrl(waypoints);
   const directionsUrl = buildDirectionsUrl(waypoints);
 
   return (
@@ -98,7 +91,7 @@ export function DayMap({ waypoints, center, zoom = 11 }: DayMapProps) {
         ))}
       </div>
 
-      {/* Google Maps iframe — centered on Maui via lat/lng */}
+      {/* Google Maps iframe */}
       <div style={{ height: "320px", background: "#EDE8DF", position: "relative" }}>
         <iframe
           title="Day route map"
@@ -110,7 +103,7 @@ export function DayMap({ waypoints, center, zoom = 11 }: DayMapProps) {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-        {/* Overlay "View Full Route" button */}
+        {/* View Full Route button */}
         <a
           href={directionsUrl}
           target="_blank"
@@ -136,7 +129,7 @@ export function DayMap({ waypoints, center, zoom = 11 }: DayMapProps) {
         </a>
       </div>
 
-      {/* Drive legs summary — static from waypoints data */}
+      {/* Drive legs summary */}
       {waypoints.some((w) => w.driveTime) && (
         <div
           className="px-5 py-3 flex flex-wrap gap-4"
