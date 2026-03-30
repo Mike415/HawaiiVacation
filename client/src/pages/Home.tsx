@@ -1043,6 +1043,18 @@ export default function Home() {
                 title: "Lāhainā Recovery — Visit Thoughtfully",
                 body: "The August 2023 wildfire destroyed much of historic Lāhainā. The old Front Street core remains closed, but the Cannery Mall area, Mala Ocean Tavern, and Honu Oceanside are open. Spending money in Lāhainā directly supports the community's recovery. The Old Lāhainā Lūʻau is fully operational and better than ever.",
               },
+              {
+                icon: "🌿",
+                category: "Toddler Favorite",
+                title: "Maui Tropical Plantation (Waikapū)",
+                body: "A low-key, low-commitment stop that toddlers genuinely enjoy: ducks and koi ponds to stare at, a short narrated tram ride through the crops, a shaded café for parents, and plenty of open space to toddle around. Clean bathrooms, no rushing, and easy to bail on if naps hit early. About 20 min south of Ka'anapali.",
+              },
+              {
+                icon: "🥞",
+                category: "Food + Activity",
+                title: "Kihei Caffé + Kalama Park",
+                body: "Kihei Caffé is a beloved breakfast spot famous for their whale-shaped pancakes — a guaranteed hit with a 4-year-old. It's super casual, cash-friendly, and opens early. Best of all, Kalama Park is directly across the street: a big grassy park with a playground, beach access, and room to run. Combine both into one easy morning outing (~35 min from Ka'anapali).",
+              },
             ].map((item, i) => (
               <div key={i} className="fade-in-up p-6 rounded-sm" style={{ background: "#FDFAF5", border: "1px solid #E8D5B0" }}>
                 <div className="flex items-center gap-3 mb-3">
