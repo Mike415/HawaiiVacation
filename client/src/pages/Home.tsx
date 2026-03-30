@@ -812,6 +812,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── DAY AT A GLANCE ─── */}
+      <section className="py-14 md:py-20" style={{ background: "#FDFAF5", borderBottom: "1px solid #E8D5B0" }}>
+        <div className="container">
+          <div className="fade-in-up text-center mb-10">
+            <p className="text-xs tracking-[0.3em] uppercase mb-2" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>Your Week at a Glance</p>
+            <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>7 Days in Maui</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3">
+            {[
+              { num: "01", title: "Arrival Day", icon: "✈️", summary: "Land at OGG, grocery run, check in to Westin villa, kids' pool, sunset beach walk" },
+              { num: "02", title: "Ka'anapali & Napili", icon: "🏖️", summary: "Black Rock snorkel beach, Napili Bay, Hula Grill Barefoot Bar at sunset" },
+              { num: "03", title: "Lāhainā Town", icon: "🌺", summary: "Stroll Front Street (early!), Ululani's shave ice, Leilani's on the Beach for dinner" },
+              { num: "04", title: "Kapalua & Merriman's", icon: "🍽️", summary: "Kapalua Bay Beach morning, Merriman's Kapalua for lunch, resort pool afternoon" },
+              { num: "05", title: "Scenic West Maui", icon: "🏔️", summary: "Kahekili Hwy scenic drive (to Kahakuloa overlook), poke picnic on Ka'anapali Beach" },
+              { num: "06", title: "Lūʻau Night", icon: "🌴", summary: "Beach morning, resort pool, Old Lāhainā Lūʻau at 5:15pm — the highlight of the trip" },
+              { num: "07", title: "Departure Day", icon: "🌅", summary: "Final sunrise beach walk, pack up, fill gas tank, return car at OGG, fly home" },
+            ].map((d) => (
+              <button
+                key={d.num}
+                onClick={() => document.getElementById(`day${parseInt(d.num)}`)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                className="fade-in-up text-left p-4 rounded-sm transition-all hover:shadow-md group"
+                style={{ background: "#FDFAF5", border: "1px solid #E8D5B0", cursor: "pointer" }}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xl">{d.icon}</span>
+                  <span className="text-xs font-bold tracking-widest" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>DAY {d.num}</span>
+                </div>
+                <h3 className="text-sm font-bold mb-1 group-hover:underline" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{d.title}</h3>
+                <p className="text-xs leading-relaxed" style={{ color: "#6B5744", fontWeight: 300 }}>{d.summary}</p>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── STICKY DAY NAV ─── */}
       <div
         ref={navRef}
@@ -920,6 +955,102 @@ export default function Home() {
                 <div className="text-3xl mb-3">{tip.icon}</div>
                 <h3 className="text-lg font-semibold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{tip.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#4A3728", fontWeight: 300 }}>{tip.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── OTHER THINGS TO CONSIDER ─── */}
+      <section className="py-20 md:py-28" style={{ background: "#FDFAF5" }}>
+        <div className="container">
+          <div className="fade-in-up text-center mb-14">
+            <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "#E8714A" }}>While You're There</p>
+            <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>Other Things to Consider</h2>
+            <p className="mt-3 max-w-xl mx-auto text-base" style={{ color: "#6B5744", fontWeight: 300 }}>Extras that didn't make the main itinerary but are worth knowing about — especially with two toddlers in tow.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              {
+                icon: "🐢",
+                category: "Wildlife",
+                title: "Hawaiian Green Sea Turtles",
+                body: "Honu (sea turtles) are a near-daily sight on Ka'anapali Beach and at Black Rock. They rest on the sand in the late afternoon — keep a respectful 10-foot distance and let the kids watch from nearby. No touching, ever.",
+              },
+              {
+                icon: "🌋",
+                category: "Day Trip",
+                title: "Haleakalā Sunrise (Skip for Now)",
+                body: "The famous Haleakalā summit sunrise requires a 2am wake-up and a 2-hour drive. With a 2yo and 4yo, this is not the trip for it — but worth knowing it exists. The crater is stunning at any time of day if you want to drive up for the view without the sunrise rush.",
+              },
+              {
+                icon: "🛍️",
+                category: "Shopping",
+                title: "Whalers Village & The Shops at Wailea",
+                body: "Whalers Village at Ka'anapali has a free hula show Tuesday & Thursday at 5:30pm — great for toddlers. The Shops at Wailea (30 min south) is a higher-end outdoor mall with a good mix of restaurants and a nice open-air layout for strolling.",
+              },
+              {
+                icon: "🍦",
+                category: "Food",
+                title: "Shave Ice — Don't Miss It",
+                body: "Ululani's Hawaiian Shave Ice is the gold standard on Maui. Hit the Lahaina location on Day 3, the Kahului location near OGG on Day 7, or the Kihei location if you venture south. Order with mochi balls and condensed milk on top. The kids will love it.",
+              },
+              {
+                icon: "🌊",
+                category: "Beaches",
+                title: "Baby Beach (Lahaina) for the 2yo",
+                body: "If Napili Bay is too wavy for the 2yo, Baby Beach in Lahaina is a calm, shallow lagoon protected by a breakwater — perfect for very young kids. It's small and not scenic, but the water is completely flat. Good backup on any beach day.",
+              },
+              {
+                icon: "🌅",
+                category: "Experience",
+                title: "Sunrise at Ka'anapali Beach",
+                body: "If anyone is up early (toddlers often are), a 6am walk on Ka'anapali Beach is magical — almost empty, golden light, and honu on the sand. Bring a coffee from the villa and let the kids splash at the water's edge. One of the best free experiences on the island.",
+              },
+              {
+                icon: "🎶",
+                category: "Free Entertainment",
+                title: "Cliff Dive Ceremony at Black Rock",
+                body: "Every evening at sunset, a Westin staff member performs a traditional torch-lighting and cliff dive ceremony at Pu'u Keka'a (Black Rock) — right in front of the resort. It's free, kid-friendly, and a beautiful Maui tradition. Gather on the beach around 6pm.",
+              },
+              {
+                icon: "🏥",
+                category: "Good to Know",
+                title: "Maui Memorial Medical Center",
+                body: "The main hospital is Maui Memorial Medical Center in Wailuku (~20 min from Ka'anapali). For non-emergency care, Urgent Care Maui in Wailuku and Lahaina Urgent Care are good options. Bring any prescription medications and a basic first-aid kit — sunburns and minor sand injuries are common with toddlers.",
+              },
+              {
+                icon: "🚗",
+                category: "Logistics",
+                title: "Car Seat & Rental Car Tips",
+                body: "Bring your own car seats — rental car seat add-ons are expensive (~$15/day each) and often poorly maintained. A compact SUV (e.g., RAV4 or CR-V) fits two car seats comfortably and handles the occasional rough road. Book through Costco Travel or Autoslash for the best rates.",
+              },
+              {
+                icon: "☀️",
+                category: "Health",
+                title: "Sun & Heat Management",
+                body: "Maui sun in June/July is intense. Apply reef-safe SPF 50 every 90 minutes, use rash guards and sun hats for the kids, and plan beach time before 10am and after 4pm. The Westin pool has shade umbrellas — use them for the 2yo especially. Dehydration sneaks up fast.",
+              },
+              {
+                icon: "🏗️",
+                category: "Heads Up",
+                title: "Westin Renovation Noise",
+                body: "The Westin Ka'anapali has interior and exterior renovation work scheduled through June 27, 2026. This overlaps with both your date options. Expect some construction noise during daytime hours. Request a villa away from the construction zone when you check in, and note that the May 29–June 5 dates fall entirely within this window.",
+              },
+              {
+                icon: "🌺",
+                category: "Culture",
+                title: "Lāhainā Recovery — Visit Thoughtfully",
+                body: "The August 2023 wildfire destroyed much of historic Lāhainā. The old Front Street core remains closed, but the Cannery Mall area, Mala Ocean Tavern, and Honu Oceanside are open. Spending money in Lāhainā directly supports the community's recovery. The Old Lāhainā Lūʻau is fully operational and better than ever.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="fade-in-up p-6 rounded-sm" style={{ background: "#FDFAF5", border: "1px solid #E8D5B0" }}>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <span className="text-xs tracking-[0.2em] uppercase" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>{item.category}</span>
+                </div>
+                <h3 className="text-base font-semibold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{item.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#4A3728", fontWeight: 300 }}>{item.body}</p>
               </div>
             ))}
           </div>
