@@ -821,13 +821,89 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3">
             {[
-              { num: "01", title: "Arrival Day", icon: "✈️", summary: "Land at OGG, grocery run, check in to Westin villa, kids' pool, sunset beach walk" },
-              { num: "02", title: "Ka'anapali & Napili", icon: "🏖️", summary: "Black Rock snorkel beach, Napili Bay, Hula Grill Barefoot Bar at sunset" },
-              { num: "03", title: "Lāhainā Town", icon: "🌺", summary: "Stroll Front Street (early!), Ululani's shave ice, Leilani's on the Beach for dinner" },
-              { num: "04", title: "Kapalua & Merriman's", icon: "🍽️", summary: "Kapalua Bay Beach morning, Merriman's Kapalua for lunch, resort pool afternoon" },
-              { num: "05", title: "Scenic West Maui", icon: "🏔️", summary: "Kahekili Hwy scenic drive (to Kahakuloa overlook), poke picnic on Ka'anapali Beach" },
-              { num: "06", title: "Lūʻau Night", icon: "🌴", summary: "Beach morning, resort pool, Old Lāhainā Lūʻau at 5:15pm — the highlight of the trip" },
-              { num: "07", title: "Departure Day", icon: "🌅", summary: "Final sunrise beach walk, pack up, fill gas tank, return car at OGG, fly home" },
+              {
+                num: "01", title: "Arrival Day", icon: "✈️",
+                schedule: [
+                  { time: "~11am", label: "Land at OGG" },
+                  { time: "↓ 15 min", label: "drive", drive: true },
+                  { time: "11:30am", label: "Costco / Safeway grocery run" },
+                  { time: "↓ 20 min", label: "drive", drive: true },
+                  { time: "1pm", label: "Check in to Westin villa" },
+                  { time: "2–4pm", label: "Kids' pool & settle in" },
+                  { time: "5–6pm", label: "Sunset walk on Ka'anapali Beach" },
+                  { time: "6:30pm", label: "Dinner at Monkeypod Ka'anapali" },
+                ],
+              },
+              {
+                num: "02", title: "Ka'anapali & Napili", icon: "🏖️",
+                schedule: [
+                  { time: "8:30am", label: "Kapalua Bay Beach (arrive early)" },
+                  { time: "↓ 5 min", label: "drive", drive: true },
+                  { time: "11:30am", label: "Napili Bay picnic (or resort pool)" },
+                  { time: "12:30–3pm", label: "🛏 Nap window at villa" },
+                  { time: "↓ 10 min", label: "drive", drive: true },
+                  { time: "5–5:30pm", label: "Hula Grill Barefoot Bar dinner" },
+                ],
+              },
+              {
+                num: "03", title: "Lāhainā Town", icon: "🌺",
+                schedule: [
+                  { time: "9am", label: "Maui Ocean Center (Ma'alaea)" },
+                  { time: "↓ 20 min", label: "drive", drive: true },
+                  { time: "11:30am", label: "Lāhainā Banyan Tree stroll" },
+                  { time: "12pm", label: "Ululani's shave ice" },
+                  { time: "12:30–3pm", label: "🛏 Nap window — back to resort" },
+                  { time: "↓ 10 min", label: "drive", drive: true },
+                  { time: "5:30pm", label: "Leilani's on the Beach dinner" },
+                ],
+              },
+              {
+                num: "04", title: "Kapalua & Merriman's", icon: "🍽️",
+                schedule: [
+                  { time: "8:30am", label: "Kapalua Bay Beach (early arrival)" },
+                  { time: "↓ 10 min", label: "drive", drive: true },
+                  { time: "11:30am", label: "Merriman's Kapalua lunch" },
+                  { time: "↓ 2 min", label: "walk", drive: true },
+                  { time: "1pm", label: "Kapalua Bay Beach afternoon" },
+                  { time: "↓ 10 min", label: "drive", drive: true },
+                  { time: "3pm", label: "Resort pool & nap window" },
+                ],
+              },
+              {
+                num: "05", title: "Scenic West Maui", icon: "🏔️",
+                schedule: [
+                  { time: "8am", label: "Depart — Kahekili Hwy (Rte 340)" },
+                  { time: "↓ 35 min", label: "drive", drive: true },
+                  { time: "8:35am", label: "Kahakuloa overlook — turn around" },
+                  { time: "↓ 35 min", label: "drive back", drive: true },
+                  { time: "11:30am", label: "Foodland Farms poke stop" },
+                  { time: "Noon", label: "Ka'anapali Beach poke picnic" },
+                  { time: "12:30–3pm", label: "🛏 Nap window at resort" },
+                ],
+              },
+              {
+                num: "06", title: "Lūʻau Night", icon: "🌴",
+                schedule: [
+                  { time: "8–11am", label: "Ka'anapali Beach morning" },
+                  { time: "11am–4pm", label: "Resort pool & nap window" },
+                  { time: "4:30pm", label: "Drive to Old Lāhainā Lūʻau" },
+                  { time: "↓ 10 min", label: "drive", drive: true },
+                  { time: "5:15pm", label: "Lūʻau gates open — arrive now" },
+                  { time: "9pm", label: "Drive back to resort" },
+                ],
+              },
+              {
+                num: "07", title: "Departure Day", icon: "🌅",
+                schedule: [
+                  { time: "6–7am", label: "Final sunrise walk on beach" },
+                  { time: "9:30am", label: "Checkout — pack & load car" },
+                  { time: "↓ 30 min", label: "drive", drive: true },
+                  { time: "10am", label: "Ululani's shave ice (Kahului)" },
+                  { time: "↓ 5 min", label: "drive", drive: true },
+                  { time: "10:30am", label: "Fill gas tank near OGG" },
+                  { time: "11am", label: "Return car & check in at OGG" },
+                ],
+              },
             ].map((d) => (
               <button
                 key={d.num}
@@ -835,12 +911,24 @@ export default function Home() {
                 className="fade-in-up text-left p-4 rounded-sm transition-all hover:shadow-md group"
                 style={{ background: "#FDFAF5", border: "1px solid #E8D5B0", cursor: "pointer" }}
               >
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-3">
                   <span className="text-xl">{d.icon}</span>
                   <span className="text-xs font-bold tracking-widest" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>DAY {d.num}</span>
                 </div>
-                <h3 className="text-sm font-bold mb-1 group-hover:underline" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{d.title}</h3>
-                <p className="text-xs leading-relaxed" style={{ color: "#6B5744", fontWeight: 300 }}>{d.summary}</p>
+                <h3 className="text-sm font-bold mb-3 group-hover:underline" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{d.title}</h3>
+                <div className="space-y-1">
+                  {d.schedule.map((s, si) => (
+                    s.drive
+                      ? <div key={si} className="flex items-center gap-1.5 py-0.5">
+                          <div className="w-px h-4 mx-[7px] flex-shrink-0" style={{ background: "#D4B896" }} />
+                          <span className="text-[10px] italic" style={{ color: "#A08060", fontFamily: "'Lato', sans-serif" }}>{s.time} {s.label}</span>
+                        </div>
+                      : <div key={si} className="flex items-start gap-2">
+                          <span className="text-[10px] font-bold flex-shrink-0 mt-px w-14 text-right" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>{s.time}</span>
+                          <span className="text-[10px] leading-snug" style={{ color: "#4A3728", fontWeight: 400 }}>{s.label}</span>
+                        </div>
+                  ))}
+                </div>
               </button>
             ))}
           </div>
