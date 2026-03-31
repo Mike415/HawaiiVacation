@@ -80,8 +80,8 @@ const days: Day[] = [
         description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the villa kitchen with milk, fruit, snacks, and easy lunches — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first — after a 5.5-hour flight, the pool lets the toddlers burn energy without the sun and wind of the beach. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
         activities: [
           {
-            title: "Westin Villa Check-In & Pool Time",
-            detail: "Your Premium Villa at the Westin Ka'anapali Ocean Resort Villas has a king bed + sofa bed, full kitchen, in-unit washer/dryer, and a private ocean-view lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is free for guests.",
+        title: "Honua Kai Check-In & Pool Time",
+            detail: "Your 1-Bedroom Partial Ocean View suite at OUTRIGGER Honua Kai Resort & Spa features a king bed + double sofa bed, full kitchen (fridge, stovetop, oven, microwave), in-unit washer/dryer, and a furnished lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is $35/day (valet $40/day).",
             tip: "Request an upper-floor unit for the best unobstructed ocean views. Stock the kitchen on arrival: Costco (275 Ho'okele St, Kahului) is cheapest; Foodland Farms (345 Keawe St, Lahaina) is closer to the resort. Pool first, beach second — toddlers do better after a calm arrival.",
             image: IMAGES.westinMaui,
           },
@@ -92,13 +92,13 @@ const days: Day[] = [
             image: IMAGES.hero,
           },
         ],
-        logistics: "Arrive OGG → Rental car → Grocery stop (Costco/Target in Kahului or Foodland Farms in Lahaina) → Westin check-in → Kids' pool first → Sunset beach walk",
+        logistics: "Arrive OGG → Rental car → Grocery stop (Costco/Target in Kahului or Foodland Farms in Lahaina) → Honua Kai check-in → Kids' pool first → Sunset beach walk",
         budget: "$0 activities today (villa & resort pool are included)",
         waypoints: [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival & car rental", driveTime: "45 min", driveDist: "27 mi", lat: 20.8986, lng: -156.4305 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Check-in", driveTime: "5 min", driveDist: "1.5 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Check-in", driveTime: "5 min", driveDist: "1.5 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Black Rock (Pu'u Keka'a)", address: "Pu'u Keka'a Black Rock, Ka'anapali, Maui, HI", note: "Sunset cliff diving", driveTime: "3 min", driveDist: "0.8 mi", lat: 20.9255, lng: -156.6944 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.6825 },
         mapZoom: 11,
@@ -129,7 +129,7 @@ const days: Day[] = [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival", driveTime: "10 min", driveDist: "7 mi", lat: 20.8986, lng: -156.4305 },
           { label: "Paia Town", address: "Paia, Maui, HI", note: "Lunch & browse", driveTime: "5 min", driveDist: "0.5 mi", lat: 20.9150, lng: -156.3700 },
           { label: "Waikomo Shave Ice", address: "Waikomo Shave Ice, Paia, Maui, HI", note: "First shave ice!", driveTime: "55 min", driveDist: "35 mi", lat: 20.9148, lng: -156.3698 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Check-in", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Check-in", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.5 },
         mapZoom: 10,
@@ -147,7 +147,7 @@ const days: Day[] = [
         tag: "Beach Day",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.kapaluaAerial,
-        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Arrive by 8:30am as parking fills by 10am in summer ($10–15/day). Note: if the kids are tired after Kapalua, skip Napili Bay and head back to the resort pool instead — Napili is only 5 minutes from the Westin and can easily be done on another afternoon. End the evening with dinner at Hula Grill.",
+        description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Arrive by 8:30am as parking fills by 10am in summer ($10–15/day). Note: if the kids are tired after Kapalua, skip Napili Bay and head back to the resort pool instead — Napili is only 5 minutes from Honua Kai and can easily be done on another afternoon. End the evening with dinner at Hula Grill.",
         activities: [
           {
             title: "Kapalua Bay",
@@ -165,11 +165,11 @@ const days: Day[] = [
         logistics: "8:30am: Kapalua Bay (arrive early, parking fills by 10am) → Noon: Resort pool if kids are tired, or Napili Bay picnic → 5:00–5:30pm: Hula Grill Barefoot Bar dinner",
         budget: "~$80–120 for dinner at Hula Grill",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Kapalua Bay Beach", address: "Kapalua Bay, Lahaina, Maui, HI", note: "Morning beach", driveTime: "1 min", driveDist: "0.1 mi", lat: 20.9993, lng: -156.6726 },
           { label: "Napili Bay", address: "Napili Bay, Lahaina, Maui, HI", note: "Lunch picnic", driveTime: "15 min", driveDist: "6.4 mi", lat: 20.9920, lng: -156.6720 },
           { label: "Hula Grill Ka'anapali", address: "Hula Grill Ka'anapali, Lahaina, Maui, HI", note: "Barefoot Bar dinner", driveTime: "15 min", driveDist: "6.4 mi", lat: 20.9248, lng: -156.6929 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9850, lng: -156.6700 },
         mapZoom: 13,
@@ -197,10 +197,10 @@ const days: Day[] = [
         logistics: "All day at Ka'anapali → Lunch at Leilani's on the Beach (Whalers Village) → Resort pool afternoon",
         budget: "~$80–120 for lunch at Leilani's + beach chair rental",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "3 min", driveDist: "0.8 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "3 min", driveDist: "0.8 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Black Rock (Pu'u Keka'a)", address: "Pu'u Keka'a Black Rock, Ka'anapali, Maui, HI", note: "Beach morning", driveTime: "2 min", driveDist: "0.5 mi", lat: 20.9255, lng: -156.6944 },
           { label: "Leilani's on the Beach", address: "Leilani's on the Beach, Whalers Village, Ka'anapali, Maui, HI", note: "Lunch", driveTime: "5 min", driveDist: "1 mi", lat: 20.9220, lng: -156.6920 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.6900 },
         mapZoom: 14,
@@ -237,11 +237,11 @@ const days: Day[] = [
         logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & Banyan Tree stroll → Ululani's shave ice → Waterfront dinner",
         budget: "~$110–130 for Ocean Center (2 adults) + dining + shave ice",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "20 min", driveDist: "12 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "20 min", driveDist: "12 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Maui Ocean Center", address: "Maui Ocean Center, Ma'alaea, Maui, HI", note: "9am opening", driveTime: "20 min", driveDist: "11 mi", lat: 20.7918, lng: -156.5072 },
           { label: "Lahaina Banyan Tree", address: "Lahaina Banyan Court Mall, Lahaina, Maui, HI", note: "Iconic tree + lunch", driveTime: "2 min", driveDist: "0.3 mi", lat: 20.8726, lng: -156.6784 },
           { label: "Ululani's Shave Ice Lahaina", address: "Ululani's Hawaiian Shave Ice, Lahaina, Maui, HI", note: "Shave ice!", driveTime: "20 min", driveDist: "11 mi", lat: 20.8747, lng: -156.6786 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.8893, lng: -156.6600 },
         mapZoom: 11,
@@ -270,10 +270,10 @@ const days: Day[] = [
         logistics: "9:30am: Maui Tropical Plantation (Waikapu) → Lunch at Mill House → 2pm: Lāhainā Banyan Tree → Back to resort",
         budget: "~$80–100 for plantation tour + lunch",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "18 min", driveDist: "10 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "18 min", driveDist: "10 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Maui Tropical Plantation", address: "Maui Tropical Plantation, Waikapu, Maui, HI", note: "Tram tour + lunch", driveTime: "15 min", driveDist: "8 mi", lat: 20.8360, lng: -156.5300 },
           { label: "Lahaina Banyan Tree", address: "Lahaina Banyan Court Mall, Lahaina, Maui, HI", note: "Shave ice & stroll", driveTime: "18 min", driveDist: "10 mi", lat: 20.8726, lng: -156.6784 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.8893, lng: -156.6300 },
         mapZoom: 11,
@@ -291,11 +291,11 @@ const days: Day[] = [
         tag: "Special Lunch",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.kapaluaAerial,
-        description: "Today is built around Merriman's Kapalua — one of Maui's finest oceanfront restaurants, just 10 minutes from the Westin. Perched above Kapalua Bay with sweeping Pacific views, Chef Peter Merriman pioneered Hawaii Regional Cuisine and sources nearly everything from local farms and fishermen. It's a world-class meal without the 45-minute drive or $80–120/person price tag of Mama's. Book online at merrimanshawaii.com — lunch is easier to get than dinner. After lunch, spend the afternoon at Kapalua Bay Beach, one of the calmest and most beautiful beaches on Maui.",
+        description: "Today is built around Merriman's Kapalua — one of Maui's finest oceanfront restaurants, just 10 minutes from Honua Kai. Perched above Kapalua Bay with sweeping Pacific views, Chef Peter Merriman pioneered Hawaii Regional Cuisine and sources nearly everything from local farms and fishermen. It's a world-class meal without the 45-minute drive or $80–120/person price tag of Mama's. Book online at merrimanshawaii.com — lunch is easier to get than dinner. After lunch, spend the afternoon at Kapalua Bay Beach, one of the calmest and most beautiful beaches on Maui.",
         activities: [
           {
             title: "Merriman's Kapalua — Oceanfront Lunch",
-            detail: "Perched above Kapalua Bay with sweeping ocean views, Merriman's is one of Maui's finest farm-to-table restaurants. Chef Peter Merriman pioneered Hawaii Regional Cuisine and sources nearly everything from local farms and fishermen. The seared ahi, fresh catch, and Kula greens salad are standouts. Lunch is more relaxed than dinner and easier to book. Just 10 minutes from the Westin.",
+            detail: "Perched above Kapalua Bay with sweeping ocean views, Merriman's is one of Maui's finest farm-to-table restaurants. Chef Peter Merriman pioneered Hawaii Regional Cuisine and sources nearly everything from local farms and fishermen. The seared ahi, fresh catch, and Kula greens salad are standouts. Lunch is more relaxed than dinner and easier to book. Just 10 minutes from Honua Kai.",
             tip: "Book online at merrimanshawaii.com — lunch reservations are easier to get than dinner. Request a window table for the best ocean views over Kapalua Bay. Dress code: resort casual.",
             image: IMAGES.kapaluaFamily,
             cost: "~$50–80/person · Reservations recommended",
@@ -311,10 +311,10 @@ const days: Day[] = [
         logistics: "10 min drive to Merriman's Kapalua for lunch → Kapalua Bay Beach afternoon → Return to resort by 3pm",
         budget: "~$100–160 for 2 adults at Merriman's · Parking ~$10–15",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "10 min", driveDist: "5 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "10 min", driveDist: "5 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Merriman's Kapalua", address: "Merriman's Kapalua, 1 Bay Club Pl, Lahaina, Maui, HI", note: "Oceanfront lunch", driveTime: "5 min", driveDist: "2 mi", lat: 21.0010, lng: -156.6680 },
           { label: "Kapalua Bay Beach", address: "Kapalua Bay Beach, Kapalua, Maui, HI", note: "Afternoon beach", driveTime: "10 min", driveDist: "5 mi", lat: 20.9990, lng: -156.6680 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9640, lng: -156.6810 },
         mapZoom: 12,
@@ -343,10 +343,10 @@ const days: Day[] = [
         logistics: "Drive to Paia (~45 min from Ka'anapali) → Mama's Fish House lunch (noon) → Paia stroll → Ho'okipa lookout → Return to resort",
         budget: "~$200–280 for 2 adults at Mama's Fish House · Plan resort return by 3pm for toddler nap",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Start", driveTime: "45 min", driveDist: "28 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "45 min", driveDist: "28 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Mama's Fish House", address: "Mama's Fish House, 799 Poho Pl, Paia, Maui, HI", note: "Legendary lunch", driveTime: "5 min", driveDist: "1.5 mi", lat: 20.9284, lng: -156.3630 },
           { label: "Ho'okipa Beach Lookout", address: "Ho'okipa Beach Park, Paia, Maui, HI", note: "Turtles & surfers", driveTime: "45 min", driveDist: "28 mi", lat: 20.9322, lng: -156.3493 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.5200 },
         mapZoom: 10,
@@ -368,14 +368,14 @@ const days: Day[] = [
         activities: [
           {
             title: "Kahekili Highway to Kahakuloa Overlook",
-            detail: "Drive north from Ka'anapali on Route 340 — the road quickly becomes dramatic, hugging sheer cliffs above the Pacific. Stop at the Kahakuloa Village overlook for sweeping views of the remote valley and the rugged West Maui Mountains. This is one of the most striking viewpoints on the island, and it takes just 30–35 minutes from the Westin. Turn around here — the road beyond gets significantly narrower and has no bathrooms.",
+            detail: "Drive north from Ka'anapali on Route 340 — the road quickly becomes dramatic, hugging sheer cliffs above the Pacific. Stop at the Kahakuloa Village overlook for sweeping views of the remote valley and the rugged West Maui Mountains. This is one of the most striking viewpoints on the island, and it takes just 30–35 minutes from Honua Kai. Turn around here — the road beyond gets significantly narrower and has no bathrooms.",
             tip: "Drive to Kahakuloa Village overlook and turn around — you get the best scenery without the stressful narrow sections. Go early (8am) before it gets hot. No guardrails on parts of this road — take it slow.",
             image: IMAGES.kahekili2,
           },
           {
             title: "Foodland Farms Poke Picnic at Ka'anapali Beach",
-            detail: "On the way back, stop at Foodland Farms in Lahaina for fresh poke bowls to go — one of the best-value meals on Maui. Grab the ahi shoyu, spicy ahi, and some local chips and drinks, then head back to Ka'anapali Beach for a relaxed afternoon picnic right in front of the Westin. Let the kids play in the sand while you eat.",
-            tip: "Foodland Farms poke is freshest before noon — go by 11:30am. Ka'anapali Beach in front of the Westin has a gentle shore — perfect for a relaxed afternoon after a morning drive.",
+            detail: "On the way back, stop at Foodland Farms in Lahaina for fresh poke bowls to go — one of the best-value meals on Maui. Grab the ahi shoyu, spicy ahi, and some local chips and drinks, then head back to Ka'anapali Beach for a relaxed afternoon picnic right in front of Honua Kai. Let the kids play in the sand while you eat.",
+            tip: "Foodland Farms poke is freshest before noon — go by 11:30am. Ka'anapali Beach in front of Honua Kai has a gentle shore — perfect for a relaxed afternoon after a morning drive.",
             image: IMAGES.napaliBay,
             cost: "~$15–25/person for poke bowls",
           },
@@ -383,11 +383,11 @@ const days: Day[] = [
         logistics: "8am: Kahekili Highway to Kahakuloa overlook → Turn around → 11:30am: Foodland Farms poke stop → Noon: Ka'anapali Beach picnic → Afternoon: resort pool",
         budget: "~$30–50 for poke bowls and snacks (scenic drive is free)",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Depart 8am", driveTime: "35 min", driveDist: "18 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Depart 8am", driveTime: "35 min", driveDist: "18 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Kahakuloa Village Overlook", address: "Kahakuloa, Maui, HI", note: "Turn around here", driveTime: "35 min", driveDist: "18 mi", lat: 21.0090, lng: -156.5760 },
           { label: "Foodland Farms Lahaina", address: "Foodland Farms, Lahaina, Maui, HI", note: "Poke bowls to go", driveTime: "10 min", driveDist: "5 mi", lat: 20.8784, lng: -156.6760 },
           { label: "Ka'anapali Beach", address: "Ka'anapali Beach, Lahaina, Maui, HI", note: "Beach picnic", driveTime: "5 min", driveDist: "3 mi", lat: 20.9281, lng: -156.6950 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9700, lng: -156.6350 },
         mapZoom: 11,
@@ -416,10 +416,10 @@ const days: Day[] = [
         logistics: "Depart Ka'anapali 7am → Twin Falls (mile 2) → Wailua Falls (mile 21) → Ke'anae lookout → Turn around → Back by noon",
         budget: "~$10 parking + $20 for banana bread and snacks",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Depart 7am", driveTime: "50 min", driveDist: "32 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Depart 7am", driveTime: "50 min", driveDist: "32 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Twin Falls", address: "Twin Falls, Hana Highway, Haiku, Maui, HI", note: "Waterfall hike", driveTime: "40 min", driveDist: "19 mi", lat: 20.9100, lng: -156.2780 },
           { label: "Ke'anae Peninsula", address: "Ke'anae Peninsula, Ke'anae, Maui, HI", note: "Banana bread stand", driveTime: "1 hr 20 min", driveDist: "51 mi", lat: 20.8580, lng: -156.1560 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return by noon", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return by noon", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.3500 },
         mapZoom: 10,
@@ -456,9 +456,9 @@ const days: Day[] = [
         logistics: "Morning: Free beach/pool time → 4:30pm: Drive to Lāhainā → 5:15pm: Lūʻau gates open → 9pm: Return to resort",
         budget: "~$535 for 2 adults + 1 child (4yo) · 2yo free · Arrive at 5:15pm gate opening",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Morning beach day", driveTime: "10 min", driveDist: "4 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Morning beach day", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Old Lāhainā Lūʻau", address: "Old Lahaina Luau, 1251 Front St, Lahaina, Maui, HI", note: "Gates open 5:15pm", driveTime: "10 min", driveDist: "4 mi", lat: 20.8770, lng: -156.6820 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return after luau", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return after luau", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.6825 },
         mapZoom: 13,
@@ -487,9 +487,9 @@ const days: Day[] = [
         logistics: "Morning: Free beach/pool time → 5pm: Walk/drive to Hyatt Ka'anapali → Luau → 9pm: Walk back to resort",
         budget: "~$350–400 for 2 adults + 1 child (4yo)",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Morning beach", driveTime: "3 min", driveDist: "0.7 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Morning beach", driveTime: "3 min", driveDist: "0.7 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Hyatt Regency Maui", address: "Hyatt Regency Maui Resort and Spa, Ka'anapali, Maui, HI", note: "Drums of the Pacific Luau", driveTime: "3 min", driveDist: "0.7 mi", lat: 20.9220, lng: -156.6920 },
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Return after luau", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return after luau", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.9281, lng: -156.6900 },
         mapZoom: 14,
@@ -525,7 +525,7 @@ const days: Day[] = [
         logistics: "Morning: Beach walk → Checkout → Shave ice in Lahaina → OGG Airport (depart afternoon)",
         budget: "~$20–30 for shave ice and snacks",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Final beach walk & checkout", driveTime: "10 min", driveDist: "4 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Final beach walk & checkout", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Ululani's Shave Ice Lahaina", address: "Ululani's Hawaiian Shave Ice, Lahaina, Maui, HI", note: "Last shave ice", driveTime: "45 min", driveDist: "27 mi", lat: 20.8747, lng: -156.6786 },
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Depart", lat: 20.8986, lng: -156.4305 },
         ],
@@ -541,7 +541,7 @@ const days: Day[] = [
         activities: [
           {
             title: "Kapalua Bay Final Morning",
-            detail: "Kapalua Bay is the perfect farewell beach — calm, clear, and beautiful. The kids can wade in the shallow water one last time while you soak in the scenery. It's a 15-minute drive north of the Westin. Arrive early before it fills up.",
+            detail: "Kapalua Bay is the perfect farewell beach — calm, clear, and beautiful. The kids can wade in the shallow water one last time while you soak in the scenery. it's a 10-minute drive north of Honua Kai. Arrive early before it fills up.",
             tip: "Take a family photo at the water's edge — the turquoise water and golden sand make for an unforgettable shot.",
             image: IMAGES.kapaluaFamily,
           },
@@ -556,7 +556,7 @@ const days: Day[] = [
         logistics: "7am: Kapalua Bay final swim → 9:30am: Checkout → Ululani's shave ice (Kahului) → OGG Airport",
         budget: "~$20–30 for shave ice and coffee",
         waypoints: [
-          { label: "Westin Ka'anapali Ocean Resort Villas", address: "Westin Ka'anapali Ocean Resort Villas, Lahaina, Maui, HI", note: "Checkout", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9281, lng: -156.6942 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Checkout", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Kapalua Bay Beach", address: "Kapalua Bay, Lahaina, Maui, HI", note: "Final swim", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9993, lng: -156.6726 },
           { label: "Ululani's Shave Ice Kahului", address: "Ululani's Hawaiian Shave Ice, 333 Dairy Rd, Kahului, Maui, HI", note: "Last shave ice", driveTime: "5 min", driveDist: "2 mi", lat: 20.8875, lng: -156.4620 },
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Depart", lat: 20.8986, lng: -156.4305 },
@@ -570,11 +570,11 @@ const days: Day[] = [
 
 const budgetRows = [
   { item: "Flights (SFO → OGG, 4 pax, round-trip — summer dates)", cost: "~$2,200" },
-  { item: "Westin Ka'anapali Ocean Resort Villas (7 nights via RedWeek)", cost: "$3,077" },
-  { item: "Hawaii state occupancy fees (~$28/night)", cost: "~$196" },
+  { item: "Honua Kai Resort & Spa — 1BR Partial Ocean View (May 29–Jun 5, via Fora Travel)", cost: "$3,274" },
+  { item: "Taxes, resort fee & local tax (Honua Kai)", cost: "$1,428" },
   { item: "Car Rental (7 days, SUV)", cost: "~$700" },
   { item: "Groceries & villa meals (full kitchen saves on dining)", cost: "~$400–500" },
-  { item: "Dining out (Mama's Fish House, Hula Grill, Leilani's, etc.)", cost: "~$600–800" },
+  { item: "Dining out (Merriman's, Hula Grill, Leilani's, Monkeypod, etc.)", cost: "~$600–800" },
   { item: "Maui Ocean Center (2 adults · kids under 3 free)", cost: "~$110" },
   { item: "Old Lāhainā Lūʻau (2 adults · 4yo · 2yo free)", cost: "~$460" },
   { item: "Shave ice, snacks, activities & misc.", cost: "~$300" },
@@ -785,16 +785,16 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,20,30,0.75) 0%, rgba(10,20,30,0.2) 60%, transparent 100%)" }} />
         <div className="relative z-10 container pb-16 md:pb-24">
           <p className="text-sm tracking-[0.25em] uppercase mb-3" style={{ color: "#F4A07A", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            Summer 2026 · Westin Ka'anapali · Family of 4 · SFO → OGG
+            May 29–Jun 5, 2026 · Honua Kai Resort & Spa · Family of 4 · SFO → OGG
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#FDFAF5" }}>
             Aloha, Maui.
           </h1>
           <p className="text-xl md:text-2xl max-w-xl" style={{ color: "#F5E6C8", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            A 7-day family escape at the Westin Ka'anapali Ocean Resort Villas — beaches, great food, and memories that last a lifetime.
+            A 7-day family escape at the OUTRIGGER Honua Kai Resort & Spa — beaches, great food, and memories that last a lifetime.
           </p>
           <div className="mt-8 flex gap-6 flex-wrap">
-            {[["7","Nights"],["4","Travelers"],["~$8–9k","Est. Budget"]].map(([val, label]) => (
+            {[["7","Nights"],["4","Travelers"],["~$9–10k","Est. Budget"]].map(([val, label]) => (
               <div key={label} className="text-center">
                 <div className="text-3xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>{val}</div>
                 <div className="text-xs tracking-widest uppercase" style={{ color: "#F5E6C8" }}>{label}</div>
@@ -828,7 +828,7 @@ export default function Home() {
                   { time: "↓ 15 min", label: "drive", drive: true },
                   { time: "11:30am", label: "Costco / Safeway grocery run" },
                   { time: "↓ 20 min", label: "drive", drive: true },
-                  { time: "1pm", label: "Check in to Westin villa" },
+                  { time: "1pm", label: "Check in to Honua Kai suite" },
                   { time: "2–4pm", label: "Kids' pool & settle in" },
                   { time: "5–6pm", label: "Sunset walk on Ka'anapali Beach" },
                   { time: "6:30pm", label: "Dinner at Monkeypod Ka'anapali" },
@@ -1008,7 +1008,7 @@ export default function Home() {
                 style={{ background: "rgba(232,113,74,0.2)", borderTop: "2px solid rgba(232,113,74,0.5)" }}
               >
                 <span className="text-base font-bold" style={{ color: "#FDFAF5", fontFamily: "'Playfair Display', serif" }}>Total Estimated Cost</span>
-                <span className="text-2xl font-bold" style={{ color: "#F4A07A", fontFamily: "'Playfair Display', serif" }}>~$8,000–9,100</span>
+                <span className="text-2xl font-bold" style={{ color: "#F4A07A", fontFamily: "'Playfair Display', serif" }}>~$9,300–10,500</span>
               </div>
             </div>
             <p className="text-xs text-center mt-6" style={{ color: "rgba(245,230,200,0.5)" }}>
@@ -1029,7 +1029,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
-              { icon: "🏠", title: "Your Westin Villa Has a Full Kitchen", body: "The Westin Ka'anapali 1BR villa has a full kitchen — fridge, oven, stovetop, dishwasher. Stock it on arrival and save $400–600 on dining costs over the week." },
+              { icon: "🏠", title: "Your Honua Kai Suite Has a Full Kitchen", body: "The Honua Kai 1BR suite has a full kitchen — fridge, stovetop, oven, microwave, and in-unit washer/dryer. Stock it on arrival and save $400–600 on dining costs over the week. Parking is $35/day self-park or $40/day valet." },
               { icon: "🔊", title: "Pack a White Noise Machine", body: "Essential for nap time in a new hotel environment. A portable speaker with a white noise app works just as well." },
               { icon: "🛒", title: "Order Groceries on Arrival", body: "Use Instacart or Foodland delivery to stock milk, snacks, fruit, and easy lunch items the day you arrive." },
               { icon: "🛺", title: "Bring a Beach Wagon", body: "A foldable beach wagon is a game-changer for hauling gear for two toddlers across soft sand." },
@@ -1037,7 +1037,7 @@ export default function Home() {
               { icon: "📅", title: "Book Mama's & the Lūʻau Early", body: "Mama's Fish House and the Old Lāhainā Lūʻau both sell out months in advance. Book Mama's 2–3 months ahead and the Lūʻau 6–8 weeks out. Don't wait." },
               { icon: "🅿️", title: "Parking Notes", body: "Kapalua Bay lot: $10–15/day, fills by 10am in summer — arrive by 8:30am. Napili Bay: street parking only, limited spaces. Baby Beach (Lahaina or Spreckelsville) is a calm backup if Napili is full." },
               { icon: "😴", title: "Protect the Nap Window", body: "Build 12:30–3pm into every day as a nap/rest window. Toddlers will have much better evenings if you're back at the villa by early afternoon. Don't overschedule mornings." },
-              { icon: "🌧️", title: "Rain & Heat Backups", body: "If it's raining or too hot: Maui Ocean Center (9am, kids under 3 free), Whalers Village shops (free hula show Tue/Thu 5:30pm), or the Westin resort pool. These three cover any bad-weather day on the itinerary." },
+              { icon: "🌧️", title: "Rain & Heat Backups", body: "If it's raining or too hot: Maui Ocean Center (9am, kids under 3 free), Whalers Village shops (free hula show Tue/Thu 5:30pm), or the Honua Kai resort pool. These three cover any bad-weather day on the itinerary." },
             ].map((tip, i) => (
               <div key={i} className="fade-in-up p-6 rounded-sm" style={{ background: "#FDFAF5" }}>
                 <div className="text-3xl mb-3">{tip.icon}</div>
@@ -1099,7 +1099,7 @@ export default function Home() {
                 icon: "🎶",
                 category: "Free Entertainment",
                 title: "Cliff Dive Ceremony at Black Rock",
-                body: "Every evening at sunset, a Westin staff member performs a traditional torch-lighting and cliff dive ceremony at Pu'u Keka'a (Black Rock) — right in front of the resort. It's free, kid-friendly, and a beautiful Maui tradition. Gather on the beach around 6pm.",
+                body: "Every evening at sunset, a traditional torch-lighting and cliff dive ceremony takes place at Pu'u Keka'a (Black Rock) — just a short walk from Honua Kai along Ka'anapali Beach. It's free, kid-friendly, and a beautiful Maui tradition. Gather on the beach around 6pm.",
               },
               {
                 icon: "🏥",
@@ -1117,13 +1117,13 @@ export default function Home() {
                 icon: "☀️",
                 category: "Health",
                 title: "Sun & Heat Management",
-                body: "Maui sun in June/July is intense. Apply reef-safe SPF 50 every 90 minutes, use rash guards and sun hats for the kids, and plan beach time before 10am and after 4pm. The Westin pool has shade umbrellas — use them for the 2yo especially. Dehydration sneaks up fast.",
+                body: "Maui sun in June/July is intense. Apply reef-safe SPF 50 every 90 minutes, use rash guards and sun hats for the kids, and plan beach time before 10am and after 4pm. The Honua Kai pool has shade umbrellas — use them for the 2yo especially. Dehydration sneaks up fast.",
               },
               {
                 icon: "🏗️",
                 category: "Heads Up",
-                title: "Westin Renovation Noise",
-                body: "The Westin Ka'anapali has interior and exterior renovation work scheduled through June 27, 2026. This overlaps with both your date options. Expect some construction noise during daytime hours. Request a villa away from the construction zone when you check in, and note that the May 29–June 5 dates fall entirely within this window.",
+                title: "Honua Kai Parking Note",
+                body: "Honua Kai charges $35/day for self-parking and $40/day for valet — budget ~$245–280 for the week. The resort is located at the north end of Ka'anapali Beach (130 Kai Malina Pkwy), slightly north of the main strip, which means less foot traffic and a quieter beach section.",
               },
               {
                 icon: "🌺",
@@ -1167,13 +1167,13 @@ export default function Home() {
                 May 29 – June 5 Option
               </h2>
               <p className="text-base mb-6" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-                A 7-night stay at the same Westin Ka'anapali Ocean Resort Villas — 1BR ocean-view villa with full kitchen, in-unit laundry, and free parking. May 29–June 5 means fewer crowds, lower airfare, and ~$2,700 in total savings vs. summer dates.
+                The Fora Travel itinerary also includes the Westin Nanea Ocean Villas — a 2BR resort-view villa at $5,309.99 all-in (May 29–June 5). Two king beds + sofa bed, full kitchen, balcony, and free WiFi. A great option if you want more space.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 {[
-                  { label: "Villa Rental", value: "$3,077" },
+                  { label: "Room + Taxes", value: "$4,702" },
                   { label: "Flights (SFO)", value: "$2,014" },
-                  { label: "Est. Total", value: "~$8.3k" },
+                  { label: "Est. Total", value: "~$9.3k" },
                 ].map((s) => (
                   <div key={s.label} className="text-center">
                     <div className="text-2xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>{s.value}</div>
@@ -1183,7 +1183,7 @@ export default function Home() {
               </div>
               <Link href="/westin">
                 <span className="inline-block px-6 py-3 text-sm font-bold cursor-pointer transition-opacity hover:opacity-80" style={{ background: "#E8714A", color: "#FDFAF5", fontFamily: "'Lato', sans-serif", borderRadius: "2px" }}>
-                  View Westin Ka'anapali Plan →
+                  View Westin Nanea 2BR Option →
                 </span>
               </Link>
             </div>
