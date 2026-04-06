@@ -13,7 +13,7 @@ export default function DataPage() {
       <div style={{ marginBottom: "32px", paddingBottom: "16px", borderBottom: "2px solid #ccc" }}>
         <h1 style={{ fontSize: "2rem", marginBottom: "8px" }}>Morelli Family Maui Trip — Full Itinerary</h1>
         <p style={{ color: "#555", margin: 0 }}>
-          <strong>Dates:</strong> May 29 – June 5, 2026 &nbsp;|&nbsp;
+          <strong>Dates:</strong> May 28 – June 5, 2026 &nbsp;|&nbsp;
           <strong>Resort:</strong> OUTRIGGER Honua Kai Resort &amp; Spa, 130 Kai Malina Pkwy, Ka'anapali, Maui, HI &nbsp;|&nbsp;
           <strong>Travelers:</strong> 2 adults, 2 children (ages 2 &amp; 4) &nbsp;|&nbsp;
           <strong>Flights:</strong> SFO → OGG (round-trip)
@@ -39,7 +39,7 @@ export default function DataPage() {
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "15px" }}>
           <tbody>
             {[
-              ["Flights (SFO → OGG, 4 pax, round-trip)", "~$2,200"],
+              ["Flights (SFO → OGG, 4 pax — Alaska Airlines nonstop · May 28: SFO 9:42am → OGG 12:05pm · Jun 5: OGG 10:33am → SFO 6:39pm)", "$1,597"],
               ["Honua Kai Resort & Spa — 1BR Partial Ocean View (7 nights, via Fora Travel)", "$3,274"],
               ["Taxes, resort fee & local tax (Honua Kai)", "$1,428"],
               ["Parking at resort ($35/day × 7)", "~$245"],
@@ -65,18 +65,18 @@ export default function DataPage() {
 
       {/* ── DAY 1 ── */}
       <DaySection
-        number="01" date="Friday, May 29"
+        number="01" date="Thursday, May 28"
         title="Arrival & First Taste of Paradise"
         subtitle="OGG Arrival · Grocery Stop · Kids' Pool First · Ka'anapali Beach Walk"
         plans={[
           {
             label: "Recommended Plan",
-            description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the suite kitchen — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
+            description: "Alaska Airlines nonstop departs SFO at 9:42am and lands OGG at 12:05pm (5h 23m). First stop: Costco or Foodland Farms to stock the suite kitchen — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
             activities: [
               { title: "Honua Kai Check-In & Pool Time", detail: "1-Bedroom Partial Ocean View suite. King bed + double sofa bed, full kitchen, in-unit washer/dryer, furnished lanai. Multiple pools including a dedicated kids' pool. Self-parking $35/day.", tip: "Request an upper-floor unit for the best ocean views. Stock the kitchen on arrival: Costco (275 Ho'okele St, Kahului) is cheapest; Foodland Farms (345 Keawe St, Lahaina) is closer. Pool first, beach second — toddlers do better after a calm arrival." },
               { title: "Ka'anapali Beach Sunset Walk", detail: "Stroll the 3-mile Ka'anapali Beachfront Walk at golden hour. Stop at Black Rock (Pu'u Keka'a) to watch cliff divers perform the traditional torch-lighting ceremony at dusk.", tip: "The cliff diving ceremony happens nightly at sunset — don't miss it!" },
             ],
-            logistics: "Arrive OGG → Rental car → Grocery stop (Costco/Target in Kahului or Foodland Farms in Lahaina) → Honua Kai check-in → Kids' pool first → Sunset beach walk",
+            logistics: "Alaska AS departs SFO 9:42am → Land OGG 12:05pm → Rental car → Grocery stop (Costco in Kahului or Foodland Farms in Lahaina) → Honua Kai check-in ~2pm → Kids' pool first → Sunset beach walk",
             budget: "$0 activities today (suite & resort pool included)",
             drive: "OGG → Costco (15 min) → Honua Kai (35 min from OGG)",
           },
@@ -96,7 +96,7 @@ export default function DataPage() {
 
       {/* ── DAY 2 ── */}
       <DaySection
-        number="02" date="Saturday, May 30"
+        number="02" date="Friday, May 29"
         title="Kapalua Bay Morning"
         subtitle="Kapalua Bay · Napili Bay · Hula Grill Dinner at Whalers Village"
         plans={[
@@ -127,7 +127,7 @@ export default function DataPage() {
 
       {/* ── DAY 3 ── */}
       <DaySection
-        number="03" date="Sunday, May 31"
+        number="03" date="Saturday, May 30"
         title="Maui Ocean Center & Lāhainā Town"
         subtitle="Maui Ocean Center · Lāhainā Historic Town · Ululani's Shave Ice"
         plans={[
@@ -158,7 +158,7 @@ export default function DataPage() {
 
       {/* ── DAY 4 ── */}
       <DaySection
-        number="04" date="Monday, June 1"
+        number="04" date="Sunday, June 1"
         title="Merriman's Kapalua & North Shore"
         subtitle="Merriman's Kapalua Lunch · Kapalua Bay Beach · Monkeypod Option"
         plans={[
@@ -189,7 +189,7 @@ export default function DataPage() {
 
       {/* ── DAY 5 ── */}
       <DaySection
-        number="05" date="Tuesday, June 2"
+        number="05" date="Monday, June 2"
         title="Kahekili Highway Scenic Drive"
         subtitle="West Maui Mountains · Kahakuloa Village · Poke Picnic at Ka'anapali"
         plans={[
@@ -220,7 +220,7 @@ export default function DataPage() {
 
       {/* ── DAY 6 ── */}
       <DaySection
-        number="06" date="Wednesday, June 3"
+        number="06" date="Tuesday, June 3"
         title="Old Lāhainā Lūʻau"
         subtitle="Beach Day · Old Lāhainā Lūʻau Evening"
         plans={[
@@ -251,7 +251,7 @@ export default function DataPage() {
 
       {/* ── DAY 7 ── */}
       <DaySection
-        number="07" date="Thursday, June 4"
+        number="07" date="Friday, June 5"
         title="Final Morning & Aloha"
         subtitle="Last Beach Walk · Shave Ice · Depart OGG"
         plans={[
@@ -262,9 +262,9 @@ export default function DataPage() {
               { title: "Final Ka'anapali Beach Walk", detail: "Wake up early for a quiet morning walk along the beach before checkout. The light is golden, the beach is uncrowded, and the ocean is calm. Fill up the rental car before heading to OGG — gas stations near the airport charge a significant premium.", tip: "Take a family photo at Black Rock (Pu'u Keka'a) — the same spot you saw the cliff divers on Day 1." },
               { title: "Shave Ice & Depart", detail: "Stop at Ululani's Hawaiian Shave Ice in Lahaina for one last treat before the drive to OGG. The airport is about 45 minutes from Ka'anapali — allow extra time for car seat return and check-in.", tip: "Fill up at Costco gas (Kahului) or any station in Ka'anapali/Lahaina before heading to OGG." },
             ],
-            logistics: "Morning: Beach walk → Checkout → Shave ice in Lahaina → OGG Airport (depart afternoon)",
+            logistics: "7:30am: Checkout → Ululani's shave ice (Kahului) → Fill gas → Return car → Check in at OGG → Alaska AS departs OGG 10:33am → Arrive SFO 6:39pm",
             budget: "~$20–30 for shave ice and snacks",
-            drive: "Honua Kai → Ululani's Lahaina (10 min) → OGG Airport (45 min, 27 mi)",
+            drive: "Honua Kai → Ululani's Kahului (35 min) → OGG Airport (5 min) · Departs 10:33am",
           },
           {
             label: "Alternative: Kapalua Bay & Shave Ice Farewell",

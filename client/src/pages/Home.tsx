@@ -77,7 +77,7 @@ const days: Day[] = [
         tag: "Relaxed",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.hero,
-        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the villa kitchen with milk, fruit, snacks, and easy lunches — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first — after a 5.5-hour flight, the pool lets the toddlers burn energy without the sun and wind of the beach. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
+        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the villa kitchen with milk, fruit, snacks, and easy lunches — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first — after the 5h 23m Alaska nonstop (SFO 9:42am → OGG 12:05pm), the pool lets the toddlers burn energy without the sun and wind of the beach. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
         activities: [
           {
         title: "Honua Kai Check-In & Pool Time",
@@ -522,7 +522,7 @@ const days: Day[] = [
             image: IMAGES.kaanapaliKids,
           },
         ],
-        logistics: "Morning: Beach walk → Checkout → Shave ice in Lahaina → OGG Airport (depart afternoon)",
+        logistics: "Morning: Beach walk → Checkout by 9am → Shave ice in Lahaina → OGG Airport (Alaska AS departs 10:33am)",
         budget: "~$20–30 for shave ice and snacks",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Final beach walk & checkout", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
@@ -553,7 +553,7 @@ const days: Day[] = [
             cost: "~$8–12 per shave ice",
           },
         ],
-        logistics: "7am: Kapalua Bay final swim → 9:30am: Checkout → Ululani's shave ice (Kahului) → OGG Airport",
+        logistics: "7am: Kapalua Bay final swim → 8am: Checkout → Ululani's shave ice (Kahului) → OGG Airport (Alaska AS departs 10:33am)",
         budget: "~$20–30 for shave ice and coffee",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Checkout", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9352, lng: -156.6925 },
@@ -569,8 +569,8 @@ const days: Day[] = [
 ];
 
 const budgetRows = [
-  { item: "Flights (SFO → OGG, 4 pax, round-trip — summer dates)", cost: "~$2,200" },
-  { item: "Honua Kai Resort & Spa — 1BR Partial Ocean View (May 29–Jun 5, via Fora Travel)", cost: "$3,274" },
+  { item: "Flights (SFO → OGG, 4 pax, round-trip — Alaska Airlines nonstop, May 28 & Jun 5)", cost: "$1,597" },
+  { item: "Honua Kai Resort & Spa — 1BR Partial Ocean View (May 28–Jun 5, via Fora Travel)", cost: "$3,274" },
   { item: "Taxes, resort fee & local tax (Honua Kai)", cost: "$1,428" },
   { item: "Car Rental (7 days, SUV)", cost: "~$700" },
   { item: "Groceries & villa meals (full kitchen saves on dining)", cost: "~$400–500" },
@@ -785,7 +785,7 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,20,30,0.75) 0%, rgba(10,20,30,0.2) 60%, transparent 100%)" }} />
         <div className="relative z-10 container pb-16 md:pb-24">
           <p className="text-sm tracking-[0.25em] uppercase mb-3" style={{ color: "#F4A07A", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            May 29–Jun 5, 2026 · Honua Kai Resort & Spa · Family of 4 · SFO → OGG
+            May 28–Jun 5, 2026 · Honua Kai Resort & Spa · Family of 4 · SFO → OGG
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#FDFAF5" }}>
             Aloha, Maui.
@@ -824,11 +824,11 @@ export default function Home() {
               {
                 num: "01", title: "Arrival Day", icon: "✈️",
                 schedule: [
-                  { time: "~11am", label: "Land at OGG" },
+                  { time: "12:05pm", label: "Land at OGG (Alaska AS nonstop)" },
                   { time: "↓ 15 min", label: "drive", drive: true },
-                  { time: "11:30am", label: "Costco / Safeway grocery run" },
-                  { time: "↓ 20 min", label: "drive", drive: true },
-                  { time: "1pm", label: "Check in to Honua Kai suite" },
+                  { time: "12:30pm", label: "Costco / Foodland grocery run" },
+                  { time: "↓ 35 min", label: "drive", drive: true },
+                  { time: "2pm", label: "Check in to Honua Kai suite" },
                   { time: "2–4pm", label: "Kids' pool & settle in" },
                   { time: "5–6pm", label: "Sunset walk on Ka'anapali Beach" },
                   { time: "6:30pm", label: "Dinner at Monkeypod Ka'anapali" },
@@ -896,12 +896,13 @@ export default function Home() {
                 num: "07", title: "Departure Day", icon: "🌅",
                 schedule: [
                   { time: "6–7am", label: "Final sunrise walk on beach" },
-                  { time: "9:30am", label: "Checkout — pack & load car" },
-                  { time: "↓ 30 min", label: "drive", drive: true },
-                  { time: "10am", label: "Ululani's shave ice (Kahului)" },
+                  { time: "7:30am", label: "Checkout — pack & load car" },
+                  { time: "↓ 35 min", label: "drive", drive: true },
+                  { time: "8:15am", label: "Ululani's shave ice (Kahului)" },
                   { time: "↓ 5 min", label: "drive", drive: true },
-                  { time: "10:30am", label: "Fill gas tank near OGG" },
-                  { time: "11am", label: "Return car & check in at OGG" },
+                  { time: "8:45am", label: "Fill gas tank near OGG" },
+                  { time: "9:30am", label: "Return car & check in at OGG" },
+                  { time: "10:33am", label: "Depart OGG → SFO (Alaska nonstop)" },
                 ],
               },
             ].map((d) => (
@@ -1033,7 +1034,7 @@ export default function Home() {
               { icon: "🔊", title: "Pack a White Noise Machine", body: "Essential for nap time in a new hotel environment. A portable speaker with a white noise app works just as well." },
               { icon: "🛒", title: "Order Groceries on Arrival", body: "Use Instacart or Foodland delivery to stock milk, snacks, fruit, and easy lunch items the day you arrive." },
               { icon: "🛺", title: "Bring a Beach Wagon", body: "A foldable beach wagon is a game-changer for hauling gear for two toddlers across soft sand." },
-              { icon: "✈️", title: "Book Nap-Time Flights", body: "A 10am or 1pm SFO departure means kids may sleep through much of the 5.5-hour flight." },
+              { icon: "✈️", title: "Book Nap-Time Flights", body: "Your Alaska nonstop departs SFO at 9:42am and lands OGG at 12:05pm — a great window for kids to nap on the 5h 23m flight." },
               { icon: "📅", title: "Book Mama's & the Lūʻau Early", body: "Mama's Fish House and the Old Lāhainā Lūʻau both sell out months in advance. Book Mama's 2–3 months ahead and the Lūʻau 6–8 weeks out. Don't wait." },
               { icon: "🅿️", title: "Parking Notes", body: "Kapalua Bay lot: $10–15/day, fills by 10am in summer — arrive by 8:30am. Napili Bay: street parking only, limited spaces. Baby Beach (Lahaina or Spreckelsville) is a calm backup if Napili is full." },
               { icon: "😴", title: "Protect the Nap Window", body: "Build 12:30–3pm into every day as a nap/rest window. Toddlers will have much better evenings if you're back at the villa by early afternoon. Don't overschedule mornings." },
@@ -1164,15 +1165,15 @@ export default function Home() {
             <div>
               <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "rgba(232,113,74,0.9)", fontFamily: "'Lato', sans-serif" }}>Also Considering</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-3" style={{ fontFamily: "'Playfair Display', serif", color: "#FDFAF5" }}>
-                May 29 – June 5 Option
+                May 28 – June 5 Option
               </h2>
               <p className="text-base mb-6" style={{ color: "rgba(255,255,255,0.75)", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-                The Fora Travel itinerary also includes the Westin Nanea Ocean Villas — a 2BR resort-view villa at $5,309.99 all-in (May 29–June 5). Two king beds + sofa bed, full kitchen, balcony, and free WiFi. A great option if you want more space.
+                The Fora Travel itinerary also includes the Westin Nanea Ocean Villas — a 2BR resort-view villa at $5,309.99 all-in (May 28–June 5). Two king beds + sofa bed, full kitchen, balcony, and free WiFi. A great option if you want more space.
               </p>
               <div className="flex flex-wrap gap-4 mb-6">
                 {[
                   { label: "Room + Taxes", value: "$4,702" },
-                  { label: "Flights (SFO)", value: "$2,014" },
+                  { label: "Flights (SFO)", value: "$1,597" },
                   { label: "Est. Total", value: "~$9.3k" },
                 ].map((s) => (
                   <div key={s.label} className="text-center">
