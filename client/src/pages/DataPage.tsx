@@ -251,7 +251,40 @@ export default function DataPage() {
 
       {/* ── DAY 7 ── */}
       <DaySection
-        number="07" date="Friday, June 5"
+        number="07" date="Wednesday, June 4"
+        title="South Maui Day"
+        subtitle="Baby Beach · Big Beach (Makena) · Maui Brewing Co. Kihei"
+        plans={[
+          {
+            label: "Recommended Plan",
+            description: "A full day exploring South Maui — the island's sunniest, driest coast. Start at Baby Beach in Lahaina for a calm, toddler-perfect morning splash, then drive south to Big Beach (Makena State Park) for the most dramatic stretch of sand on Maui. End the day at Maui Brewing Company in Kihei — excellent craft beer, great food, and one of the most family-friendly brewpubs in Hawaii.",
+            activities: [
+              { title: "Baby Beach, Lahaina", detail: "A calm, shallow lagoon created by a natural rock breakwater. The water is barely knee-deep for 50 yards out — perfect for a 2yo and 4yo. Street parking on Puunoa Place. Rarely crowded.", tip: "Keep kids on the inside (lagoon side) away from the open ocean. Best before 10am before it gets hot." },
+              { title: "Big Beach (Oneloa Beach) — Makena State Park", detail: "A sweeping half-mile crescent of golden sand with dramatic views of Molokini and Kaho'olawe. The surf here is bigger than Ka'anapali — keep toddlers in the shallow shore break. Restrooms and parking on-site.", tip: "Arrive by 9:30am — the lot fills by 10:30am in summer. The south end near the lava rock is calmer. Zero shade — bring reef-safe sunscreen.", cost: "Free · Parking fills early" },
+              { title: "Maui Brewing Company — Kihei", detail: "Maui's flagship craft brewery with a massive open-air taproom, fire pits, and a full food menu. Bikini Blonde Lager and CoCoNut PorTeR are the classics. Excellent fish tacos, burgers, and a solid kids' menu. Very family-friendly.", tip: "Happy hour is 3–5pm daily. Sit on the covered outdoor patio — breezy and kid-friendly.", cost: "~$60–90 for 2 adults + kids" },
+            ],
+            logistics: "9am: Baby Beach Lahaina → 10am: Drive south (35 min) → 10:30am: Big Beach Makena → 12:30–3pm: Nap window at resort → 3pm: Drive to Kihei (25 min) → 3–5pm: Maui Brewing Co. happy hour",
+            budget: "~$60–90 for Maui Brewing Co. + snacks",
+            drive: "Honua Kai → Baby Beach (5 min) → Big Beach (35 min, 21 mi) → Resort (35 min) → Maui Brewing Co. (25 min)",
+          },
+          {
+            label: "Alternative: Kihei Caffe + Kalama Park",
+            description: "A low-key South Maui morning built around whale-shaped pancakes and a playground. Kihei Caffe is a beloved local breakfast spot famous for its whale pancakes. Kalama Park playground is directly across the street for post-pancake energy burns.",
+            activities: [
+              { title: "Kihei Caffe — Whale Pancakes", detail: "Cash-friendly, super casual, and famous for whale-shaped pancakes that are a guaranteed hit with toddlers. Expect a short wait on weekends. Breakfast burritos and loco moco are excellent for adults.", tip: "Arrive by 7:30am to avoid the wait. Cash preferred.", cost: "~$30–50 for the family" },
+              { title: "Kalama Park Playground", detail: "Large county park directly across the street from Kihei Caffe. Playground equipment, open grass, picnic tables, and a small beach area. Clean restrooms.", tip: "Good shade in the morning. The beach at Kalama Park is calm and good for wading." },
+              { title: "Maui Brewing Company — Lunch or Happy Hour", detail: "10 min from Kalama Park. Excellent craft beer, fish tacos, and a solid kids' menu in a massive open-air taproom.", tip: "Happy hour is 3–5pm daily.", cost: "~$60–90 for 2 adults + kids" },
+            ],
+            logistics: "7:30am: Kihei Caffe breakfast → Kalama Park playground → Maui Brewing Co. lunch or happy hour → Drive back to Ka'anapali (35 min)",
+            budget: "~$90–140 for breakfast + Maui Brewing Co.",
+            drive: "Honua Kai → Kihei Caffe (35 min, 20 mi) → Kalama Park (across the street) → Maui Brewing Co. (10 min) → Honua Kai (35 min)",
+          },
+        ]}
+      />
+
+      {/* ── DAY 8 ── */}
+      <DaySection
+        number="08" date="Friday, June 5"
         title="Final Morning & Aloha"
         subtitle="Last Beach Walk · Shave Ice · Depart OGG"
         plans={[

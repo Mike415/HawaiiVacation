@@ -499,6 +499,94 @@ const days: Day[] = [
   {
     id: "day7",
     number: "07",
+    title: "South Maui Day",
+    subtitle: "Baby Beach · Big Beach (Makena) · Maui Brewing Co. Kihei",
+    plans: [
+      {
+        label: "Recommended Plan",
+        tag: "South Maui",
+        tagColor: "#0A4A5C",
+        heroImage: IMAGES.heroBeach,
+        description: "A full day exploring South Maui — the island's sunniest, driest coast. Start at Baby Beach in Lahaina for a calm, toddler-perfect morning splash, then drive south to Big Beach (Makena State Park) for the most dramatic stretch of sand on Maui. End the day at Maui Brewing Company in Kihei — excellent craft beer, great food, and one of the most family-friendly brewpubs in Hawaii.",
+        activities: [
+          {
+            title: "Baby Beach, Lahaina",
+            detail: "A calm, shallow lagoon created by a natural rock breakwater just off the main road in Lahaina. The water is barely knee-deep for 50 yards out — perfect for a 2yo and 4yo. No facilities, but street parking is easy and it's rarely crowded. A great morning stop before the drive south.",
+            tip: "Park on Puunoa Place. The breakwater creates a natural pool — keep kids on the inside (lagoon side) away from the open ocean. Best before 10am before it gets hot.",
+            image: IMAGES.kaanapaliKids,
+          },
+          {
+            title: "Big Beach (Oneloa Beach) — Makena State Park",
+            detail: "One of the most spectacular beaches in all of Hawaii — a sweeping half-mile crescent of golden sand with dramatic views of Molokini and Kaho'olawe. The surf here is bigger than Ka'anapali, so keep toddlers in the shallow shore break. Little Beach (clothing-optional) is a short scramble over the lava rock at the north end — skip it with kids. Facilities include restrooms and a small parking lot.",
+            tip: "Arrive by 9:30am — the lot fills by 10:30am in summer. The south end of the beach near the lava rock is calmer. Bring reef-safe sunscreen — this beach has zero shade.",
+            image: IMAGES.heroBeach,
+            cost: "Free · Parking fills early",
+          },
+          {
+            title: "Maui Brewing Company — Kihei",
+            detail: "Maui's flagship craft brewery, located in Kihei with a massive open-air taproom, fire pits, and a full food menu. The Bikini Blonde Lager and CoCoNut PorTeR are the classics. The food is excellent — fish tacos, burgers, and a solid kids' menu. Very family-friendly with high chairs and a relaxed vibe. Live music some evenings.",
+            tip: "Happy hour is 3–5pm daily. Sit on the covered outdoor patio — it's breezy and the kids can move around. The brewery tour is available if you're curious about the production side.",
+            image: IMAGES.lahainaTown,
+            cost: "~$60–90 for 2 adults + kids",
+          },
+        ],
+        logistics: "9am: Baby Beach Lahaina → 10am: Drive south (35 min) → 10:30am: Big Beach Makena → 12:30–3pm: Nap window at resort → 3pm: Drive to Kihei (25 min) → 3–5pm: Maui Brewing Co. happy hour",
+        budget: "~$60–90 for Maui Brewing Co. + snacks",
+        waypoints: [
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "5 min", driveDist: "2 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Baby Beach, Lahaina", address: "Baby Beach, Puunoa Place, Lahaina, Maui, HI", note: "Calm toddler lagoon", driveTime: "35 min", driveDist: "21 mi", lat: 20.8770, lng: -156.6820 },
+          { label: "Big Beach (Makena State Park)", address: "Oneloa Beach, Makena State Park, Maui, HI", note: "Dramatic big beach", driveTime: "25 min", driveDist: "14 mi", lat: 20.6350, lng: -156.4420 },
+          { label: "Maui Brewing Company", address: "Maui Brewing Company, 605 Lipoa Pkwy, Kihei, Maui, HI", note: "Happy hour 3–5pm", driveTime: "20 min", driveDist: "11 mi", lat: 20.7230, lng: -156.4460 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
+        ],
+        mapCenter: { lat: 20.7800, lng: -156.5500 },
+        mapZoom: 10,
+      },
+      {
+        label: "Alternative: Kihei Caffe + Kalama Park",
+        tag: "Easy & Local",
+        tagColor: "#E8714A",
+        heroImage: IMAGES.kaanapaliKids,
+        description: "A low-key South Maui morning built around whale-shaped pancakes and a playground. Kihei Caffe is a beloved local breakfast spot — super casual, cash-friendly, and famous for its whale pancakes that will make your 4yo's entire trip. Kalama Park playground is directly across the street for post-pancake energy burns. Pair with a visit to Maui Brewing Co. for lunch or happy hour.",
+        activities: [
+          {
+            title: "Kihei Caffe — Whale Pancakes",
+            detail: "A beloved local breakfast institution in Kihei. Cash-friendly, super casual, and famous for whale-shaped pancakes that are a guaranteed hit with toddlers. Expect a short wait on weekends. The breakfast burritos and loco moco are also excellent for adults.",
+            tip: "Arrive by 7:30am to avoid the wait. Cash preferred. Order the whale pancakes for the kids — it's the whole point.",
+            image: IMAGES.kaanapaliKids,
+            cost: "~$30–50 for the family",
+          },
+          {
+            title: "Kalama Park Playground",
+            detail: "A large, well-maintained county park directly across the street from Kihei Caffe. Playground equipment, open grass, picnic tables, and a small beach area. Perfect for burning off post-pancake energy. The park also has clean restrooms and a skate park.",
+            tip: "The playground has good shade in the morning. The beach at Kalama Park is calm and good for wading.",
+            image: IMAGES.resortFamily,
+          },
+          {
+            title: "Maui Brewing Company — Lunch or Happy Hour",
+            detail: "After the park, head to Maui Brewing Co. (10 min from Kalama Park) for lunch or happy hour. Excellent craft beer, fish tacos, and a solid kids' menu in a massive open-air taproom.",
+            tip: "Happy hour is 3–5pm daily. The outdoor patio is breezy and kid-friendly.",
+            image: IMAGES.lahainaTown,
+            cost: "~$60–90 for 2 adults + kids",
+          },
+        ],
+        logistics: "7:30am: Kihei Caffe breakfast → Kalama Park playground → Maui Brewing Co. lunch or happy hour → Drive back to Ka'anapali (35 min)",
+        budget: "~$90–140 for breakfast + Maui Brewing Co.",
+        waypoints: [
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "35 min", driveDist: "20 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Kihei Caffe", address: "Kihei Caffe, 1945 S Kihei Rd, Kihei, Maui, HI", note: "Whale pancakes!", driveTime: "2 min", driveDist: "0.1 mi", lat: 20.7460, lng: -156.4500 },
+          { label: "Kalama Park", address: "Kalama Park, S Kihei Rd, Kihei, Maui, HI", note: "Playground across the street", driveTime: "10 min", driveDist: "5 mi", lat: 20.7455, lng: -156.4490 },
+          { label: "Maui Brewing Company", address: "Maui Brewing Company, 605 Lipoa Pkwy, Kihei, Maui, HI", note: "Happy hour 3–5pm", driveTime: "35 min", driveDist: "20 mi", lat: 20.7230, lng: -156.4460 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
+        ],
+        mapCenter: { lat: 20.8200, lng: -156.4800 },
+        mapZoom: 11,
+      },
+    ],
+  },
+  {
+    id: "day8",
+    number: "08",
     title: "Final Morning & Aloha",
     subtitle: "Last Beach Walk · Shave Ice · Depart OGG",
     plans: [
@@ -791,10 +879,10 @@ export default function Home() {
             Aloha, Maui.
           </h1>
           <p className="text-xl md:text-2xl max-w-xl" style={{ color: "#F5E6C8", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            A 7-day family escape at the OUTRIGGER Honua Kai Resort & Spa — beaches, great food, and memories that last a lifetime.
+            An 8-day family escape at the OUTRIGGER Honua Kai Resort & Spa — beaches, great food, and memories that last a lifetime.
           </p>
           <div className="mt-8 flex gap-6 flex-wrap">
-            {[["7","Nights"],["4","Travelers"],["~$9–10k","Est. Budget"]].map(([val, label]) => (
+            {[["8","Days"],["4","Travelers"],["~$9–10k","Est. Budget"]].map(([val, label]) => (
               <div key={label} className="text-center">
                 <div className="text-3xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>{val}</div>
                 <div className="text-xs tracking-widest uppercase" style={{ color: "#F5E6C8" }}>{label}</div>
@@ -893,7 +981,19 @@ export default function Home() {
                 ],
               },
               {
-                num: "07", title: "Departure Day", icon: "🌅",
+                num: "07", title: "South Maui Day", icon: "🍺",
+                schedule: [
+                  { time: "9am", label: "Baby Beach, Lahaina" },
+                  { time: "↓ 35 min", label: "drive south", drive: true },
+                  { time: "10:30am", label: "Big Beach (Makena State Park)" },
+                  { time: "↓ 35 min", label: "drive back to resort", drive: true },
+                  { time: "12:30–3pm", label: "🛏 Nap window at resort" },
+                  { time: "↓ 25 min", label: "drive to Kihei", drive: true },
+                  { time: "3–5pm", label: "Maui Brewing Co. happy hour" },
+                ],
+              },
+              {
+                num: "08", title: "Departure Day", icon: "🌅",
                 schedule: [
                   { time: "6–7am", label: "Final sunrise walk on beach" },
                   { time: "7:30am", label: "Checkout — pack & load car" },
@@ -988,7 +1088,7 @@ export default function Home() {
               Budget Breakdown
             </h2>
             <p className="text-center mb-12" style={{ color: "rgba(245,230,200,0.7)", fontWeight: 300 }}>
-              Estimated costs for a family of 4 (2 adults + 4yo + 2yo), 7 nights in Ka'anapali, Maui.
+              Estimated costs for a family of 4 (2 adults + 4yo + 2yo), 8 days / 7 nights in Ka'anapali, Maui.
             </p>
             <div className="rounded-sm overflow-hidden" style={{ border: "1px solid rgba(245,230,200,0.15)" }}>
               {budgetRows.map((row, i) => (
