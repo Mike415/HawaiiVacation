@@ -160,18 +160,18 @@ export default function DataPage() {
       <DaySection
         number="04" date="Sunday, June 1"
         title="Merriman's Kapalua & North Shore"
-        subtitle="Merriman's Kapalua Lunch · Kapalua Bay Beach · Monkeypod Option"
+        subtitle="Kapalua Bay Morning · Merriman's Kapalua Dinner"
         plans={[
           {
             label: "Recommended Plan",
-            description: "Today is built around Merriman's Kapalua — one of Maui's finest oceanfront restaurants, just 10 minutes from Honua Kai. Perched above Kapalua Bay with sweeping Pacific views, Chef Peter Merriman pioneered Hawaii Regional Cuisine and sources nearly everything from local farms and fishermen. Book online at merrimanshawaii.com — lunch is easier to get than dinner.",
+              description: "A beautiful North Ka'anapali day capped with dinner at Merriman's Kapalua — one of Maui's finest oceanfront restaurants, just 10 minutes from Honua Kai. Spend the morning at Kapalua Bay, nap window at the resort, then head to Merriman's for a sunset dinner. Note: Merriman's is dinner-only (no lunch service). Book online at merrimanshawaii.com.",
             activities: [
-              { title: "Merriman's Kapalua — Oceanfront Lunch", detail: "Perched above Kapalua Bay with sweeping ocean views. Seared ahi, fresh catch, and Kula greens salad are standouts. Lunch is more relaxed than dinner and easier to book.", tip: "Book at merrimanshawaii.com. Request a window table for the best ocean views over Kapalua Bay. Dress code: resort casual.", cost: "~$50–80/person · Reservations recommended" },
-              { title: "Kapalua Bay Beach — Afternoon", detail: "Walk down to Kapalua Bay Beach — consistently rated one of the best beaches in the US. Crescent-shaped bay sheltered by two lava-rock points, making the water exceptionally calm and clear. Perfect for toddlers.", tip: "Arrive at the beach by 1pm after lunch — the morning crowds have thinned and the water is warm.", cost: "Free · Parking ~$10–15" },
+              { title: "Kapalua Bay Beach — Morning", detail: "Consistently rated one of the best beaches in the US. The crescent-shaped bay is sheltered by two lava-rock points, making the water exceptionally calm and clear — perfect for toddlers. Arrive early (8:30–9am) before the parking lot fills.", tip: "Arrive by 8:30am — the lot fills by 10am in summer. The left side of the bay near the rocks has the most shade.", cost: "Free · Parking ~$10–15" },
+              { title: "Merriman's Kapalua — Oceanfront Dinner", detail: "Perched above Kapalua Bay with sweeping sunset views over the Pacific, Merriman's is one of Maui's finest farm-to-table restaurants. Chef Peter Merriman pioneered Hawaii Regional Cuisine. The seared ahi, fresh catch, and Kula greens salad are standouts. Dinner-only — no lunch service.", tip: "Book online at merrimanshawaii.com — dinner fills up fast in summer. Request a window or lanai table for the best sunset views. Dress code: resort casual.", cost: "~$60–100/person · Reservations required" },
             ],
-            logistics: "10 min drive to Merriman's Kapalua for lunch → Kapalua Bay Beach afternoon → Return to resort by 3pm",
-            budget: "~$100–160 for 2 adults at Merriman's · Parking ~$10–15",
-            drive: "Honua Kai → Merriman's Kapalua (10 min, 5 mi) → Kapalua Bay Beach (5 min, 2 mi) → Honua Kai (10 min)",
+            logistics: "8:30am: Kapalua Bay Beach morning → 11:30am: Return to resort → 12–3pm: Nap window → 5:30pm: Drive to Merriman's (10 min) → Sunset dinner → Return to resort",
+            budget: "~$120–200 for 2 adults at Merriman's · Parking ~$10–15",
+            drive: "Honua Kai → Kapalua Bay (10 min, 5 mi) → Merriman's Kapalua (2 min, 0.5 mi)",
           },
           {
             label: "Alternative: Mama's Fish House",
