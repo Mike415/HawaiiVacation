@@ -429,15 +429,15 @@ const days: Day[] = [
   {
     id: "day6",
     number: "06",
-    title: "Old Lāhainā Lūʻau",
-    subtitle: "Beach Day · Old Lāhainā Lūʻau Evening",
+    title: "Myths of Maui Lūʻau",
+    subtitle: "Beach Day · Myths of Maui Lūʻau Evening — BOOKED ✓",
     plans: [
       {
         label: "Recommended Plan",
         tag: "Must-Do",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.luau,
-        description: "Keep the day relaxed — a final morning at the beach and pool — because tonight is the crown jewel of the trip: the Old Lāhainā Lūʻau. Widely considered the most authentic luau in Hawaii, it's set in a traditional oceanfront village in historic Lāhainā and features an imu feast, traditional hula, and Hawaiian storytelling as the sun sets over the Pacific.",
+        description: "Keep the day relaxed — a free morning at the beach and pool — because tonight is the Myths of Maui Lūʻau at the Royal Lāhainā Resort, right on Ka'anapali Beach. One of Maui's most beloved luaus, featuring an open-bar cocktail reception, traditional imu ceremony, a full Hawaiian feast, and a spectacular Polynesian show with fire knife dancing — all on the oceanfront just minutes from your suite. Already booked for June 2!",
         activities: [
           {
             title: "Morning Beach & Pool Day",
@@ -446,22 +446,22 @@ const days: Day[] = [
             image: IMAGES.kaanapaliKids,
           },
           {
-            title: "Old Lāhainā Lūʻau",
-            detail: "The most authentic luau on Maui, held on the oceanfront in Lāhainā. The feast includes kalua pig, poi, lomi salmon, haupia, and much more. The hula show tells the story of Hawaii's history from ancient Polynesia to modern times. New table-service format means food comes to you — great with toddlers.",
-            tip: "Gates open 5:15pm — arrive right at opening so your kids can explore the cultural village before they get hungry or tired. Children under 3 are free; your 4-year-old needs a child ticket (~$75). Book 6–8 weeks out — it sells out nightly in summer.",
+            title: "Myths of Maui Lūʻau — BOOKED ✓",
+            detail: "Held on the oceanfront grounds of the Royal Lāhainā Resort at the north end of Ka'anapali Beach — just a 5-minute drive from Honua Kai. The evening begins with an open-bar cocktail reception and cultural activities (lei making, hula lessons, coconut weaving), followed by the traditional imu ceremony (uncovering the kalua pig), a full Hawaiian feast, and a spectacular Polynesian revue with fire knife dancing, hula, and music from across Polynesia.",
+            tip: "Arrive right at gate opening to enjoy the cocktail reception and cultural village before the kids get tired. The imu ceremony is a highlight — make sure the kids see the pig being uncovered. Your 2yo is likely free; confirm child pricing when you receive your confirmation.",
             image: IMAGES.luau,
-            cost: "~$230/adult · Under 3 free",
+            cost: "BOOKED · June 2, 2026",
           },
         ],
-        logistics: "Morning: Free beach/pool time → 4:30pm: Drive to Lāhainā → 5:15pm: Lūʻau gates open → 9pm: Return to resort",
-        budget: "~$535 for 2 adults + 1 child (4yo) · 2yo free · Arrive at 5:15pm gate opening",
+        logistics: "Morning: Free beach/pool time → Check luau start time on confirmation → Drive 5 min to Royal Lāhainā Resort → Cocktail reception & imu ceremony → Feast & Polynesian show → Return to resort",
+        budget: "BOOKED ✓ · June 2, 2026",
         waypoints: [
-          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Morning beach day", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
-          { label: "Old Lāhainā Lūʻau", address: "Old Lahaina Luau, 1251 Front St, Lahaina, Maui, HI", note: "Gates open 5:15pm", driveTime: "10 min", driveDist: "4 mi", lat: 20.8770, lng: -156.6820 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Morning beach day", driveTime: "5 min", driveDist: "2 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Myths of Maui Lūʻau — Royal Lāhainā Resort", address: "Royal Lahaina Resort, 2780 Kekaa Dr, Lahaina, Maui, HI", note: "BOOKED · June 2", driveTime: "5 min", driveDist: "2 mi", lat: 20.9280, lng: -156.6940 },
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return after luau", lat: 20.9352, lng: -156.6925 },
         ],
-        mapCenter: { lat: 20.9281, lng: -156.6825 },
-        mapZoom: 13,
+        mapCenter: { lat: 20.9310, lng: -156.6930 },
+        mapZoom: 14,
       },
       {
         label: "Alternative: Drums of the Pacific Luau",
@@ -587,6 +587,78 @@ const days: Day[] = [
   {
     id: "day8",
     number: "08",
+    title: "Maui Tropical Plantation",
+    subtitle: "Waikapū · Tram Ride · Ducks & Koi Pond · Plantation Café",
+    plans: [
+      {
+        label: "Recommended Plan",
+        tag: "Easy & Fun",
+        tagColor: "#0A4A5C",
+        heroImage: IMAGES.kahekili,
+        description: "A perfect low-commitment day for the whole family. The Maui Tropical Plantation in Waikapū is a working farm and botanical garden with a narrated tram tour through tropical fruit orchards, a duck pond, koi pond, zip lines, and a lovely open-air café. It's about 20 minutes south of Ka'anapali — easy on toddlers, clean bathrooms, lots of space to toddle, and a great way to spend a relaxed penultimate day before departure.",
+        activities: [
+          {
+            title: "Maui Tropical Plantation — Tram Tour",
+            detail: "A narrated tram ride through the plantation's tropical fruit orchards, past papaya, pineapple, sugarcane, coffee, and macadamia nut trees. The tram is open-air and toddler-friendly — no hiking required. The tour runs about 40 minutes and departs every 30–45 minutes. Kids love spotting the different fruits and hearing about how they grow.",
+            tip: "Check the tram schedule at the entrance — first tour is usually around 10am. Arrive early to grab a coffee at the café first. The tram is stroller-accessible.",
+            image: IMAGES.kahekili,
+            cost: "~$20/adult · ~$12/child (3–12) · Under 3 free",
+          },
+          {
+            title: "Duck Pond & Koi Pond",
+            detail: "The plantation has a charming duck pond and koi pond that are a guaranteed hit with toddlers. The koi are large and colorful — you can buy fish food at the entrance for a few dollars. The ducks are friendly and the whole area is shaded and easy to navigate with a stroller.",
+            tip: "Buy fish food at the entrance kiosk — the koi feeding is a highlight for the 2yo and 4yo. The duck pond is right near the entrance so you can visit before or after the tram.",
+            image: IMAGES.resortFamily,
+            cost: "~$2 for fish food",
+          },
+          {
+            title: "Plantation Café — Lunch",
+            detail: "The on-site Mill House Restaurant (or the more casual Café) serves farm-to-table lunch with ingredients grown on the property. The menu features fresh salads, sandwiches, and local specialties. The open-air setting is beautiful — surrounded by tropical gardens with views of the West Maui Mountains.",
+            tip: "The Mill House is one of the best farm-to-table restaurants on Maui — worth a proper sit-down lunch. Reservations recommended for the Mill House; the café is walk-in.",
+            image: IMAGES.lahainaTown,
+            cost: "~$60–90 for the family",
+          },
+        ],
+        logistics: "9:30am: Drive to Maui Tropical Plantation (20 min) → 10am: Tram tour → Duck & koi pond → Noon: Lunch at Mill House or Café → 1:30pm: Drive back to resort → 2–4pm: Nap window → 5pm: Final Ka'anapali sunset walk",
+        budget: "~$80–120 for tram + lunch + fish food",
+        waypoints: [
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "20 min", driveDist: "12 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Maui Tropical Plantation", address: "Maui Tropical Plantation, 1670 Honoapiilani Hwy, Waikapu, Maui, HI", note: "Tram tour, ducks, koi pond, café", driveTime: "20 min", driveDist: "12 mi", lat: 20.8430, lng: -156.5100 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return for nap", lat: 20.9352, lng: -156.6925 },
+        ],
+        mapCenter: { lat: 20.8900, lng: -156.6000 },
+        mapZoom: 11,
+      },
+      {
+        label: "Alternative: Molokini Snorkel Boat Trip",
+        tag: "Adventure",
+        tagColor: "#E8714A",
+        heroImage: IMAGES.molokiniAerial,
+        description: "If you want one big adventure before departure day, a Molokini snorkel boat trip is the classic Maui bucket-list activity. The crescent-shaped volcanic crater is one of the best snorkel spots in the world — crystal-clear water, 150+ fish species, and dramatic underwater walls. Boats depart from Mā'alaea Harbor around 6:30–7am, so it's an early start but you're back by noon.",
+        activities: [
+          {
+            title: "Molokini Crater Snorkel — Early Morning",
+            detail: "Book with Trilogy Excursions or Pacific Whale Foundation for the best family-friendly experience. The trip includes snorkel gear, instruction, breakfast on board, and a second stop at Turtle Town (Coral Gardens) where you're almost guaranteed to see Hawaiian green sea turtles. The 4yo will love it; the 2yo can stay on the boat or do the shallow snorkel area.",
+            tip: "Book the earliest departure (6:30–7am) — the water is calmest and the crater is least crowded. Dramamine the night before if anyone gets seasick. Trilogy has the best boats for families.",
+            image: IMAGES.molokiniSnorkel,
+            cost: "~$130–160/adult · ~$80–100/child · Under 3 often free",
+          },
+        ],
+        logistics: "5:30am: Drive to Mā'alaea Harbor (30 min) → 6:30am: Boat departs → Noon: Return to harbor → 12:30pm: Drive back to resort → 1:30–3pm: Nap window",
+        budget: "~$350–450 for 2 adults + 1 child (4yo)",
+        waypoints: [
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Early departure", driveTime: "30 min", driveDist: "18 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Mā'alaea Harbor", address: "Maalaea Harbor, Maalaea, Maui, HI", note: "Boat departs 6:30–7am", driveTime: "30 min", driveDist: "18 mi", lat: 20.7930, lng: -156.5080 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return by noon", lat: 20.9352, lng: -156.6925 },
+        ],
+        mapCenter: { lat: 20.8700, lng: -156.6000 },
+        mapZoom: 11,
+      },
+    ],
+  },
+  {
+    id: "day9",
+    number: "09",
     title: "Final Morning & Aloha",
     subtitle: "Last Beach Walk · Shave Ice · Depart OGG",
     plans: [
@@ -664,7 +736,7 @@ const budgetRows = [
   { item: "Groceries & villa meals (full kitchen saves on dining)", cost: "~$400–500" },
   { item: "Dining out (Merriman's, Hula Grill, Leilani's, Monkeypod, etc.)", cost: "~$600–800" },
   { item: "Maui Ocean Center (2 adults · kids under 3 free)", cost: "~$110" },
-  { item: "Old Lāhainā Lūʻau (2 adults · 4yo · 2yo free)", cost: "~$460" },
+  { item: "Myths of Maui Lūʻau — Royal Lāhainā Resort (Jun 2) — BOOKED ✓", cost: "Booked" },
   { item: "Shave ice, snacks, activities & misc.", cost: "~$300" },
 ];
 
@@ -879,10 +951,10 @@ export default function Home() {
             Aloha, Maui.
           </h1>
           <p className="text-xl md:text-2xl max-w-xl" style={{ color: "#F5E6C8", fontFamily: "'Lato', sans-serif", fontWeight: 300 }}>
-            An 8-day family escape at the OUTRIGGER Honua Kai Resort & Spa — beaches, great food, and memories that last a lifetime.
+            A 9-day family escape at the OUTRIGGER Honua Kai Resort & Spa — beaches, great food, and memories that last a lifetime.
           </p>
           <div className="mt-8 flex gap-6 flex-wrap">
-            {[["8","Days"],["4","Travelers"],["~$9–10k","Est. Budget"]].map(([val, label]) => (
+            {[["9","Days"],["4","Travelers"],["~$9–10k","Est. Budget"]].map(([val, label]) => (
               <div key={label} className="text-center">
                 <div className="text-3xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>{val}</div>
                 <div className="text-xs tracking-widest uppercase" style={{ color: "#F5E6C8" }}>{label}</div>
@@ -970,13 +1042,11 @@ export default function Home() {
                 ],
               },
               {
-                num: "06", title: "Lūʻau Night", icon: "🌴",
+                num: "06", title: "Myths of Maui Lūʻau", icon: "🌴",
                 schedule: [
-                  { time: "8–11am", label: "Ka'anapali Beach morning" },
-                  { time: "11am–4pm", label: "Resort pool & nap window" },
-                  { time: "4:30pm", label: "Drive to Old Lāhainā Lūʻau" },
-                  { time: "↓ 10 min", label: "drive", drive: true },
-                  { time: "5:15pm", label: "Lūʻau gates open — arrive now" },
+                  { time: "Morning", label: "Free beach & pool day" },
+                  { time: "↓ 5 min", label: "drive", drive: true },
+                  { time: "Evening", label: "Myths of Maui Lūʻau — BOOKED ✓" },
                   { time: "9pm", label: "Drive back to resort" },
                 ],
               },
@@ -993,7 +1063,20 @@ export default function Home() {
                 ],
               },
               {
-                num: "08", title: "Departure Day", icon: "🌅",
+                num: "08", title: "Maui Tropical Plantation", icon: "🦆",
+                schedule: [
+                  { time: "9:30am", label: "Drive to Waikapū (20 min)" },
+                  { time: "↓ 20 min", label: "drive", drive: true },
+                  { time: "10am", label: "Tram tour through orchards" },
+                  { time: "11am", label: "Duck pond & koi feeding" },
+                  { time: "Noon", label: "Lunch at Mill House Café" },
+                  { time: "↓ 20 min", label: "drive back", drive: true },
+                  { time: "2–4pm", label: "🛏 Nap window at resort" },
+                  { time: "5pm", label: "Final Ka'anapali sunset walk" },
+                ],
+              },
+              {
+                num: "09", title: "Departure Day", icon: "🌅",
                 schedule: [
                   { time: "6–7am", label: "Final sunrise walk on beach" },
                   { time: "7:30am", label: "Checkout — pack & load car" },
@@ -1088,7 +1171,7 @@ export default function Home() {
               Budget Breakdown
             </h2>
             <p className="text-center mb-12" style={{ color: "rgba(245,230,200,0.7)", fontWeight: 300 }}>
-              Estimated costs for a family of 4 (2 adults + 4yo + 2yo), 8 days / 7 nights in Ka'anapali, Maui.
+              Estimated costs for a family of 4 (2 adults + 4yo + 2yo), 9 days / 8 nights in Ka'anapali, Maui.
             </p>
             <div className="rounded-sm overflow-hidden" style={{ border: "1px solid rgba(245,230,200,0.15)" }}>
               {budgetRows.map((row, i) => (
@@ -1135,7 +1218,7 @@ export default function Home() {
               { icon: "🛒", title: "Order Groceries on Arrival", body: "Use Instacart or Foodland delivery to stock milk, snacks, fruit, and easy lunch items the day you arrive." },
               { icon: "🛺", title: "Bring a Beach Wagon", body: "A foldable beach wagon is a game-changer for hauling gear for two toddlers across soft sand." },
               { icon: "✈️", title: "Book Nap-Time Flights", body: "Your Alaska nonstop departs SFO at 9:42am and lands OGG at 12:05pm — a great window for kids to nap on the 5h 23m flight." },
-              { icon: "📅", title: "Book Mama's & the Lūʻau Early", body: "Mama's Fish House and the Old Lāhainā Lūʻau both sell out months in advance. Book Mama's 2–3 months ahead and the Lūʻau 6–8 weeks out. Don't wait." },
+              { icon: "📅", title: "Book Mama's Early", body: "Mama's Fish House sells out 2–3 months in advance. The Myths of Maui Lūʻau is already booked for June 2 — just confirm your reservation details when the email arrives." },
               { icon: "🅿️", title: "Parking Notes", body: "Kapalua Bay lot: $10–15/day, fills by 10am in summer — arrive by 8:30am. Napili Bay: street parking only, limited spaces. Baby Beach (Lahaina or Spreckelsville) is a calm backup if Napili is full." },
               { icon: "😴", title: "Protect the Nap Window", body: "Build 12:30–3pm into every day as a nap/rest window. Toddlers will have much better evenings if you're back at the villa by early afternoon. Don't overschedule mornings." },
               { icon: "🌧️", title: "Rain & Heat Backups", body: "If it's raining or too hot: Maui Ocean Center (9am, kids under 3 free), Whalers Village shops (free hula show Tue/Thu 5:30pm), or the Honua Kai resort pool. These three cover any bad-weather day on the itinerary." },
@@ -1230,7 +1313,7 @@ export default function Home() {
                 icon: "🌺",
                 category: "Culture",
                 title: "Lāhainā Recovery — Visit Thoughtfully",
-                body: "The August 2023 wildfire destroyed much of historic Lāhainā. The old Front Street core remains closed, but the Cannery Mall area, Mala Ocean Tavern, and Honu Oceanside are open. Spending money in Lāhainā directly supports the community's recovery. The Old Lāhainā Lūʻau is fully operational and better than ever.",
+                body: "The August 2023 wildfire destroyed much of historic Lāhainā. The old Front Street core remains closed, but the Cannery Mall area, Mala Ocean Tavern, and Honu Oceanside are open. Spending money in Lāhainā directly supports the community's recovery. The Myths of Maui Lūʻau at the Royal Lāhainā Resort is fully operational and located right on Ka'anapali Beach.",
               },
               {
                 icon: "🌿",

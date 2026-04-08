@@ -220,20 +220,19 @@ export default function DataPage() {
 
       {/* ── DAY 6 ── */}
       <DaySection
-        number="06" date="Tuesday, June 3"
-        title="Old Lāhainā Lūʻau"
-        subtitle="Beach Day · Old Lāhainā Lūʻau Evening"
+        number="06" date="Monday, June 2"
+        title="Myths of Maui Lūʻau"
+        subtitle="Beach Day · Myths of Maui Lūʻau Evening — BOOKED ✓"
         plans={[
           {
-            label: "Recommended Plan",
-            description: "Keep the day relaxed — a final morning at the beach and pool — because tonight is the crown jewel of the trip: the Old Lāhainā Lūʻau. Widely considered the most authentic luau in Hawaii, it's set in a traditional oceanfront village in historic Lāhainā and features an imu feast, traditional hula, and Hawaiian storytelling as the sun sets over the Pacific.",
+            label: "Recommended Plan",            description: "Keep the day relaxed — a free morning at the beach and pool — because tonight is the Myths of Maui Lūʻau at the Royal Lāhainā Resort, right on Ka'anapali Beach. One of Maui's most beloved luaus, featuring an open-bar cocktail reception, traditional imu ceremony, a full Hawaiian feast, and a spectacular Polynesian show with fire knife dancing — all on the oceanfront just 5 minutes from your suite. BOOKED for June 2!",
             activities: [
-              { title: "Morning Beach & Pool Day", detail: "A free, unstructured morning. Let the kids play in the sand, build castles, and splash in the resort pool.", tip: "Use this morning to pack any souvenirs and do a final grocery run." },
-              { title: "Old Lāhainā Lūʻau", detail: "The most authentic luau on Maui, held on the oceanfront in Lāhainā. The feast includes kalua pig, poi, lomi salmon, haupia, and much more. The hula show tells the story of Hawaii's history from ancient Polynesia to modern times. New table-service format means food comes to you — great with toddlers.", tip: "Gates open 5:15pm — arrive right at opening so your kids can explore the cultural village before they get hungry or tired. Children under 3 are free; your 4-year-old needs a child ticket (~$75). Book 6–8 weeks out — it sells out nightly in summer.", cost: "~$230/adult · Under 3 free" },
+              { title: "Morning Beach & Pool Day", detail: "A free, unstructured morning. Let the kids play in the sand and splash in the resort pool.", tip: "Use this morning to pack any souvenirs and do a final grocery run." },
+              { title: "Myths of Maui Lūʻau — BOOKED ✓", detail: "Held on the oceanfront grounds of the Royal Lāhainā Resort at the north end of Ka'anapali Beach — just a 5-minute drive from Honua Kai. The evening begins with an open-bar cocktail reception and cultural activities (lei making, hula lessons, coconut weaving), followed by the traditional imu ceremony (uncovering the kalua pig), a full Hawaiian feast, and a spectacular Polynesian revue with fire knife dancing, hula, and music from across Polynesia.", tip: "Arrive right at gate opening to enjoy the cocktail reception and cultural village before the kids get tired. The imu ceremony is a highlight — make sure the kids see the pig being uncovered. Your 2yo is likely free; confirm child pricing on your confirmation.", cost: "BOOKED · June 2, 2026" },
             ],
-            logistics: "Morning: Free beach/pool time → 4:30pm: Drive to Lāhainā → 5:15pm: Lūʻau gates open → 9pm: Return to resort",
-            budget: "~$535 for 2 adults + 1 child (4yo) · 2yo free · Arrive at 5:15pm gate opening",
-            drive: "Honua Kai → Old Lāhainā Lūʻau (10 min, 4 mi)",
+            logistics: "Morning: Free beach/pool time → Check luau start time on confirmation → Drive 5 min to Royal Lāhainā Resort → Cocktail reception & imu ceremony → Feast & Polynesian show → Return to resort",
+            budget: "BOOKED ✓ · June 2, 2026",
+            drive: "Honua Kai → Royal Lāhainā Resort, 2780 Kekaa Dr (5 min, 2 mi)",
           },
           {
             label: "Alternative: Drums of the Pacific Luau",
@@ -284,7 +283,38 @@ export default function DataPage() {
 
       {/* ── DAY 8 ── */}
       <DaySection
-        number="08" date="Friday, June 5"
+        number="08" date="Thursday, June 4"
+        title="Maui Tropical Plantation"
+        subtitle="Waikapū · Tram Ride · Ducks & Koi Pond · Plantation Café"
+        plans={[
+          {
+            label: "Recommended Plan",
+            description: "A perfect low-commitment day for the whole family. The Maui Tropical Plantation in Waikapū is a working farm and botanical garden with a narrated tram tour through tropical fruit orchards, a duck pond, koi pond, zip lines, and a lovely open-air café. About 20 minutes south of Ka'anapali — easy on toddlers, clean bathrooms, lots of space to toddle.",
+            activities: [
+              { title: "Maui Tropical Plantation — Tram Tour", detail: "A narrated tram ride through tropical fruit orchards past papaya, pineapple, sugarcane, coffee, and macadamia nut trees. Open-air and toddler-friendly — no hiking required. Runs about 40 minutes, departs every 30–45 minutes.", tip: "First tour usually around 10am. Arrive early to grab coffee at the café first. Stroller-accessible.", cost: "~$20/adult · ~$12/child (3–12) · Under 3 free" },
+              { title: "Duck Pond & Koi Pond", detail: "A charming duck pond and koi pond that are a guaranteed hit with toddlers. The koi are large and colorful — buy fish food at the entrance for a few dollars. Shaded and easy to navigate with a stroller.", tip: "Buy fish food at the entrance kiosk. The duck pond is right near the entrance.", cost: "~$2 for fish food" },
+              { title: "Plantation Café — Lunch", detail: "The on-site Mill House Restaurant serves farm-to-table lunch with ingredients grown on the property. The open-air setting is beautiful — surrounded by tropical gardens with views of the West Maui Mountains.", tip: "The Mill House is one of the best farm-to-table restaurants on Maui. Reservations recommended for the Mill House; the café is walk-in.", cost: "~$60–90 for the family" },
+            ],
+            logistics: "9:30am: Drive to Maui Tropical Plantation (20 min) → 10am: Tram tour → Duck & koi pond → Noon: Lunch at Mill House → 1:30pm: Drive back to resort → 2–4pm: Nap window → 5pm: Final Ka'anapali sunset walk",
+            budget: "~$80–120 for tram + lunch + fish food",
+            drive: "Honua Kai → Maui Tropical Plantation, 1670 Honoapiilani Hwy, Waikapū (20 min, 12 mi)",
+          },
+          {
+            label: "Alternative: Molokini Snorkel Boat Trip",
+            description: "If you want one big adventure before departure day, a Molokini snorkel boat trip is the classic Maui bucket-list activity. Boats depart from Mā'alaea Harbor around 6:30–7am and return by noon.",
+            activities: [
+              { title: "Molokini Crater Snorkel — Early Morning", detail: "Book with Trilogy Excursions or Pacific Whale Foundation. Includes snorkel gear, breakfast on board, and a second stop at Turtle Town. The 4yo will love it; the 2yo can stay on the boat or do the shallow area.", tip: "Book the earliest departure (6:30–7am) — calmest water, least crowded. Dramamine the night before if anyone gets seasick.", cost: "~$130–160/adult · ~$80–100/child" },
+            ],
+            logistics: "5:30am: Drive to Mā'alaea Harbor (30 min) → 6:30am: Boat departs → Noon: Return to harbor → 12:30pm: Drive back to resort → 1:30–3pm: Nap window",
+            budget: "~$350–450 for 2 adults + 1 child (4yo)",
+            drive: "Honua Kai → Mā'alaea Harbor (30 min, 18 mi)",
+          },
+        ]}
+      />
+
+      {/* ── DAY 9 ── */}
+      <DaySection
+        number="09" date="Friday, June 5"
         title="Final Morning & Aloha"
         subtitle="Last Beach Walk · Shave Ice · Depart OGG"
         plans={[
