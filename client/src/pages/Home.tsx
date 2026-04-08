@@ -77,12 +77,12 @@ const days: Day[] = [
         tag: "Relaxed",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.hero,
-        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. First stop: Costco or Target in Kahului (or Foodland Farms in Lahaina) to stock the villa kitchen with milk, fruit, snacks, and easy lunches — this one stop saves $400–600 across the week. After check-in, head to the resort's kids' pool first — after the 5h 23m Alaska nonstop (SFO 9:42am → OGG 12:05pm), the pool lets the toddlers burn energy without the sun and wind of the beach. Then end the day with a relaxed sunset walk along Ka'anapali Beach.",
+        description: "Touch down at Kahului Airport (OGG) and let the warm Maui air wash over you. OGG baggage + Avis shuttle runs 45–60 min, so plan to be at the car by 1pm. Quick grocery stop at Foodland Farms in Lāhainā (15 min from the resort) to stock the kitchen — milk, fruit, snacks, easy lunches. This one stop saves $400–600 across the week. Honua Kai's official check-in is 4pm; you can use the pools from 2pm but the room likely won't be ready until 4. Pool first after arrival — after the 5h 23m Alaska nonstop, the kids' pool burns flight energy without the sun and wind of the beach. End the day with a relaxed sunset walk along Ka'anapali Beach.",
         activities: [
           {
         title: "Honua Kai Check-In & Pool Time",
             detail: "Your 1-Bedroom Partial Ocean View suite at OUTRIGGER Honua Kai Resort & Spa features a king bed + double sofa bed, full kitchen (fridge, stovetop, oven, microwave), in-unit washer/dryer, and a furnished lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is $35/day (valet $40/day).",
-            tip: "Request an upper-floor unit for the best unobstructed ocean views. Stock the kitchen on arrival: Costco (275 Ho'okele St, Kahului) is cheapest; Foodland Farms (345 Keawe St, Lahaina) is closer to the resort. Pool first, beach second — toddlers do better after a calm arrival.",
+            tip: "Request an upper-floor unit for the best unobstructed ocean views. Stock the kitchen at Foodland Farms in Lāhainā (345 Keawe St) — it's only 15 min from the resort and much faster than Costco on arrival day. Official check-in is 4pm; pools are open from 2pm. Pool first, beach second — toddlers do better after a calm arrival.",
             image: IMAGES.westinMaui,
           },
           {
@@ -92,7 +92,7 @@ const days: Day[] = [
             image: IMAGES.hero,
           },
         ],
-        logistics: "Arrive OGG → Rental car → Grocery stop (Costco/Target in Kahului or Foodland Farms in Lahaina) → Honua Kai check-in → Kids' pool first → Sunset beach walk",
+        logistics: "Land 12:05pm → Car rental by 1pm (allow 45–60 min for baggage + Avis shuttle) → Foodland Farms Lāhainā grocery stop (15 min from resort) → Arrive Honua Kai ~2:30pm → Kids' pool (room ready ~4pm) → Sunset beach walk → Easy dinner at resort or nearby",
         budget: "$0 activities today (villa & resort pool are included)",
         waypoints: [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival & car rental", driveTime: "45 min", driveDist: "27 mi", lat: 20.8986, lng: -156.4305 },
@@ -229,8 +229,8 @@ const days: Day[] = [
           },
           {
             title: "Lāhainā Town, Banyan Tree & Ululani's Shave Ice",
-            detail: "Stroll down Front Street, lined with art galleries, boutique shops, and restaurants. Visit the famous 150-year-old Banyan Tree — the largest in the US. Then head to Ululani's Hawaiian Shave Ice — the gold standard on Maui. Ultra-fine ice, natural syrups, and add-ons like mochi, azuki beans, and ice cream inside. Note: Front Street gets hot and crowded by midday. Do the Banyan Tree + shave ice, then head back to the resort — sunset dinners in Lāhainā often mean a late bedtime for toddlers.",
-            tip: "Order the 'full experience' — shave ice with ice cream inside and mochi on top. Kids will lose their minds.",
+            detail: "The 150-year-old Banyan Tree survived the 2023 fire with about 60% canopy and the park reopened for walking in early 2026. However, Front Street is still patchy — much of the town is construction fencing and only a handful of north-end restaurants are open. It's emotionally heavy rather than a casual stroll. Keep expectations low: see the Banyan Tree, grab Ululani's shave ice at the Cannery Mall location, and head back. Alternatively, skip Lāhainā and spend this time at Whalers Village (fully open, shops, restaurants, beach access) — much easier with toddlers.",
+            tip: "Ululani's Lāhainā is at the Cannery Mall (1221 Honoapiilani Hwy) — open and convenient. The Banyan Tree area has no restrooms or water. If the kids are tired, swap to Whalers Village instead — it's fully open and 5 min from the resort.",
             image: IMAGES.lahainaStreet,
           },
         ],
@@ -507,18 +507,12 @@ const days: Day[] = [
         tag: "South Maui",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.heroBeach,
-        description: "A full day exploring South Maui — the island's sunniest, driest coast. Start at Baby Beach in Lahaina for a calm, toddler-perfect morning splash, then drive south to Big Beach (Makena State Park) for the most dramatic stretch of sand on Maui. End the day at Maui Brewing Company in Kihei — excellent craft beer, great food, and one of the most family-friendly brewpubs in Hawaii.",
+        description: "A dedicated South Maui day — the island's sunniest, driest coast. Leave by 8am to beat the crowds: Big Beach (Makena State Park) is one of the most spectacular beaches in Hawaii and the lot fills by 10am. After Big Beach, head to Maui Brewing Company in Kihei for lunch (they open at 11am — much better timing than happy hour with toddler nap schedules). Note: Baby Beach in Lāhainā and Big Beach in Makena are 55–70 min apart — not 35 — so pick one or the other. This plan goes straight to Big Beach for maximum time there.",
         activities: [
-          {
-            title: "Baby Beach, Lahaina",
-            detail: "A calm, shallow lagoon created by a natural rock breakwater just off the main road in Lahaina. The water is barely knee-deep for 50 yards out — perfect for a 2yo and 4yo. No facilities, but street parking is easy and it's rarely crowded. A great morning stop before the drive south.",
-            tip: "Park on Puunoa Place. The breakwater creates a natural pool — keep kids on the inside (lagoon side) away from the open ocean. Best before 10am before it gets hot.",
-            image: IMAGES.kaanapaliKids,
-          },
           {
             title: "Big Beach (Oneloa Beach) — Makena State Park",
             detail: "One of the most spectacular beaches in all of Hawaii — a sweeping half-mile crescent of golden sand with dramatic views of Molokini and Kaho'olawe. The surf here is bigger than Ka'anapali, so keep toddlers in the shallow shore break. Little Beach (clothing-optional) is a short scramble over the lava rock at the north end — skip it with kids. Facilities include restrooms and a small parking lot.",
-            tip: "Arrive by 9:30am — the lot fills by 10:30am in summer. The south end of the beach near the lava rock is calmer. Bring reef-safe sunscreen — this beach has zero shade.",
+            tip: "Leave Honua Kai by 8am to arrive by 9am — the lot fills by 10am in summer. The south end of the beach near the lava rock is calmer. Big Beach has a strong shore break — keep toddlers in the shallow wash zone, not in the surf. Bring reef-safe sunscreen — zero shade.",
             image: IMAGES.heroBeach,
             cost: "Free · Parking fills early",
           },
@@ -530,12 +524,11 @@ const days: Day[] = [
             cost: "~$60–90 for 2 adults + kids",
           },
         ],
-        logistics: "9am: Baby Beach Lahaina → 10am: Drive south (35 min) → 10:30am: Big Beach Makena → 12:30–3pm: Nap window at resort → 3pm: Drive to Kihei (25 min) → 3–5pm: Maui Brewing Co. happy hour",
+        logistics: "8am: Depart Honua Kai → 9am: Big Beach Makena (55 min drive) → 9–11am: Beach time → 11am: Drive to Maui Brewing Co. Kihei (20 min) → 11:30am: Lunch at Maui Brewing Co. (opens 11am) → 1pm: Drive back to resort (35 min) → 2–4pm: Nap window at resort",
         budget: "~$60–90 for Maui Brewing Co. + snacks",
         waypoints: [
-          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "5 min", driveDist: "2 mi", lat: 20.9352, lng: -156.6925 },
-          { label: "Baby Beach, Lahaina", address: "Baby Beach, Puunoa Place, Lahaina, Maui, HI", note: "Calm toddler lagoon", driveTime: "35 min", driveDist: "21 mi", lat: 20.8770, lng: -156.6820 },
-          { label: "Big Beach (Makena State Park)", address: "Oneloa Beach, Makena State Park, Maui, HI", note: "Dramatic big beach", driveTime: "25 min", driveDist: "14 mi", lat: 20.6350, lng: -156.4420 },
+          { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Depart 8am", driveTime: "55 min", driveDist: "32 mi", lat: 20.9352, lng: -156.6925 },
+          { label: "Big Beach (Makena State Park)", address: "Oneloa Beach, Makena State Park, Maui, HI", note: "Arrive 9am — lot fills by 10am", driveTime: "20 min", driveDist: "11 mi", lat: 20.6350, lng: -156.4420 },
           { label: "Maui Brewing Company", address: "Maui Brewing Company, 605 Lipoa Pkwy, Kihei, Maui, HI", note: "Happy hour 3–5pm", driveTime: "20 min", driveDist: "11 mi", lat: 20.7230, lng: -156.4460 },
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return", lat: 20.9352, lng: -156.6925 },
         ],
@@ -676,13 +669,13 @@ const days: Day[] = [
             image: IMAGES.heroBeach,
           },
           {
-            title: "Shave Ice & Depart",
-            detail: "Stop at Ululani's Hawaiian Shave Ice in Lahaina for one last treat before the drive to OGG. The airport is about 45 minutes from Ka'anapali — allow extra time for car seat return and check-in.",
-            tip: "Fill up at Costco gas (Kahului) or any station in Ka'anapali/Lahaina before heading to OGG — stations right near the airport charge a significant premium.",
+            title: "Depart OGG — 10:33am",
+            detail: "OGG recommends 2 hours for mainland flights due to the agricultural inspection checkpoint. With a 10:33am departure, you need to be through security by 9am. That means: 7am checkout, 7:45am fill gas in Ka'anapali/Lāhainā (don't wait until Kahului — airport-area stations charge a premium), 8am drive to OGG (45 min), 8:45am car return, 9am security. Ululani's Kahului doesn't open until 10am — skip it or grab a treat at the airport.",
+            tip: "Fill gas in Ka'anapali or Lāhainā before heading to OGG — airport-area stations charge significantly more. Car return + shuttle to terminal adds 15 min. Don't cut it close with two toddlers.",
             image: IMAGES.kaanapaliKids,
           },
         ],
-        logistics: "Morning: Beach walk → Checkout by 9am → Shave ice in Lahaina → OGG Airport (Alaska AS departs 10:33am)",
+        logistics: "6am: Final sunrise walk → 7am: Checkout — pack & load car → 7:45am: Fill gas tank (Ka'anapali/Lāhainā) → 8am: Drive to OGG (45 min) → 8:45am: Return rental car → 9am: Through security (OGG recommends 2 hrs for mainland + ag inspection) → 10:33am: Depart OGG → SFO. Skip shave ice or grab at airport — Ululani's Kahului doesn't open until 10am.",
         budget: "~$20–30 for shave ice and snacks",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Final beach walk & checkout", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
@@ -1051,9 +1044,9 @@ export default function Home() {
               {
                 num: "07", title: "South Maui Day", icon: "🍺",
                 schedule: [
-                  { time: "9am", label: "Baby Beach, Lahaina" },
-                  { time: "↓ 35 min", label: "drive south", drive: true },
-                  { time: "10:30am", label: "Big Beach (Makena State Park)" },
+                  { time: "8am", label: "Depart — drive south (55 min)" },
+                  { time: "↓ 55 min", label: "drive south", drive: true },
+                  { time: "9am", label: "Big Beach (Makena State Park)" },
                   { time: "↓ 35 min", label: "drive back to resort", drive: true },
                   { time: "12:30–3pm", label: "🛏 Nap window at resort" },
                   { time: "↓ 25 min", label: "drive to Kihei", drive: true },
@@ -1076,13 +1069,11 @@ export default function Home() {
               {
                 num: "09", title: "Departure Day", icon: "🌅",
                 schedule: [
-                  { time: "6–7am", label: "Final sunrise walk on beach" },
-                  { time: "7:30am", label: "Checkout — pack & load car" },
-                  { time: "↓ 35 min", label: "drive", drive: true },
-                  { time: "8:15am", label: "Ululani's shave ice (Kahului)" },
-                  { time: "↓ 5 min", label: "drive", drive: true },
-                  { time: "8:45am", label: "Fill gas tank near OGG" },
-                  { time: "9:30am", label: "Return car & check in at OGG" },
+                  { time: "6am", label: "Final sunrise walk on beach" },
+                  { time: "7am", label: "Checkout — pack & load car" },
+                  { time: "7:45am", label: "Fill gas in Ka'anapali" },
+                  { time: "↓ 45 min", label: "drive to OGG", drive: true },
+                  { time: "8:45am", label: "Return car → security by 9am" },
                   { time: "10:33am", label: "Depart OGG → SFO (Alaska nonstop)" },
                 ],
               },
@@ -1159,6 +1150,253 @@ export default function Home() {
       {days.map((day, idx) => (
         <DaySection key={day.id} day={day} idx={idx} />
       ))}
+
+      {/* ─── RESTAURANTS GUIDE SECTION ─── */}
+      <section id="restaurants" className="py-20 md:py-28" style={{ background: "#FDFAF5" }}>
+        <div className="container">
+          <div className="fade-in-up text-center mb-14">
+            <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "#E8714A" }}>West Maui Dining</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>Restaurant Guide</h2>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#5C4A32" }}>From beach-shack breakfasts to oceanfront fine dining — all within reach of Honua Kai. Organized from most casual to most special.</p>
+          </div>
+
+          {[
+            {
+              tier: "Breakfast & Casual",
+              tierColor: "#E8714A",
+              restaurants: [
+                {
+                  name: "Gazebo Restaurant at Napili Shores",
+                  tag: "Iconic Breakfast",
+                  distance: "10 min · 4 mi",
+                  price: "$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in only · Arrive by 7:30am",
+                  vibe: "Open-air breakfast spot perched right over Napili Bay. Plastic chairs, paper menus, and one of the most beautiful views on Maui. Locals and tourists alike line up before it opens.",
+                  review: "Famous for banana macadamia nut pancakes with coconut syrup. The wait can be 30–45 min but the line moves fast and the views make it worth it. Cash-friendly, very kid-tolerant, and the outdoor setting means toddler noise is a non-issue.",
+                  mustOrder: "Banana mac nut pancakes with coconut syrup",
+                  hours: "Breakfast only · 7:30am–2pm",
+                },
+                {
+                  name: "Kihei Café",
+                  tag: "Whale Pancakes",
+                  distance: "35 min · 20 mi (South Maui)",
+                  price: "$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in · Arrive early",
+                  vibe: "Classic local breakfast counter in Kihei with outdoor seating on the main drag. No frills, big portions, very local crowd. Kalama Park playground is directly across the street.",
+                  review: "Famous for whale-shaped pancakes that kids absolutely love. Ube mochi pancakes and loco moco are standouts. Expect a line but it moves quickly. The playground across the street makes it a perfect family stop.",
+                  mustOrder: "Whale-shaped pancakes · Loco moco",
+                  hours: "Breakfast & lunch · 5am–1pm",
+                },
+                {
+                  name: "Joey's Kitchen",
+                  tag: "Filipino Fusion · Local Favorite",
+                  distance: "5 min · 2 mi (Whalers Village)",
+                  price: "$–$$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in",
+                  vibe: "Casual Filipino-Hawaiian fusion counter in Whalers Village. Bright, unpretentious, and wildly popular with locals. One of the best value meals in Ka'anapali.",
+                  review: "Garlic chicken, short rib, and basil fish are consistently praised. Generous portions at reasonable prices — a rare find in Ka'anapali. Great for families who want something different from standard resort food. Also has a Napili location.",
+                  mustOrder: "Garlic chicken · Short rib plate",
+                  hours: "Lunch & dinner",
+                },
+                {
+                  name: "Leoda's Kitchen & Pie Shop",
+                  tag: "Roadside Gem · Pie Paradise",
+                  distance: "15 min · 8 mi (Olowalu, on the way to/from South Maui)",
+                  price: "$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in",
+                  vibe: "Charming plantation-style roadside stop in tiny Olowalu, between Ka'anapali and Kihei. Bright, casual, and always busy. Perfect pit stop on South Maui day.",
+                  review: "Reviewers rave about the turkey pot pie, fresh brioche sandwiches, and the Olowalu lime pie. One of the most-loved casual spots on Maui. Locally sourced ingredients, friendly staff, and prices that won't hurt. The pies alone are worth the detour.",
+                  mustOrder: "Turkey pot pie · Olowalu lime pie · BLT on brioche",
+                  hours: "Breakfast & lunch · 7am–8pm",
+                },
+                {
+                  name: "Fish Market Maui",
+                  tag: "Fish Tacos · Counter Service",
+                  distance: "5 min · 2 mi (Lahaina)",
+                  price: "$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in counter",
+                  vibe: "No-frills fish taco counter near Lahaina. Order at the window, eat at picnic tables. One of the best quick bites in West Maui.",
+                  review: "Consistently praised for fresh fish tacos, poke, and plate lunches at honest prices. A local institution. Great for a quick lunch before or after the beach.",
+                  mustOrder: "Fish tacos · Poke bowl",
+                  hours: "Lunch & early dinner",
+                },
+              ],
+            },
+            {
+              tier: "Casual Beachfront",
+              tierColor: "#0A7A5C",
+              restaurants: [
+                {
+                  name: "Hula Grill Barefoot Bar",
+                  tag: "Toes in the Sand",
+                  distance: "5 min · 2 mi (Whalers Village)",
+                  price: "$$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in · Wait list opens 4:30pm",
+                  vibe: "Tables literally on the sand under thatched palapas at Whalers Village. One of the most relaxed and iconic beach dining experiences in Ka'anapali. The indoor Hula Grill is more upscale; the Barefoot Bar is the casual outdoor section.",
+                  review: "Beloved for its laid-back vibe, fresh fish, and unbeatable location. The Barefoot Bar doesn't take reservations — put your name on the wait list when it opens at 4:30pm and you'll usually get a table by 5pm. Kids can dig their feet in the sand while you wait. Sunset views are spectacular.",
+                  mustOrder: "Fresh catch of the day · Fish tacos · Mai Tai",
+                  hours: "Lunch & dinner · Barefoot Bar from 11am",
+                },
+                {
+                  name: "Duke's Beach House",
+                  tag: "Right at Honua Kai",
+                  distance: "0 min · On-property",
+                  price: "$$",
+                  kidFriendly: 5,
+                  reservations: "Recommended via OpenTable",
+                  vibe: "Lively beachfront restaurant right at Honua Kai, named after Duke Kahanamoku. Open-air with direct beach access, surf memorabilia, and a fun island energy. Can get noisy at peak times.",
+                  review: "Praised for its prime location and consistent food. Request a patio table near the rail for ocean views. Great for families — kids can watch the beach while you eat. Service can be uneven but the convenience factor is hard to beat.",
+                  mustOrder: "Fresh fish · Duke's Mai Tai",
+                  hours: "Breakfast, lunch & dinner",
+                },
+                {
+                  name: "Leilani's on the Beach",
+                  tag: "Sunset Views · Whalers Village",
+                  distance: "5 min · 2 mi (Whalers Village)",
+                  price: "$$–$$$",
+                  kidFriendly: 4,
+                  reservations: "Recommended · OpenTable",
+                  vibe: "Two-level oceanfront restaurant at Whalers Village. The downstairs Beachside Grill is more casual; the upstairs dining room is more polished. Both have stunning sunset views over Ka'anapali Beach.",
+                  review: "Consistently rated one of the top restaurants in Ka'anapali. Fresh fish, great cocktails, and the sunset views are hard to beat. The downstairs is more kid-friendly and casual. Arrive at 5:30pm for the best light.",
+                  mustOrder: "Fresh catch · Hula pie (dessert) · Sunset cocktails",
+                  hours: "Lunch & dinner",
+                },
+                {
+                  name: "Monkeypod Kitchen",
+                  tag: "Happy Hour Legend",
+                  distance: "5 min · 2 mi (Whalers Village)",
+                  price: "$$",
+                  kidFriendly: 4,
+                  reservations: "Recommended · Book ahead",
+                  vibe: "Buzzy, modern gastropub at Whalers Village with a great cocktail program and farm-to-table menu. Known for its legendary happy hour (3–5:30pm and 9–11pm). Lively and social, with live music most evenings.",
+                  review: "The happy hour mai tais are famous — made with fresh-squeezed juice and considered among the best on Maui. Food is consistently good: wood-fired pizza, fresh fish, and excellent salads. Can get loud and crowded; book ahead or go at 5pm for sunset.",
+                  mustOrder: "Mai Tai (happy hour) · Wood-fired pizza · Kula strawberry pie",
+                  hours: "Lunch & dinner · Happy hour 3–5:30pm",
+                },
+              ],
+            },
+            {
+              tier: "Mid-Range & Special",
+              tierColor: "#5C4A32",
+              restaurants: [
+                {
+                  name: "Star Noodle",
+                  tag: "Asian Fusion · Trendy",
+                  distance: "10 min · 5 mi (Lahaina)",
+                  price: "$$",
+                  kidFriendly: 4,
+                  reservations: "Recommended",
+                  vibe: "Sleek, modern Asian fusion spot in Lahaina. Dim sum on Sundays. The new location is more polished than the original but keeps the same creative noodle-forward menu. Trendy but not stuffy.",
+                  review: "Praised for creative cocktails, excellent noodle dishes, and a fun group dining vibe. The Lahaina fried noodles and pad thai are standouts. Sunday dim sum is a special experience. Good for a fun dinner that's different from standard resort fare.",
+                  mustOrder: "Lahaina fried noodles · Pad thai · Sunday dim sum",
+                  hours: "Lunch & dinner",
+                },
+                {
+                  name: "Honu Oceanside",
+                  tag: "Oceanfront · Post-Fire Survivor",
+                  distance: "10 min · 5 mi (Lahaina)",
+                  price: "$$$",
+                  kidFriendly: 3,
+                  reservations: "Required · Book 2–4 weeks ahead",
+                  vibe: "One of the few upscale Lahaina restaurants that survived the 2023 fire and is fully operational. Stunning oceanfront setting with views toward Lana'i. Artful presentations and a focused menu of fresh seafood.",
+                  review: "Currently TripAdvisor's #1 restaurant in Lahaina. Rave reviews for fresh seafood, beautiful presentations, and excellent service. The oceanfront setting is magical. A more intimate and refined experience than the big resort restaurants.",
+                  mustOrder: "Fresh catch · Seafood appetizers",
+                  hours: "Dinner only",
+                },
+                {
+                  name: "Maui Brewing Company — Kihei",
+                  tag: "Craft Beer · Family Brewpub",
+                  distance: "35 min · 20 mi (Kihei)",
+                  price: "$$",
+                  kidFriendly: 5,
+                  reservations: "Walk-in · Reservations available",
+                  vibe: "Maui's flagship craft brewery with a massive open-air taproom, fire pits, and a full food menu. Very family-friendly with high chairs and a relaxed outdoor vibe. Best paired with the South Maui day.",
+                  review: "Bikini Blonde Lager and CoCoNut PorTeR are the classics. Food is excellent — fish tacos, burgers, and a solid kids' menu. Happy hour 3–5pm but lunch works better with toddler nap schedules. One of the most family-friendly dining experiences on Maui.",
+                  mustOrder: "CoCoNut PorTeR · Fish tacos · Burgers",
+                  hours: "Lunch & dinner · Opens 11am · Happy hour 3–5pm",
+                },
+              ],
+            },
+            {
+              tier: "Fine Dining & Special Occasions",
+              tierColor: "#0A4A5C",
+              restaurants: [
+                {
+                  name: "Merriman's Kapalua",
+                  tag: "Farm-to-Table · Sunset Views · BOOKED",
+                  distance: "10 min · 5 mi",
+                  price: "$$$$",
+                  kidFriendly: 3,
+                  reservations: "Book 60 days ahead · merrimanshawaii.com · Dinner only",
+                  vibe: "Perched above Kapalua Bay with sweeping Pacific sunset views. Chef Peter Merriman pioneered Hawaii Regional Cuisine. One of the most celebrated farm-to-table restaurants in the state. Dinner only — no lunch service.",
+                  review: "Consistently praised for the freshest local fish, Kula greens, and an exceptional wine list. The sunset views over Kapalua Bay are among the best on Maui. Request a window or lanai table. Dress code: resort casual. Worth every penny for a special evening.",
+                  mustOrder: "Seared ahi · Fresh catch · Kula greens salad",
+                  hours: "Dinner only · 5–9pm",
+                },
+                {
+                  name: "Mama's Fish House",
+                  tag: "Bucket List · Book 3 Months Ahead",
+                  distance: "45 min · 28 mi (Paia, North Shore)",
+                  price: "$$$$",
+                  kidFriendly: 2,
+                  reservations: "Book 2–3 months ahead · mamasfishhouse.com",
+                  vibe: "Set in a 1940s oceanfront coconut grove in Paia, Mama's is consistently ranked one of the top restaurants in the entire United States. The menu lists the name of the fisherman who caught each fish. Magical, unhurried, and unlike anywhere else.",
+                  review: "Entrees average $70, apps $25+, drinks $18–25. A lunch for 2 adults + 1 toddler can run $300. Worth it for a once-in-a-trip splurge, but the 45-min drive each way and long lunch make it the hardest day with toddlers. Book months in advance and plan to be back at the resort by 3pm.",
+                  mustOrder: "Whatever fish the fisherman caught that day · Coconut crusted catch",
+                  hours: "Lunch & dinner",
+                },
+              ],
+            },
+          ].map((tier) => (
+            <div key={tier.tier} className="mb-16">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="h-px flex-1" style={{ background: tier.tierColor, opacity: 0.3 }} />
+                <h3 className="text-sm font-bold tracking-[0.2em] uppercase px-4" style={{ color: tier.tierColor }}>{tier.tier}</h3>
+                <div className="h-px flex-1" style={{ background: tier.tierColor, opacity: 0.3 }} />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {tier.restaurants.map((r) => (
+                  <div key={r.name} className="rounded-2xl overflow-hidden" style={{ background: "#fff", border: "1px solid #E8D5B0" }}>
+                    <div className="p-6">
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <div>
+                          <h4 className="text-xl font-bold mb-1" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{r.name}</h4>
+                          <span className="text-xs font-semibold tracking-wide px-2 py-1 rounded-full" style={{ background: "#F5E6C8", color: "#5C4A32" }}>{r.tag}</span>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <div className="text-lg font-bold" style={{ color: "#E8714A" }}>{r.price}</div>
+                          <div className="text-xs" style={{ color: "#8C7A5C" }}>{r.distance}</div>
+                        </div>
+                      </div>
+                      <p className="text-sm mb-3 leading-relaxed" style={{ color: "#5C4A32" }}><strong>Vibe:</strong> {r.vibe}</p>
+                      <p className="text-sm mb-3 leading-relaxed" style={{ color: "#5C4A32" }}>{r.review}</p>
+                      <div className="flex flex-wrap gap-3 text-xs pt-3" style={{ borderTop: "1px solid #F5E6C8" }}>
+                        <span style={{ color: "#0A7A5C" }}><strong>Must order:</strong> {r.mustOrder}</span>
+                      </div>
+                      <div className="flex flex-wrap gap-3 text-xs mt-2">
+                        <span style={{ color: "#8C7A5C" }}>🕐 {r.hours}</span>
+                        <span style={{ color: r.reservations.includes("Walk-in") ? "#0A7A5C" : "#E8714A" }}>📋 {r.reservations}</span>
+                      </div>
+                      <div className="flex items-center gap-1 mt-2">
+                        <span className="text-xs" style={{ color: "#8C7A5C" }}>Kid-friendly:</span>
+                        {[1,2,3,4,5].map(s => (
+                          <span key={s} className="text-sm" style={{ color: s <= r.kidFriendly ? "#E8714A" : "#E8D5B0" }}>★</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ─── BUDGET SECTION ─── */}
       <section id="budget" className="py-20 md:py-28" style={{ background: "#0A4A5C" }}>

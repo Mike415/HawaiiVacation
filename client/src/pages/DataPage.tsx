@@ -316,18 +316,18 @@ export default function DataPage() {
       <DaySection
         number="09" date="Friday, June 5"
         title="Final Morning & Aloha"
-        subtitle="Last Beach Walk · Shave Ice · Depart OGG"
+        subtitle="Last Beach Walk · Depart OGG 10:33am"
         plans={[
           {
             label: "Recommended Plan",
-            description: "Your last morning in Maui. Take one final walk along Ka'anapali Beach, let the kids get their feet wet one last time, and stop for shave ice before heading to the airport.",
+            description: "OGG recommends 2 hours for mainland flights due to the agricultural inspection checkpoint. With a 10:33am departure, you need to be through security by 9am. Wake up at 6am, checkout at 7am, fill gas in Ka'anapali/Lāhainā (don't wait until Kahului — airport-area stations charge a premium), drive 45 min to OGG, return car by 8:45am, through security by 9am. Skip the shave ice stop — Ululani's Kahului doesn't open until 10am.",
             activities: [
-              { title: "Final Ka'anapali Beach Walk", detail: "Wake up early for a quiet morning walk along the beach before checkout. The light is golden, the beach is uncrowded, and the ocean is calm. Fill up the rental car before heading to OGG — gas stations near the airport charge a significant premium.", tip: "Take a family photo at Black Rock (Pu'u Keka'a) — the same spot you saw the cliff divers on Day 1." },
-              { title: "Shave Ice & Depart", detail: "Stop at Ululani's Hawaiian Shave Ice in Lahaina for one last treat before the drive to OGG. The airport is about 45 minutes from Ka'anapali — allow extra time for car seat return and check-in.", tip: "Fill up at Costco gas (Kahului) or any station in Ka'anapali/Lahaina before heading to OGG." },
+              { title: "Final Ka'anapali Beach Walk", detail: "One last sunrise walk along Ka'anapali Beach at 6am. Watch the early morning light on the water and let the kids splash one more time before checkout.", tip: "Take a family photo at Black Rock (Pu'u Keka'a) — the same spot you saw the cliff divers on Day 1." },
+              { title: "Checkout & Depart OGG", detail: "7am checkout, fill gas in Ka'anapali/Lāhainā, drive 45 min to OGG. Return car by 8:45am, through security by 9am. Car return + shuttle to terminal adds 15 min — don't cut it close with two toddlers. Ululani's Kahului doesn't open until 10am — skip it or grab a treat at the airport.", tip: "Fill gas in Ka'anapali before you go — airport-area stations charge significantly more.", cost: "~$0" },
             ],
-            logistics: "7:30am: Checkout → Ululani's shave ice (Kahului) → Fill gas → Return car → Check in at OGG → Alaska AS departs OGG 10:33am → Arrive SFO 6:39pm",
-            budget: "~$20–30 for shave ice and snacks",
-            drive: "Honua Kai → Ululani's Kahului (35 min) → OGG Airport (5 min) · Departs 10:33am",
+            logistics: "6am: Final sunrise walk → 7am: Checkout — pack & load car → 7:45am: Fill gas (Ka'anapali/Lāhainā) → 8am: Drive to OGG (45 min) → 8:45am: Return rental car → 9am: Through security → 10:33am: Depart OGG → SFO 6:39pm",
+            budget: "~$0 — just gas",
+            drive: "Honua Kai → OGG Airport (45 min, 27 mi) · Departs 10:33am",
           },
           {
             label: "Alternative: Kapalua Bay & Shave Ice Farewell",
