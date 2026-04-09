@@ -163,13 +163,13 @@ const days: Day[] = [
             image: IMAGES.kapaluaFamily,
           },
           {
-            title: "Hula Grill Ka'anapali — Barefoot Bar Dinner",
-            detail: "End the day at Hula Grill's legendary Barefoot Bar — tables literally on the sand at Whalers Village, 5 min from Honua Kai. Fresh island fish, great mai tais, and a fantastic kids' menu. Live Hawaiian music most evenings.",
-            tip: "Put your name on the Barefoot Bar wait list at 4:30pm (no reservations taken for the outdoor section). Aim to be seated by 5–5:30pm so kids aren't overtired. Fresh catch and fish tacos are the move.",
+            title: "Hula Grill Ka'anapali — Barefoot Bar Dinner ✓ CONFIRMED",
+            detail: "Reservation confirmed: Friday, May 29 at 6:30 PM · Party of 4. Tables literally on the sand at Whalers Village, 5 min from Honua Kai. The open-air Barefoot Bar is legendary — thatched palapas, feet in the sand, fresh island fish, and mai tais. Live Hawaiian music most evenings.",
+            tip: "Confirmed 6:30pm, party of 4. Fresh catch and fish tacos are the move. Arrive a few minutes early to grab a drink at the bar.",
             image: IMAGES.resortAerial,
           },
         ],
-        logistics: "8:30am: Kapalua Bay (arrive early, parking fills by 10am) → Noon: Resort pool if kids are tired, or Napili Bay picnic → 4:30pm: Add name to Hula Grill Barefoot Bar wait list → 5–5:30pm: Hula Grill Barefoot Bar dinner",
+        logistics: "8:30am: Kapalua Bay (arrive early, parking fills by 10am) → Noon: Resort pool if kids are tired, or Napili Bay picnic → 6:30pm: Hula Grill Ka'anapali dinner (confirmed reservation, party of 4)",
         budget: "~$80–120 for dinner at Hula Grill",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "14 min", driveDist: "5.5 mi", lat: 20.9352, lng: -156.6925 },
@@ -1002,8 +1002,7 @@ export default function Home() {
                   { time: "11:30am", label: "Napili Bay picnic (or resort pool)" },
                   { time: "12:30–3pm", label: "🛏 Nap window at villa" },
                   { time: "↓ 10 min", label: "drive", drive: true },
-                  { time: "4:30pm", label: "Hula Grill wait list opens" },
-                  { time: "5–5:30pm", label: "Hula Grill Barefoot Bar dinner" },
+                  { time: "6:30pm", label: "Hula Grill Barefoot Bar dinner ✓" },
                 ],
               },
               {

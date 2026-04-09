@@ -106,9 +106,9 @@ export default function DataPage() {
             description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Arrive by 8:30am as parking fills by 10am in summer ($10–15/day). End the evening with dinner at Hula Grill.",
             activities: [
               { title: "Kapalua Bay", detail: "A crescent of golden sand sheltered by lava rock arms on both sides, creating almost zero wave action. Crystal clear, shallow near shore — ideal for toddlers. Snorkel gear rentals available nearby.", tip: "Arrive by 8:30am — parking ($10–15/day) fills by 10am in summer. Bring a small soft cooler as there's limited shade." },
-              { title: "Hula Grill Ka'anapali — Barefoot Bar Dinner", detail: "End the day at Hula Grill's legendary Barefoot Bar — tables literally on the sand at Whalers Village, 5 min from Honua Kai. Fresh island fish, great mai tais, and a fantastic kids' menu. Live Hawaiian music most evenings.", tip: "Put your name on the Barefoot Bar wait list at 4:30pm (no reservations taken for the outdoor section). Aim to be seated by 5–5:30pm so kids aren't overtired." },
+              { title: "Hula Grill Ka'anapali — Barefoot Bar Dinner ✓ CONFIRMED", detail: "Reservation confirmed: Friday, May 29 at 6:30 PM · Party of 4. Tables literally on the sand at Whalers Village, 5 min from Honua Kai. Fresh island fish, mai tais, great kids' menu, live Hawaiian music nightly.", tip: "Confirmed 6:30pm, party of 4. Fresh catch and fish tacos are the move. Arrive a few minutes early to grab a drink at the bar." },
             ],
-            logistics: "8:30am: Kapalua Bay → Noon: Resort pool or Napili Bay picnic → 5:00–5:30pm: Hula Grill Barefoot Bar dinner",
+            logistics: "8:30am: Kapalua Bay → Noon: Resort pool or Napili Bay picnic → 6:30pm: Hula Grill Ka'anapali dinner (confirmed reservation, party of 4)",
             budget: "~$80–120 for dinner at Hula Grill",
             drive: "Honua Kai → Kapalua Bay (14 min, 5.5 mi)",
           },
