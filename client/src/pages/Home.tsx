@@ -92,14 +92,14 @@ const days: Day[] = [
             image: IMAGES.hero,
           },
           {
-            title: "Hula Grill Barefoot Bar — First Night Dinner",
-            detail: "The perfect first-night dinner: tables literally on the sand at Whalers Village, just 5 min from Honua Kai. The Barefoot Bar is the outdoor casual section — thatched palapas, feet in the sand, fresh island fish, and legendary mai tais. The wait list opens at 4:30pm — add your name then and you'll usually be seated by 5pm. Live Hawaiian music most evenings.",
-            tip: "Put your name on the Barefoot Bar wait list at 4:30pm — it doesn't take reservations. Aim to be seated by 5pm so kids aren't overtired. The fresh catch and fish tacos are the move.",
+            title: "Hula Grill Ka'anapali — First Night Dinner ✓ CONFIRMED",
+            detail: "Reservation confirmed: Thursday, May 28 at 6:30 PM · Party of 4. Tables on the sand at Whalers Village, just 5 min from Honua Kai. The Barefoot Bar is the outdoor casual section — thatched palapas, feet in the sand, fresh island fish, and legendary mai tais. Live Hawaiian music most evenings.",
+            tip: "Reservation confirmed for 6:30pm, party of 4. The fresh catch and fish tacos are the move. Arrive a few minutes early to grab a drink at the bar while waiting for your table.",
             image: IMAGES.hero,
             cost: "~$80–120 for 2 adults",
           },
         ],
-        logistics: "Land 12:05pm → Car rental by 1pm (allow 45–60 min for baggage + Avis shuttle) → Foodland Farms Lāhainā grocery stop (15 min from resort) → Arrive Honua Kai ~2:30pm → Kids' pool (room ready ~4pm) → 4:30pm: Add name to Hula Grill Barefoot Bar wait list → 5pm: Dinner on the sand at Hula Grill Barefoot Bar",
+        logistics: "Land 12:05pm → Car rental by 1pm (allow 45–60 min for baggage + Avis shuttle) → Foodland Farms Lāhainā grocery stop (15 min from resort) → Arrive Honua Kai ~2:30pm → Kids' pool (room ready ~4pm) → 6:30pm: Hula Grill Ka'anapali dinner (confirmed reservation, party of 4)",
         budget: "$0 activities today (villa & resort pool are included)",
         waypoints: [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival & car rental", driveTime: "45 min", driveDist: "27 mi", lat: 20.8986, lng: -156.4305 },
@@ -991,8 +991,7 @@ export default function Home() {
                   { time: "↓ 35 min", label: "drive", drive: true },
                   { time: "2pm", label: "Check in to Honua Kai suite" },
                   { time: "2–4pm", label: "Kids' pool & settle in" },
-                  { time: "4:30pm", label: "Hula Grill wait list opens" },
-                  { time: "5pm", label: "Dinner at Hula Grill Barefoot Bar" },
+                  { time: "6:30pm", label: "Hula Grill Ka'anapali dinner ✓" },
                 ],
               },
               {
