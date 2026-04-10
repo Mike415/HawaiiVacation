@@ -45,7 +45,7 @@ export default function DataPage() {
               ["Parking at resort ($35/day × 7)", "~$245"],
               ["Car Rental (7 days, SUV)", "~$700"],
               ["Groceries & suite meals (full kitchen saves on dining)", "~$400–500"],
-              ["Dining out (Merriman's, Hula Grill, Leilani's, Monkeypod, etc.)", "~$600–800"],
+              ["Dining out (Duke's, Hula Grill, Leilani's, Monkeypod, Maui Brewing Co., etc.)", "~$500–700"],
               ["Maui Ocean Center (2 adults · kids under 3 free)", "~$110"],
               ["Old Lāhainā Lūʻau (2 adults · 4yo · 2yo free)", "~$460"],
               ["Shave ice, snacks, activities & misc.", "~$300"],
@@ -160,19 +160,19 @@ export default function DataPage() {
       {/* ── DAY 4 ── */}
       <DaySection
         number="04" date="Sunday, June 1"
-        title="Merriman's Kapalua & North Shore"
-        subtitle="Kapalua Bay Morning · Merriman's Kapalua Dinner"
+        title="Kapalua Bay & Leilani's Dinner"
+        subtitle="Kapalua Bay Morning · Leilani's on the Beach Dinner"
         plans={[
           {
             label: "Recommended Plan",
-              description: "A beautiful North Ka'anapali day capped with dinner at Merriman's Kapalua — one of Maui's finest oceanfront restaurants, just 10 minutes from Honua Kai. Spend the morning at Kapalua Bay, nap window at the resort, then head to Merriman's for a sunset dinner. Note: Merriman's is dinner-only (no lunch service). Book online at merrimanshawaii.com.",
+              description: "A beautiful North Ka'anapali day ending with dinner at Leilani's on the Beach — one of Whalers Village's most family-friendly waterfront restaurants, just 5 minutes from Honua Kai. Spend the morning at Kapalua Bay, nap window at the resort, then head to Leilani's for a relaxed sunset dinner. Great kids' menu, casual vibe, walk-in friendly.",
             activities: [
               { title: "Kapalua Bay Beach — Morning", detail: "Consistently rated one of the best beaches in the US. The crescent-shaped bay is sheltered by two lava-rock points, making the water exceptionally calm and clear — perfect for toddlers. Arrive early (8:30–9am) before the parking lot fills.", tip: "Arrive by 8:30am — the lot fills by 10am in summer. The left side of the bay near the rocks has the most shade.", cost: "Free · Parking ~$10–15" },
-              { title: "Merriman's Kapalua — Oceanfront Dinner", detail: "Perched above Kapalua Bay with sweeping sunset views over the Pacific, Merriman's is one of Maui's finest farm-to-table restaurants. Chef Peter Merriman pioneered Hawaii Regional Cuisine. The seared ahi, fresh catch, and Kula greens salad are standouts. Dinner-only — no lunch service.", tip: "Book online at merrimanshawaii.com — dinner fills up fast in summer. Request a window or lanai table for the best sunset views. Dress code: resort casual.", cost: "~$60–100/person · Reservations required" },
+              { title: "Leilani's on the Beach — Sunset Dinner", detail: "One of the most family-friendly beachfront restaurants in Ka'anapali, right at Whalers Village. Open-air tables with direct ocean views, full kids' menu, relaxed casual vibe. Known for fresh island fish, prime rib, and great cocktails. Walk-in friendly — no reservation needed.", tip: "Arrive at 5pm to snag a beachfront table before the sunset rush. Kids' menu has mac & cheese, fish tacos, and grilled chicken. Fresh catch and prime rib are the adult standouts.", cost: "~$60–80 for 2 adults · Walk-in friendly" },
             ],
-            logistics: "8:30am: Kapalua Bay Beach morning → 11:30am: Return to resort → 12–3pm: Nap window → 5:30pm: Drive to Merriman's (10 min) → Sunset dinner → Return to resort",
-            budget: "~$120–200 for 2 adults at Merriman's · Parking ~$10–15",
-            drive: "Honua Kai → Kapalua Bay (10 min, 5 mi) → Merriman's Kapalua (2 min, 0.5 mi)",
+            logistics: "8:30am: Kapalua Bay Beach morning → 11:30am: Return to resort → 12–3pm: Nap window → 5pm: Drive to Leilani's on the Beach at Whalers Village (5 min) → Sunset dinner → Walk Whalers Village → Return to resort",
+            budget: "~$60–80 for 2 adults at Leilani's · Parking ~$10–15",
+            drive: "Honua Kai → Kapalua Bay (10 min, 5 mi) → Leilani's at Whalers Village (10 min, 4 mi)",
           },
           {
             label: "Alternative: Mama's Fish House",
