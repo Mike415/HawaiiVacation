@@ -99,7 +99,7 @@ const days: Day[] = [
             cost: "~$80–120 for 2 adults",
           },
         ],
-        logistics: "Land 12:05pm → Car rental by 1pm (allow 45–60 min for baggage + Avis shuttle) → Foodland Farms Lāhainā grocery stop (15 min from resort) → Arrive Honua Kai ~2:30pm → Kids' pool (room ready ~4pm) → 6:30pm: Duke's Beach House dinner (confirmed reservation, party of 4 — steps from resort)",
+        logistics: "Land 12:05pm → Car rental by 1pm (allow 45–60 min for baggage + Avis shuttle) → Foodland Farms Lāhainā grocery stop (15 min from resort) → Arrive Honua Kai ~2:30pm → Kids' pool (room ready ~4pm) → 5pm: Duke's Beach House dinner (steps from resort, walk-in)",
         budget: "$0 activities today (villa & resort pool are included)",
         waypoints: [
           { label: "Kahului Airport (OGG)", address: "Kahului Airport, Kahului, Maui, HI", note: "Arrival & car rental", driveTime: "45 min", driveDist: "27 mi", lat: 20.8986, lng: -156.4305 },
@@ -217,8 +217,8 @@ const days: Day[] = [
   {
     id: "day3",
     number: "03",
-    title: "Maui Ocean Center & Lāhainā Town",
-    subtitle: "Maui Ocean Center · Lāhainā Historic Town · Ululani's Shave Ice",
+    title: "Maui Ocean Center & Lāhainā",
+    subtitle: "Maui Ocean Center · Lāhainā Banyan Tree · Star Noodle Dinner",
     plans: [
       {
         label: "Recommended Plan",
@@ -241,13 +241,14 @@ const days: Day[] = [
             image: IMAGES.lahainaStreet,
           },
         ],
-        logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & Banyan Tree stroll → Ululani's shave ice → Waterfront dinner",
-        budget: "~$110–130 for Ocean Center (2 adults) + dining + shave ice",
+        logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Banyan Tree stroll → Ululani's shave ice → Back to resort for nap → 5pm: Star Noodle dinner (Lāhainā)",
+        budget: "~$110–130 for Ocean Center (2 adults) + Star Noodle dinner + shave ice",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Start", driveTime: "20 min", driveDist: "12 mi", lat: 20.9352, lng: -156.6925 },
           { label: "Maui Ocean Center", address: "Maui Ocean Center, Ma'alaea, Maui, HI", note: "9am opening", driveTime: "20 min", driveDist: "11 mi", lat: 20.7918, lng: -156.5072 },
           { label: "Lahaina Banyan Tree", address: "Lahaina Banyan Court Mall, Lahaina, Maui, HI", note: "Iconic tree + lunch", driveTime: "2 min", driveDist: "0.3 mi", lat: 20.8726, lng: -156.6784 },
           { label: "Ululani's Shave Ice Lahaina", address: "Ululani's Hawaiian Shave Ice, Lahaina, Maui, HI", note: "Shave ice!", driveTime: "20 min", driveDist: "11 mi", lat: 20.8747, lng: -156.6786 },
+          { label: "Star Noodle", address: "Star Noodle, 286 Kupuohi St, Lahaina, Maui, HI", note: "Dinner 5pm", driveTime: "5 min", driveDist: "1 mi", lat: 20.8760, lng: -156.6790 },
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Return to resort", lat: 20.9352, lng: -156.6925 },
         ],
         mapCenter: { lat: 20.8893, lng: -156.6600 },
@@ -991,7 +992,7 @@ export default function Home() {
                   { time: "↓ 35 min", label: "drive", drive: true },
                   { time: "2pm", label: "Check in to Honua Kai suite" },
                   { time: "2–4pm", label: "Kids' pool & settle in" },
-                  { time: "6:30pm", label: "Duke's Beach House dinner ✓" },
+                  { time: "5pm", label: "Duke's Beach House dinner" },
                 ],
               },
               {
@@ -1002,19 +1003,18 @@ export default function Home() {
                   { time: "11:30am", label: "Napili Bay picnic (or resort pool)" },
                   { time: "12:30–3pm", label: "🛏 Nap window at villa" },
                   { time: "↓ 10 min", label: "drive", drive: true },
-                  { time: "6:30pm", label: "Hula Grill Barefoot Bar dinner ✓" },
+                  { time: "5pm", label: "Hula Grill Barefoot Bar dinner" },
                 ],
               },
               {
-                num: "03", title: "Lāhainā Town", icon: "🌺",
+                num: "03", title: "Lāhainā & Star Noodle", icon: "🍜",
                 schedule: [
                   { time: "9am", label: "Maui Ocean Center (Ma'alaea)" },
                   { time: "↓ 20 min", label: "drive", drive: true },
-                  { time: "11:30am", label: "Lāhainā Banyan Tree stroll" },
-                  { time: "12pm", label: "Ululani's shave ice" },
+                  { time: "11:30am", label: "Lāhainā Banyan Tree + shave ice" },
                   { time: "12:30–3pm", label: "🛏 Nap window — back to resort" },
                   { time: "↓ 10 min", label: "drive", drive: true },
-                  { time: "5:30pm", label: "Leilani's on the Beach dinner" },
+                  { time: "5pm", label: "Star Noodle dinner (Lāhainā)" },
                 ],
               },
               {

@@ -75,9 +75,9 @@ export default function DataPage() {
             activities: [
               { title: "Honua Kai Check-In & Pool Time", detail: "1-Bedroom Partial Ocean View suite. King bed + double sofa bed, full kitchen, in-unit washer/dryer, furnished lanai. Multiple pools including a dedicated kids' pool. Self-parking $35/day.", tip: "Request an upper-floor unit for the best ocean views. Stock the kitchen on arrival: Costco (275 Ho'okele St, Kahului) is cheapest; Foodland Farms (345 Keawe St, Lahaina) is closer. Pool first, beach second — toddlers do better after a calm arrival." },
               { title: "Ka'anapali Beach Sunset Walk", detail: "Stroll the 3-mile Ka'anapali Beachfront Walk at golden hour. Stop at Black Rock (Pu'u Keka'a) to watch cliff divers perform the traditional torch-lighting ceremony at dusk.", tip: "The cliff diving ceremony happens nightly at sunset — don't miss it!" },
-              { title: "Duke's Beach House — First Night Dinner ✓ CONFIRMED", detail: "Reservation confirmed: Thursday, May 28 at 6:30 PM · Party of 4. Duke's Beach House sits right on the sand at Honua Kai Resort — steps from your suite. Named after legendary surfer Duke Kahanamoku. Fresh island fish, mai tais, great kids' menu, live Hawaiian music nightly.", tip: "Confirmed 6:30pm, party of 4. Fresh catch, fish tacos, and Duke's famous hula pie are the move. No driving needed on arrival night — it's steps from Honua Kai.", cost: "~$80–120 for 2 adults" },
+              { title: "Duke's Beach House — First Night Dinner", detail: "Duke's Beach House sits right on the sand at Honua Kai Resort — steps from your suite. Named after legendary surfer Duke Kahanamoku. Fresh island fish, mai tais, great kids' menu, live Hawaiian music nightly.", tip: "Walk-in beachside dining — no reservation needed. Fresh catch, fish tacos, and Duke's famous hula pie are the move. Steps from Honua Kai so no driving needed on arrival night.", cost: "~$80–120 for 2 adults" },
             ],
-            logistics: "Alaska AS departs SFO 9:42am → Land OGG 12:05pm → Rental car → Grocery stop (Foodland Farms in Lahaina) → Honua Kai check-in ~2pm → Kids' pool first → 6:30pm: Duke's Beach House dinner (confirmed reservation, party of 4 — steps from resort)",
+            logistics: "Alaska AS departs SFO 9:42am → Land OGG 12:05pm → Rental car → Grocery stop (Foodland Farms in Lahaina) → Honua Kai check-in ~2pm → Kids' pool first → 5pm: Duke's Beach House dinner (walk-in, steps from resort)",
             budget: "$0 activities today (suite & resort pool included)",
             drive: "OGG → Costco (15 min) → Honua Kai (35 min from OGG)",
           },
@@ -106,9 +106,9 @@ export default function DataPage() {
             description: "Kapalua Bay is consistently ranked one of the best family beaches in Hawaii — protected by lava rock headlands that create nearly lagoon-like calm, perfect for your 2yo and 4yo. Arrive by 8:30am as parking fills by 10am in summer ($10–15/day). End the evening with dinner at Hula Grill.",
             activities: [
               { title: "Kapalua Bay", detail: "A crescent of golden sand sheltered by lava rock arms on both sides, creating almost zero wave action. Crystal clear, shallow near shore — ideal for toddlers. Snorkel gear rentals available nearby.", tip: "Arrive by 8:30am — parking ($10–15/day) fills by 10am in summer. Bring a small soft cooler as there's limited shade." },
-              { title: "Hula Grill Ka'anapali — Barefoot Bar Dinner ✓ CONFIRMED", detail: "Reservation confirmed: Friday, May 29 at 6:30 PM · Party of 4. Tables literally on the sand at Whalers Village, 5 min from Honua Kai. Fresh island fish, mai tais, great kids' menu, live Hawaiian music nightly.", tip: "Confirmed 6:30pm, party of 4. Fresh catch and fish tacos are the move. Arrive a few minutes early to grab a drink at the bar." },
+              { title: "Hula Grill Ka'anapali — Barefoot Bar Dinner", detail: "Tables literally on the sand at Whalers Village, 5 min from Honua Kai. The open-air Barefoot Bar is legendary — thatched palapas, feet in the sand, fresh island fish, and mai tais. Live Hawaiian music most evenings.", tip: "Walk-in beachside dining — put your name on the Barefoot Bar wait list when you arrive. Aim for 5pm so kids aren't overtired. Fresh catch and fish tacos are the move." },
             ],
-            logistics: "8:30am: Kapalua Bay → Noon: Resort pool or Napili Bay picnic → 6:30pm: Hula Grill Ka'anapali dinner (confirmed reservation, party of 4)",
+            logistics: "8:30am: Kapalua Bay → Noon: Resort pool or Napili Bay picnic → 5pm: Hula Grill Barefoot Bar dinner (walk-in)",
             budget: "~$80–120 for dinner at Hula Grill",
             drive: "Honua Kai → Kapalua Bay (14 min, 5.5 mi)",
           },
@@ -134,12 +134,12 @@ export default function DataPage() {
         plans={[
           {
             label: "Recommended Plan",
-            description: "Start the morning at the Maui Ocean Center — Hawaii's premier aquarium and a genuine highlight for toddlers. Then head into historic Lāhainā for a stroll down Front Street, ice cream, and a waterfront dinner as the sun sets over Lāna'i.",
+            description: "Start the morning at the Maui Ocean Center — Hawaii's premier aquarium and a genuine highlight for toddlers. Then head into historic Lāhainā for a stroll, Ululani's shave ice, and dinner at Star Noodle — one of Maui's most fun, casual restaurants with creative noodle dishes and great sharing plates.",
             activities: [
               { title: "Maui Ocean Center", detail: "Walk through a 54-foot acrylic underwater tunnel surrounded by sharks, rays, and thousands of tropical fish. Touch pools and Hawaiian green sea turtle lagoon are the toddler favorites. Plan for 2–2.5 hours.", tip: "Arrive right at 9am opening — before the tour buses arrive. Kids under 3 are free; 4yo needs a child ticket (~$25).", cost: "~$55/adult · Under 3 free" },
               { title: "Lāhainā Town, Banyan Tree & Ululani's Shave Ice", detail: "Stroll down Front Street. Visit the famous 150-year-old Banyan Tree — the largest in the US. Then Ululani's Hawaiian Shave Ice — the gold standard on Maui. Ultra-fine ice, natural syrups, mochi, azuki beans, and ice cream inside.", tip: "Order the 'full experience' — shave ice with ice cream inside and mochi on top." },
             ],
-            logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Lunch & Banyan Tree stroll → Ululani's shave ice → Waterfront dinner",
+            logistics: "9am: Maui Ocean Center (Ma'alaea) → 11:30am: Drive to Lāhainā (20 min) → Banyan Tree stroll → Ululani's shave ice → Back to resort for nap → 5pm: Star Noodle dinner (Lāhainā)",
             budget: "~$110–130 for Ocean Center (2 adults) + dining + shave ice",
             drive: "Honua Kai → Maui Ocean Center (20 min, 12 mi) → Lāhainā (20 min, 11 mi) → Honua Kai (20 min)",
           },
