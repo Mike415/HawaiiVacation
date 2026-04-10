@@ -82,7 +82,7 @@ const days: Day[] = [
           {
         title: "Honua Kai Check-In & Pool Time",
             detail: "Your 1-Bedroom Partial Ocean View suite at OUTRIGGER Honua Kai Resort & Spa features a king bed + double sofa bed, full kitchen (fridge, stovetop, oven, microwave), in-unit washer/dryer, and a furnished lanai. The resort has multiple pools including a dedicated kids' pool — perfect for burning off flight energy. Self-parking is $35/day (valet $40/day).",
-            tip: "Request an upper-floor unit for the best unobstructed ocean views. Stock the kitchen at Foodland Farms in Lāhainā (345 Keawe St) — it's only 15 min from the resort and much faster than Costco on arrival day. Official check-in is 4pm; pools are open from 2pm. Pool first, beach second — toddlers do better after a calm arrival.",
+            tip: "Request an upper-floor unit for the best unobstructed ocean views. Skip Costco on arrival day — it's a 40-min ordeal with tired kids. Instead, hit Foodland Farms Ka'anapali (right in Ka'anapali, 5 min from the resort) for first-night basics. Official check-in is 4pm; you'll get pool wristbands at 2:30pm but the room likely won't be ready until 4. Pool first, beach second — toddlers do better after a calm arrival.",
             image: IMAGES.westinMaui,
           },
           {
@@ -165,7 +165,7 @@ const days: Day[] = [
           {
             title: "Hula Grill Ka'anapali — Barefoot Bar Dinner",
             detail: "Tables literally on the sand at Whalers Village, 5 min from Honua Kai. The open-air Barefoot Bar is legendary — thatched palapas, feet in the sand, fresh island fish, and mai tais. Live Hawaiian music most evenings.",
-            tip: "Walk-in beachside dining — put your name on the Barefoot Bar wait list when you arrive (no reservations for the outdoor section). Aim for 5–6pm so kids aren't overtired. Fresh catch and fish tacos are the move.",
+            tip: "The Barefoot Bar wait list opens at 4:30pm — put your name in via Yelp Waitlist before you leave the resort, then walk the beach path to Whalers Village. Arriving at 5pm on a summer Thursday means a 45–75 min wait for a sunset table, so plan accordingly. Or shift to 5:30pm and accept a later sunset view. Fresh catch and fish tacos are the move.",
             image: IMAGES.resortAerial,
           },
         ],
@@ -237,7 +237,7 @@ const days: Day[] = [
           {
             title: "Lāhainā Town, Banyan Tree & Ululani's Shave Ice",
             detail: "The 150-year-old Banyan Tree survived the 2023 fire with about 60% canopy and the park reopened for walking in early 2026. However, Front Street is still patchy — much of the town is construction fencing and only a handful of north-end restaurants are open. It's emotionally heavy rather than a casual stroll. Keep expectations low: see the Banyan Tree, grab Ululani's shave ice at the Cannery Mall location, and head back. Alternatively, skip Lāhainā and spend this time at Whalers Village (fully open, shops, restaurants, beach access) — much easier with toddlers.",
-            tip: "Ululani's Lāhainā is at the Cannery Mall (1221 Honoapiilani Hwy) — open and convenient. The Banyan Tree area has no restrooms or water. If the kids are tired, swap to Whalers Village instead — it's fully open and 5 min from the resort.",
+            tip: "Use the Ululani's at Lāhainā Gateway (not downtown) to avoid the construction parking nightmare. The Banyan Tree area has no restrooms or water — keep the visit to 20 minutes. If the kids are tired, swap to Whalers Village instead — it's fully open and 5 min from the resort.",
             image: IMAGES.lahainaStreet,
           },
         ],
@@ -311,7 +311,7 @@ const days: Day[] = [
           {
             title: "Leilani's on the Beach — Sunset Dinner",
             detail: "One of the most family-friendly beachfront restaurants in Ka'anapali, right at Whalers Village. Open-air tables with direct ocean views, a full kids' menu, and a relaxed casual vibe that's perfect for toddlers. Known for fresh island fish, prime rib, and great cocktails. Walk-in friendly — no reservation needed.",
-            tip: "Arrive at 5pm to snag a beachfront table before the sunset rush. The kids' menu has mac & cheese, fish tacos, and grilled chicken. The fresh catch and prime rib are the adult standouts. 5 min from Honua Kai.",
+            tip: "Book the dining room on OpenTable for 5pm now — if you don't, you'll be on a 60-minute beach bar waitlist with tired kids. The beach bar is walk-in only, waitlist opens at 4pm. The kids' menu has mac & cheese, fish tacos, and grilled chicken. Fresh catch and prime rib are the adult standouts.",
             image: IMAGES.kapaluaFamily,
             cost: "~$60–80 for 2 adults · Walk-in friendly",
           },
@@ -377,7 +377,7 @@ const days: Day[] = [
           {
             title: "Kahekili Highway to Kahakuloa Overlook",
             detail: "Drive north from Ka'anapali on Route 340 — the road quickly becomes dramatic, hugging sheer cliffs above the Pacific. Stop at the Kahakuloa Village overlook for sweeping views of the remote valley and the rugged West Maui Mountains. This is one of the most striking viewpoints on the island, and it takes just 30–35 minutes from Honua Kai. Turn around here — the road beyond gets significantly narrower and has no bathrooms.",
-            tip: "Drive to Kahakuloa Village overlook and turn around — you get the best scenery without the stressful narrow sections. Go early (8am) before it gets hot. No guardrails on parts of this road — take it slow.",
+            tip: "Check Maui County road alerts morning-of — Rte 340 is frequently closed after rain (one-lane cliff road, no guardrails). If it's wet or closed, swap to the Honolua Bay overlook instead (20 min north, easy pull-off, stunning views). Drive to Kahakuloa Village overlook and turn around — you get the best scenery without the stressful narrow sections.",
             image: IMAGES.kahekili2,
           },
           {
@@ -457,7 +457,7 @@ const days: Day[] = [
           {
             title: "Myths of Maui Lūʻau — BOOKED ✓",
             detail: "Held on the oceanfront grounds of the Royal Lāhainā Resort at the north end of Ka'anapali Beach — just a 5-minute drive from Honua Kai. The evening begins with an open-bar cocktail reception and cultural activities (lei making, hula lessons, coconut weaving), followed by the traditional imu ceremony (uncovering the kalua pig), a full Hawaiian feast, and a spectacular Polynesian revue with fire knife dancing, hula, and music from across Polynesia.",
-            tip: "Arrive right at gate opening to enjoy the cocktail reception and cultural village before the kids get tired. The imu ceremony is a highlight — make sure the kids see the pig being uncovered. Your 2yo is likely free; confirm child pricing when you receive your confirmation.",
+            tip: "Check-in is 30 minutes prior to showtime — arrive early for the cocktail reception and cultural village (lei making, hula lessons) before the kids get tired. Parking is $10 cash. The show runs 2.5–3 hours. Myths of Maui runs Tue–Sat only — confirm your June 2 date is a Tuesday. The imu ceremony is a highlight — make sure the kids see the pig being uncovered.",
             image: IMAGES.luau,
             cost: "BOOKED · June 2, 2026",
           },
@@ -516,12 +516,12 @@ const days: Day[] = [
         tag: "South Maui",
         tagColor: "#0A4A5C",
         heroImage: IMAGES.heroBeach,
-        description: "A dedicated South Maui day — the island's sunniest, driest coast. Leave by 8am to beat the crowds: Big Beach (Makena State Park) is one of the most spectacular beaches in Hawaii and the lot fills by 10am. After Big Beach, head to Maui Brewing Company in Kihei for lunch (they open at 11am — much better timing than happy hour with toddler nap schedules). Note: Baby Beach in Lāhainā and Big Beach in Makena are 55–70 min apart — not 35 — so pick one or the other. This plan goes straight to Big Beach for maximum time there.",
+        description: "A dedicated South Maui day — the island's sunniest, driest coast. Leave by 7am (not 8am) to beat the crowds: Big Beach parking fills by 9:30am in late May. Drive is 55–70 min from Honua Kai. After Big Beach, drive straight to Monkeypod Wailea for lunch at 11:30am (skip the happy hour plan — Monkeypod Wailea is 50 min from Honua Kai, and you won't make 3pm happy hour after a nap). Back to resort by 2pm for a late nap. Note: Baby Beach in Lāhainā and Big Beach in Makena are 55–70 min apart — pick one or the other. This plan goes straight to Big Beach.",
         activities: [
           {
             title: "Big Beach (Oneloa Beach) — Makena State Park",
             detail: "One of the most spectacular beaches in all of Hawaii — a sweeping half-mile crescent of golden sand with dramatic views of Molokini and Kaho'olawe. The surf here is bigger than Ka'anapali, so keep toddlers in the shallow shore break. Little Beach (clothing-optional) is a short scramble over the lava rock at the north end — skip it with kids. Facilities include restrooms and a small parking lot.",
-            tip: "Leave Honua Kai by 8am to arrive by 9am — the lot fills by 10am in summer. The south end of the beach near the lava rock is calmer. Big Beach has a strong shore break — keep toddlers in the shallow wash zone, not in the surf. Bring reef-safe sunscreen — zero shade.",
+            tip: "Leave by 7am — the lot fills by 9:30am in late May. The drive is 55–70 min from Honua Kai. The south end near the lava rock is calmer. Big Beach has a strong shore break — keep toddlers in the shallow wash zone only. Zero shade — bring reef-safe sunscreen, a beach umbrella, and plenty of water.",
             image: IMAGES.heroBeach,
             cost: "Free · Parking fills early",
           },
@@ -533,7 +533,7 @@ const days: Day[] = [
             cost: "~$60–90 for 2 adults + kids",
           },
         ],
-        logistics: "8am: Depart Honua Kai → 9am: Big Beach Makena (55 min drive) → 9–11am: Beach time → 11am: Drive to Maui Brewing Co. Kihei (20 min) → 11:30am: Lunch at Maui Brewing Co. (opens 11am) → 1pm: Drive back to resort (35 min) → 2–4pm: Nap window at resort",
+        logistics: "7am: Depart Honua Kai → 8–8:15am: Arrive Big Beach (55–70 min drive) → 8–10:30am: Beach time before lot fills → 10:30am: Drive to Monkeypod Wailea (20 min) → 11:30am: Lunch at Monkeypod Wailea → 1pm: Drive back to resort (50 min) → 2–4pm: Nap window at resort",
         budget: "~$60–90 for Maui Brewing Co. + snacks",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Depart 8am", driveTime: "55 min", driveDist: "32 mi", lat: 20.9352, lng: -156.6925 },
@@ -602,7 +602,7 @@ const days: Day[] = [
           {
             title: "Maui Tropical Plantation — Tram Tour",
             detail: "A narrated tram ride through the plantation's tropical fruit orchards, past papaya, pineapple, sugarcane, coffee, and macadamia nut trees. The tram is open-air and toddler-friendly — no hiking required. The tour runs about 40 minutes and departs every 30–45 minutes. Kids love spotting the different fruits and hearing about how they grow.",
-            tip: "Check the tram schedule at the entrance — first tour is usually around 10am. Arrive early to grab a coffee at the café first. The tram is stroller-accessible.",
+            tip: "Book the tram in advance at mauiexplore.com — it sells out on weekends and busy days. First tour is usually 10am. Arrive early to grab a coffee at the café first. The tram is stroller-accessible.",
             image: IMAGES.kahekili,
             cost: "~$20/adult · ~$12/child (3–12) · Under 3 free",
           },
@@ -679,12 +679,12 @@ const days: Day[] = [
           },
           {
             title: "Depart OGG — 10:33am",
-            detail: "OGG recommends 2 hours for mainland flights due to the agricultural inspection checkpoint. With a 10:33am departure, you need to be through security by 9am. That means: 7am checkout, 7:45am fill gas in Ka'anapali/Lāhainā (don't wait until Kahului — airport-area stations charge a premium), 8am drive to OGG (45 min), 8:45am car return, 9am security. Ululani's Kahului doesn't open until 10am — skip it or grab a treat at the airport.",
-            tip: "Fill gas in Ka'anapali or Lāhainā before heading to OGG — airport-area stations charge significantly more. Car return + shuttle to terminal adds 15 min. Don't cut it close with two toddlers.",
+            detail: "OGG recommends 2 hours for mainland flights due to the agricultural inspection checkpoint. With a 10:33am departure, you need to be through security by 9am. That means: 7am checkout, 7:45am fill gas at Costco Kahului (275 Ho'okele St — cheapest on the island, 5 min from OGG, much better than Ka'anapali stations), 8am drive to OGG (5 min from Costco), 8:45am car return, 9am security. Ululani's Kahului doesn't open until 10am — skip it or grab a treat at the airport.",
+            tip: "Fill gas at Costco Kahului (275 Ho'okele St) — it's the cheapest on the island and only 5 min from OGG. Skip Ka'anapali gas stations entirely. Car return + shuttle to terminal adds 15 min. Don't cut it close with two toddlers.",
             image: IMAGES.kaanapaliKids,
           },
         ],
-        logistics: "6am: Final sunrise walk → 7am: Checkout — pack & load car → 7:45am: Fill gas tank (Ka'anapali/Lāhainā) → 8am: Drive to OGG (45 min) → 8:45am: Return rental car → 9am: Through security (OGG recommends 2 hrs for mainland + ag inspection) → 10:33am: Depart OGG → SFO. Skip shave ice or grab at airport — Ululani's Kahului doesn't open until 10am.",
+        logistics: "6am: Final sunrise walk → 7am: Checkout — pack & load car → 7:45am: Fill gas at Costco Kahului (275 Ho'okele St — cheapest on island, 5 min from OGG) → 8am: Drive to OGG (5 min from Costco) → 8:45am: Return rental car → 9am: Through security (OGG recommends 2 hrs for mainland + ag inspection) → 10:33am: Depart OGG → SFO.",
         budget: "~$20–30 for shave ice and snacks",
         waypoints: [
           { label: "Honua Kai Resort & Spa", address: "OUTRIGGER Honua Kai Resort & Spa, 130 Kai Malina Pkwy, Lahaina, Maui, HI", note: "Final beach walk & checkout", driveTime: "10 min", driveDist: "4 mi", lat: 20.9352, lng: -156.6925 },
@@ -1078,7 +1078,7 @@ export default function Home() {
                 schedule: [
                   { time: "6am", label: "Final sunrise walk on beach" },
                   { time: "7am", label: "Checkout — pack & load car" },
-                  { time: "7:45am", label: "Fill gas in Ka'anapali" },
+                  { time: "7:45am", label: "Fill gas at Costco Kahului (cheapest)" },
                   { time: "↓ 45 min", label: "drive to OGG", drive: true },
                   { time: "8:45am", label: "Return car → security by 9am" },
                   { time: "10:33am", label: "Depart OGG → SFO (Alaska nonstop)" },
