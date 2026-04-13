@@ -201,7 +201,7 @@ export default function DataPage() {
               { title: "Kahekili Highway to Kahakuloa Overlook", detail: "Drive north from Ka'anapali on Route 340 — the road quickly becomes dramatic, hugging sheer cliffs above the Pacific. Stop at the Kahakuloa Village overlook for sweeping views. Turn around here — the road beyond gets significantly narrower and has no bathrooms.", tip: "Check Maui County road alerts morning-of — Rte 340 is frequently closed after rain (one-lane cliff road, no guardrails). If it's wet or closed, swap to the Honolua Bay overlook instead (20 min north, easy pull-off, stunning views). Go early before it gets hot." },
               { title: "Foodland Farms Poke Picnic at Ka'anapali Beach", detail: "On the way back, stop at Foodland Farms in Lahaina for fresh poke bowls to go. Grab the ahi shoyu, spicy ahi, and some local chips and drinks, then head back to Ka'anapali Beach for a relaxed afternoon picnic right in front of Honua Kai.", tip: "Foodland Farms poke is freshest before noon — go by 11:30am.", cost: "~$15–25/person for poke bowls" },
             ],
-            logistics: "8am: Kahekili Highway to Kahakuloa overlook → Turn around → 11:30am: Foodland Farms poke stop → Noon: Ka'anapali Beach picnic → Afternoon: resort pool",
+            logistics: "8am: Kahekili Highway to Kahakuloa overlook → Turn around → 11am: Taverna lunch (Kapalua, 5 min from Kahekili start) → 12:30–3pm: Nap window → 3pm: Monkeypod Kitchen happy hour → Dinner at Monkeypod",
             budget: "~$30–50 for poke bowls and snacks (scenic drive is free)",
             drive: "Honua Kai → Kahakuloa Overlook (35 min, 18 mi) → Foodland Farms Lahaina (35 min, 18 mi) → Ka'anapali Beach (10 min, 5 mi)",
           },
@@ -223,15 +223,16 @@ export default function DataPage() {
       <DaySection
         number="06" date="Monday, June 2"
         title="Myths of Maui Lūʻau"
-        subtitle="Beach Day · Myths of Maui Lūʻau Evening — BOOKED ✓"
+        subtitle="Slappy Cakes Breakfast · Beach Day · Myths of Maui Lūʻau Evening — BOOKED ✓"
         plans={[
           {
-            label: "Recommended Plan",            description: "Keep the day relaxed — a free morning at the beach and pool — because tonight is the Myths of Maui Lūʻau at the Royal Lāhainā Resort, right on Ka'anapali Beach. One of Maui's most beloved luaus, featuring an open-bar cocktail reception, traditional imu ceremony, a full Hawaiian feast, and a spectacular Polynesian show with fire knife dancing — all on the oceanfront just 5 minutes from your suite. BOOKED for June 2!",
+            label: "Recommended Plan",            description: "Start with breakfast at Slappy Cakes — directly across the street from Honua Kai. Then keep the day relaxed — a free morning at the beach and pool — because tonight is the Myths of Maui Lūʻau at the Royal Lāhainā Resort. BOOKED for June 2!",
             activities: [
-              { title: "Morning Beach & Pool Day", detail: "A free, unstructured morning. Let the kids play in the sand and splash in the resort pool.", tip: "Use this morning to pack any souvenirs and do a final grocery run." },
+              { title: "Slappy Cakes — Breakfast", detail: "Interactive pancake restaurant directly across the street from Honua Kai. Guests cook their own pancakes at the table using squeeze bottles of batter. An absolute hit with toddlers.", tip: "Arrive at 7:30am to beat the wait. Open daily 7am–12pm.", cost: "~$40–60 for the family" },
+              { title: "Morning Beach & Pool Day", detail: "A free, unstructured morning after breakfast. Let the kids play in the sand and splash in the resort pool.", tip: "Use this morning to pack any souvenirs and do a final grocery run." },
               { title: "Myths of Maui Lūʻau — BOOKED ✓", detail: "Held on the oceanfront grounds of the Royal Lāhainā Resort at the north end of Ka'anapali Beach — just a 5-minute drive from Honua Kai. The evening begins with an open-bar cocktail reception and cultural activities (lei making, hula lessons, coconut weaving), followed by the traditional imu ceremony (uncovering the kalua pig), a full Hawaiian feast, and a spectacular Polynesian revue with fire knife dancing, hula, and music from across Polynesia.", tip: "Check-in is 30 minutes prior to showtime — arrive early for the cocktail reception and cultural village. Parking is $10 cash. The show runs 2.5–3 hours. Myths of Maui runs Tue–Sat only — confirm your June 2 date is a Tuesday. The imu ceremony is a highlight — make sure the kids see the pig being uncovered.", cost: "BOOKED · June 2, 2026" },
             ],
-            logistics: "Morning: Free beach/pool time → Check luau start time on confirmation → Drive 5 min to Royal Lāhainā Resort → Cocktail reception & imu ceremony → Feast & Polynesian show → Return to resort",
+            logistics: "7:30am: Slappy Cakes breakfast (across the street) → Morning: Free beach/pool time → Check luau start time on confirmation → Drive 5 min to Royal Lāhainā Resort → Cocktail reception & imu ceremony → Feast & Polynesian show → Return to resort",
             budget: "BOOKED ✓ · June 2, 2026",
             drive: "Honua Kai → Royal Lāhainā Resort, 2780 Kekaa Dr (5 min, 2 mi)",
           },
