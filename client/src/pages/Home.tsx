@@ -166,7 +166,7 @@ const days: Day[] = [
           {
             title: "Kapalua Bay",
             detail: "A crescent of golden sand sheltered by lava rock arms on both sides, creating almost zero wave action. The water is crystal clear and shallow near shore — ideal for toddlers. Snorkel gear rentals are available nearby for the adults.",
-            tip: "Arrive by 8:30am — parking ($10–15/day) fills by 10am in summer. Bring a small soft cooler as there's limited shade. If kids are tired after Kapalua, skip Napili and head back to the resort pool — Napili is only 5 min away and can be done on another afternoon.",
+            tip: "Arrive before 9am to secure one of the limited parking spots ($10–15/day, fills by 10am) — drop gear and kids at the beach access first, then park. The bay's sheltered headlands create near-lagoon calm perfect for toddlers. Locals know the right (north) side of the bay has the gentlest entry and best turtle sightings — snorkel close to the rocky outcroppings for the most fish.",
             image: IMAGES.kapaluaFamily,
           },
           {
