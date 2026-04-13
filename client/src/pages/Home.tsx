@@ -1192,6 +1192,8 @@ export default function Home() {
               restaurants: [
                 {
                   name: "Castaway Café",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/oB0z6kL-Ev0_4GtYvFC2kg/l.jpg",
+                  gems: ["Arrive 7:30–8am for a quiet experience and the best ocean-facing patio tables", "Try the Braised Short Rib Benedict or Crab Cake Benedict — both are standouts", "The banana bread is an absolute must-try side", "Walk-in only, no reservations — but the wait is rarely long at opening"],
                   tag: "Hidden Gem · Day 02 Breakfast",
                   distance: "5 min · 0.7 mi south (Maui Ka'anapali Villas)",
                   price: "$$",
@@ -1204,6 +1206,8 @@ export default function Home() {
                 },
                 {
                   name: "Slappy Cakes",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/bDl4ALN-m5NK0CLvF9mcqA/l.jpg",
+                  gems: ["Arrive right at opening (7am) on weekends to avoid lines", "Try the candied bacon with macadamia nuts or banana bread French toast", "Free parking at Honokowai Marketplace", "Bar seating can be faster than waiting for a table during busy times"],
                   tag: "Must-Do for Kids · Day 06 Breakfast",
                   distance: "1 min · <0.1 mi (directly across the street)",
                   price: "$$",
@@ -1216,6 +1220,8 @@ export default function Home() {
                 },
                 {
                   name: "Gazebo Restaurant at Napili Shores",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/S3RGwljcrqVp_jwuX7t-rQ/l.jpg",
+                  gems: ["Arrive before 7:30am to minimize wait — the line gets long fast", "White chocolate macadamia nut pancakes are the signature must-try (not just banana mac nut)", "After your meal, explore the tide pools just down the stairs from the restaurant", "The menu is identical for breakfast and lunch — a later visit means shorter lines"],
                   tag: "Iconic Breakfast",
                   distance: "10 min · 4 mi",
                   price: "$",
@@ -1228,6 +1234,8 @@ export default function Home() {
                 },
                 {
                   name: "Kihei Café",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/7LK65cMUhCRuavjTxhOlRg/l.jpg",
+                  gems: ["Go early — they move quickly but lines form fast at opening", "Try the epic cinnamon rolls — a must-try that most visitors miss", "Bring cash to avoid the 3% credit card fee", "Kalama Park playground is directly across the street for post-breakfast energy burns"],
                   tag: "Whale Pancakes",
                   distance: "35 min · 20 mi (South Maui)",
                   price: "$",
@@ -1240,6 +1248,8 @@ export default function Home() {
                 },
                 {
                   name: "Joey's Kitchen",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/v_oKnLYy4m28WjzobU92bA/l.jpg",
+                  gems: ["Arrive before 5:30pm to avoid the lines", "The Furikake Ahi is exceptional — don't skip it", "Boneless Beef Short Ribs are a crowd favorite", "Tofu & vegetables with rice for $12 is one of the best value meals in Ka'anapali"],
                   tag: "Filipino Fusion · Local Favorite",
                   distance: "5 min · 2 mi (Whalers Village)",
                   price: "$–$$",
@@ -1252,6 +1262,8 @@ export default function Home() {
                 },
                 {
                   name: "Leoda's Kitchen & Pie Shop",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/7IPxFBdMyDawSefyiKDFlQ/l.jpg",
+                  gems: ["Arrive at 9:40am if they open at 10am — line moves fast", "Banana Cream Pie and Chocolate Mac Nut Pie are the must-tries (not just the lime pie)", "The Reuben sandwich and Beef Pot Pie with horseradish cream sauce are the savory standouts", "Hand-cut fries are highly recommended — skip the Chicken Pot Pie (hard crust, small size)"],
                   tag: "Roadside Gem · Pie Paradise",
                   distance: "15 min · 8 mi (Olowalu, on the way to/from South Maui)",
                   price: "$",
@@ -1264,6 +1276,8 @@ export default function Home() {
                 },
                 {
                   name: "Fish Market Maui",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/Y-2j-g3g8wX6X_l_Z_j_w/o.jpg",
+                  gems: ["Left side of the counter is for cooked entrées; right side is for raw items", "Arrive right at opening — parking and seating are very limited", "It's primarily a to-go spot with only a few tables", "The seared ahi sandwich is a must-try"],
                   tag: "Fish Tacos · Counter Service",
                   distance: "5 min · 2 mi (Lahaina)",
                   price: "$",
@@ -1282,6 +1296,8 @@ export default function Home() {
               restaurants: [
                 {
                   name: "Hula Grill Barefoot Bar",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/S3RGwljcrqVp_jwuX7t-rQ/l.jpg",
+                  gems: ["They validate parking for 2 hours at Whalers Village", "Live music daily 6–8:30pm with a Hula Show 7–8pm — arrive at 5pm to get sandy seats before the show", "The Barefoot Bar is the casual section — same great beach but a simpler, more affordable menu than the main dining room", "Sitting with your chair rocked back in the sand is the signature experience"],
                   tag: "Toes in the Sand",
                   distance: "5 min · 2 mi (Whalers Village)",
                   price: "$$",
@@ -1294,6 +1310,8 @@ export default function Home() {
                 },
                 {
                   name: "Duke's Beach House",
+                  photo: "https://www.dukesmaui.com/wp-content/uploads/2018/08/DBHM_HPSlider_3.jpg",
+                  gems: ["Don't miss the Hula Pie for dessert — it's legendary", "Try the macadamia-encrusted mahi-mahi or buttery lemon fish with capers", "Complimentary self-parking available — no valet ticket needed", "Lunch is less busy than dinner if you want easier walk-in seating"],
                   tag: "Right at Honua Kai",
                   distance: "0 min · On-property",
                   price: "$$",
@@ -1306,6 +1324,8 @@ export default function Home() {
                 },
                 {
                   name: "Leilani's on the Beach",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/CRth4gnbFFwZCTP4JdT3LQ/348s.jpg",
+                  gems: ["Book the dining room on OpenTable for 5pm — the beach bar is walk-up only and fills fast", "Hula Pie is a must-try dessert (shared with Hula Grill — both are excellent)", "Happy hour portions are very small — order full entrées instead of happy hour food", "Consider takeout to skip the wait entirely"],
                   tag: "Sunset Views · Whalers Village",
                   distance: "5 min · 2 mi (Whalers Village)",
                   price: "$$–$$$",
@@ -1318,6 +1338,8 @@ export default function Home() {
                 },
                 {
                   name: "Monkeypod Kitchen",
+                  photo: "https://monkeypodkitchen.com/wp-content/uploads/2023/07/MK_Wailea_Gnocchi_1012x660.webp",
+                  gems: ["Arrive at 3:30pm sharp for happy hour (3:30–5pm) — discounted cocktails, beers, wines, and appetizers", "Their Mai Tais are consistently cited as the best on Maui — don't skip them", "Daily live music during happy hour makes it a lively family atmosphere", "Try the macadamia-crusted mahi mahi or the famous cream pie"],
                   tag: "Happy Hour Legend",
                   distance: "5 min · 2 mi (Whalers Village)",
                   price: "$$",
@@ -1336,6 +1358,8 @@ export default function Home() {
               restaurants: [
                 {
                   name: "Taverna",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/xY_lAslDXhaRFlLLVvY5vA/ms.jpg",
+                  gems: ["Request a table on the lanai — kids can run on the grass while you eat", "Don't miss the Drunken Affogato dessert and Truffle Fries", "The truffle gnocchi is superb", "BYOB with a $35 corkage fee — worth it for a special bottle with the sunset views", "Happy hour 2:30–4:30pm is the best value on the menu"],
                   tag: "West Maui Views · Day 05 Lunch",
                   distance: "5 min · 2 mi north (Kapalua Golf Course)",
                   price: "$$$",
@@ -1348,6 +1372,8 @@ export default function Home() {
                 },
                 {
                   name: "Sea House Restaurant",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/mYSOOWmmg9GYoj3NGvmcTA/l.jpg",
+                  gems: ["Snag a window table at sunset for a truly magical experience", "Happy hour menu is completely different from the dinner menu — plan accordingly", "Try the gnocchi with truffle and mushroom, and the crispy wings at happy hour", "Bar area has shaded seating with the same great views as the patio — good for avoiding direct sun"],
                   tag: "Napili Bay Views · Romantic",
                   distance: "11 min · 4.7 mi north (Napili Bay)",
                   price: "$$$",
@@ -1360,6 +1386,8 @@ export default function Home() {
                 },
                 {
                   name: "Miso Phat Sushi",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/v_oKnLYy4m28WjzobU92bA/l.jpg",
+                  gems: ["BYOB — grab drinks from the liquor store next door before dining", "Small restaurant, first-come first-serve — arrive early or join the in-person waitlist", "Must-try: TNT Roll, TNA Roll, and Miso Butterfish", "Sit at the sushi bar to watch the chefs work"],
                   tag: "Family-Owned · Fresh Sushi",
                   distance: "5–10 min · 2 mi south",
                   price: "$$$",
@@ -1372,6 +1400,8 @@ export default function Home() {
                 },
                 {
                   name: "Star Noodle",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/jgWf3PgoLzGddRP1tAo-kg/l.jpg",
+                  gems: ["Arrive 30 min before opening for walk-in bar seating — or book OpenTable 3 weeks ahead", "Garlic Noodles are the signature must-try", "Food comes out almost instantly — order more as you go rather than all at once", "Favorites: Vietnamese crepe, ahi avo, and garlic noodles", "Avoid on very windy days — outdoor seating can be uncomfortable"],
                   tag: "Asian Fusion · Trendy",
                   distance: "10 min · 5 mi (Lahaina)",
                   price: "$$",
@@ -1384,6 +1414,8 @@ export default function Home() {
                 },
                 {
                   name: "Honu Oceanside",
+                  photo: "https://images.squarespace-cdn.com/content/v1/691c311ba264a4091a588c74/c42eb2d2-7aef-48e2-8a9c-a51f7494a793/HONU+09.2024+_+Kristy+Taylor+Photography-64.jpg?format=500w",
+                  gems: ["Arrive before sunset to spot sea turtles from the oceanfront tables", "Bar seating offers the liveliest atmosphere", "Don't miss the nightly fresh fish special", "Ahi Bruschetta, pizza, and kale salad are the most-praised dishes", "Corkage fee is $30/bottle if you bring your own wine"],
                   tag: "Oceanfront · Post-Fire Survivor",
                   distance: "10 min · 5 mi (Lahaina)",
                   price: "$$$",
@@ -1396,6 +1428,8 @@ export default function Home() {
                 },
                 {
                   name: "Maui Brewing Company — Kihei",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/fROiWlECyouwt7JzbBB5SA/l.jpg",
+                  gems: ["Happy hour 3–5pm — discounts on draft beers, cocktails, and select appetizers", "If there's a wait, head to the beer garden — you may get seated faster than expected", "Must-try: Guava BBQ Pork Sando, Calamari Fries, Parmesan Truffle Fries", "Parking lot is below the building — look for signs carefully, especially at night"],
                   tag: "Craft Beer · Family Brewpub",
                   distance: "35 min · 20 mi (Kihei)",
                   price: "$$",
@@ -1414,6 +1448,8 @@ export default function Home() {
               restaurants: [
                 {
                   name: "Merriman's Kapalua",
+                  photo: "https://images.getbento.com/accounts/6db51802be5a34030975528e8f6cea1a/media/images/33666Merriman-s_Kapalua_Pano1.jpg?w=1800&fit=max&auto=compress,format&cs=origin&h=1800",
+                  gems: ["Happy hour at The Point (3–5pm) is casual, no reservation needed, and has the same stunning views", "Macadamia Nut-Crusted Fresh Catch and Crispy Pork Shank are the most-praised dishes", "Dress code is resort casual — shorts and collared shirts are fine", "Complimentary valet parking", "Note: 4% food surcharge and automatic 20% gratuity for parties of 6+"],
                   tag: "Farm-to-Table · Sunset Views · BOOKED",
                   distance: "10 min · 5 mi",
                   price: "$$$$",
@@ -1426,6 +1462,8 @@ export default function Home() {
                 },
                 {
                   name: "Mama's Fish House",
+                  photo: "https://s3-media0.fl.yelpcdn.com/bphoto/7DQseINsNzxBtgAAdJyzuQ/ms.jpg",
+                  gems: ["Can't get a reservation? Call and ask about open bar area tables", "Menu changes daily based on fresh catches — lunch and dinner menus are the same", "Must-try: Arctic Toothfish with ginger mushroom oil, Crab cakes with mango/citrus chutney, Polynesian Black Pearl dessert", "Valet parking available", "Budget $300+ for 2 adults + 1 toddler — plan to be back at resort by 3pm"],
                   tag: "Bucket List · Book 3 Months Ahead",
                   distance: "45 min · 28 mi (Paia, North Shore)",
                   price: "$$$$",
@@ -1446,8 +1484,13 @@ export default function Home() {
                 <div className="h-px flex-1" style={{ background: tier.tierColor, opacity: 0.3 }} />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {tier.restaurants.map((r) => (
+                {tier.restaurants.map((r: any) => (
                   <div key={r.name} className="rounded-2xl overflow-hidden" style={{ background: "#fff", border: "1px solid #E8D5B0" }}>
+                    {r.photo && (
+                      <div style={{ height: "180px", overflow: "hidden" }}>
+                        <img src={r.photo} alt={r.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                      </div>
+                    )}
                     <div className="p-6">
                       <div className="flex items-start justify-between gap-3 mb-3">
                         <div>
@@ -1474,6 +1517,16 @@ export default function Home() {
                           <span key={s} className="text-sm" style={{ color: s <= r.kidFriendly ? "#E8714A" : "#E8D5B0" }}>★</span>
                         ))}
                       </div>
+                      {r.gems && (
+                        <div className="mt-4 pt-3" style={{ borderTop: "1px solid #F5E6C8" }}>
+                          <p className="text-xs font-bold mb-2" style={{ color: "#E8714A", letterSpacing: "0.05em" }}>✨ INSIDER GEMS</p>
+                          <ul className="space-y-1">
+                            {r.gems.map((g: string, i: number) => (
+                              <li key={i} className="text-xs leading-relaxed" style={{ color: "#5C4A32" }}>• {g}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
