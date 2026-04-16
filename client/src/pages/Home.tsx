@@ -1133,6 +1133,151 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── BOOK AHEAD SECTION ─── */}
+      <section id="book-ahead" className="py-14 md:py-20" style={{ background: "#fff", borderBottom: "1px solid #E8D5B0" }}>
+        <div className="container">
+          <div className="fade-in-up text-center mb-10">
+            <p className="text-xs tracking-[0.3em] uppercase mb-2" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>Before You Go</p>
+            <h2 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>📋 Book Ahead</h2>
+            <p className="mt-3 text-sm" style={{ color: "#8B7355", fontFamily: "'Lato', sans-serif", maxWidth: 520, margin: "12px auto 0" }}>
+              Maui restaurants and activities fill up fast — especially in summer. Here's what to lock in now and what's walk-in friendly.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                name: "Myths of Maui Lūʻau",
+                day: "Day 6",
+                status: "booked",
+                statusLabel: "✅ BOOKED",
+                tip: "June 2, 2026 — Royal Lāhainā Resort. You're all set!",
+                link: "",
+              },
+              {
+                name: "Star Noodle",
+                day: "Day 3 · Dinner",
+                status: "soon",
+                statusLabel: "⏰ BOOK 30 DAYS OUT",
+                tip: "Reservations open exactly 30 days before your date. Very popular — sells out same-day. Set a reminder!",
+                link: "https://www.starnoodle.com",
+              },
+              {
+                name: "Monkeypod Kitchen",
+                day: "Day 5 · Dinner",
+                status: "urgent",
+                statusLabel: "🔴 BOOK NOW",
+                tip: "One of the hardest reservations on the island. Book on OpenTable ASAP — tables go fast for summer.",
+                link: "https://www.opentable.com/monkeypod-kitchen-by-merriman-wailea",
+              },
+              {
+                name: "Leilani's on the Beach",
+                day: "Day 4 · Dinner",
+                status: "urgent",
+                statusLabel: "🔴 BOOK NOW",
+                tip: "Book the dining room on OpenTable for 5pm — otherwise you'll wait 60+ min at the beach bar with tired kids.",
+                link: "https://www.opentable.com/leilanis-on-the-beach",
+              },
+              {
+                name: "Maui Ocean Center",
+                day: "Day 3 · 9am",
+                status: "urgent",
+                statusLabel: "🔴 BOOK NOW",
+                tip: "Buy timed entry tickets online to skip the line. Much easier with toddlers.",
+                link: "https://mauioceancenter.com/tickets",
+              },
+              {
+                name: "Maui Tropical Plantation",
+                day: "Day 8 · Tram Tour",
+                status: "urgent",
+                statusLabel: "🔴 BOOK NOW",
+                tip: "Book at mauiexplore.com — sells out on weekends and busy days. First tour is 10am. Stroller-accessible.",
+                link: "https://mauiexplore.com",
+              },
+              {
+                name: "Mama's Fish House",
+                day: "Alt Day 4 · Lunch",
+                status: "soon",
+                statusLabel: "⏰ BOOK 2–3 MO OUT",
+                tip: "Legendary — one of the top restaurants in the US. If you're considering this option, book 2–3 months ahead at mamasfishhouse.com.",
+                link: "https://www.mamasfishhouse.com",
+              },
+              {
+                name: "Car Seats (Avis)",
+                day: "Day 1 · Pickup",
+                status: "urgent",
+                statusLabel: "🔴 VERIFY NOW",
+                tip: "Hawaii law: car seat/booster required to age 10. Verify 2 car seats are reserved with your Avis rental.",
+                link: "https://www.avis.com/en/reservation",
+              },
+              {
+                name: "Hula Grill Barefoot Bar",
+                day: "Day 2 · Dinner",
+                status: "walkin",
+                statusLabel: "🟡 WALK-IN",
+                tip: "No reservations. Put your name on the Yelp Waitlist at 4:30pm to avoid a long wait with kids.",
+                link: "https://www.yelp.com/biz/hula-grill-ka-anapali",
+              },
+              {
+                name: "Slappy Cakes",
+                day: "Day 6 · Breakfast",
+                status: "walkin",
+                statusLabel: "🟡 WALK-IN",
+                tip: "Kids love making their own pancakes on the griddle table. Arrive at 7am to beat the crowd.",
+                link: "",
+              },
+              {
+                name: "Castaway Café",
+                day: "Day 2 · Breakfast",
+                status: "walkin",
+                statusLabel: "🟡 WALK-IN",
+                tip: "Arrive 7:30am for a relaxed ocean-view breakfast before heading to Kapalua Bay.",
+                link: "",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="rounded-xl p-5 transition-all hover:shadow-md"
+                style={{
+                  background: item.status === "booked" ? "#F0FAF0" : "#FDFAF5",
+                  border: item.status === "booked" ? "1.5px solid #4CAF50" : item.status === "urgent" ? "1.5px solid #E8714A" : item.status === "soon" ? "1.5px solid #F5A623" : "1.5px solid #E8D5B0",
+                }}
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <span
+                    className="text-[10px] tracking-wider uppercase font-bold px-2 py-0.5 rounded-full"
+                    style={{
+                      background: item.status === "booked" ? "#E8F5E9" : item.status === "urgent" ? "#FFF3E0" : item.status === "soon" ? "#FFF8E1" : "#FDFAF5",
+                      color: item.status === "booked" ? "#2E7D32" : item.status === "urgent" ? "#E65100" : item.status === "soon" ? "#E65100" : "#8B7355",
+                      fontFamily: "'Lato', sans-serif",
+                    }}
+                  >
+                    {item.statusLabel}
+                  </span>
+                  <span className="text-[10px] tracking-wider uppercase" style={{ color: "#8B7355", fontFamily: "'Lato', sans-serif" }}>{item.day}</span>
+                </div>
+                <h3 className="text-base font-bold mb-1.5" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>{item.name}</h3>
+                <p className="text-xs leading-relaxed mb-3" style={{ color: "#6B5B4D", fontFamily: "'Lato', sans-serif" }}>{item.tip}</p>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-semibold px-3 py-1.5 rounded-full transition-all hover:opacity-80"
+                    style={{
+                      background: item.status === "urgent" ? "#E8714A" : item.status === "soon" ? "#F5A623" : "#0A4A5C",
+                      color: "#fff",
+                      fontFamily: "'Lato', sans-serif",
+                    }}
+                  >
+                    {item.status === "booked" ? "View" : item.status === "walkin" ? "Yelp Waitlist →" : "Book Now →"}
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── STICKY DAY NAV ─── */}
       <div
         ref={navRef}
@@ -1160,6 +1305,13 @@ export default function Home() {
                 <span className="sm:hidden">Day {parseInt(day.number)}</span>
               </button>
             ))}
+            <button
+              onClick={() => document.getElementById("book-ahead")?.scrollIntoView({ behavior: "smooth" })}
+              className="px-4 py-4 text-sm transition-all whitespace-nowrap"
+              style={{ fontFamily: "'Lato', sans-serif", fontWeight: 400, color: "#E8714A" }}
+            >
+              📋 Book Ahead
+            </button>
             <button
               onClick={() => document.getElementById("budget")?.scrollIntoView({ behavior: "smooth" })}
               className="px-4 py-4 text-sm transition-all whitespace-nowrap"
