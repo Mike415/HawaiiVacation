@@ -1167,7 +1167,7 @@ export default function Home() {
                 status: "urgent",
                 statusLabel: "🔴 BOOK NOW",
                 tip: "One of the hardest reservations on the island. Book on OpenTable ASAP — tables go fast for summer.",
-                link: "https://www.opentable.com/monkeypod-kitchen-by-merriman-wailea",
+                link: "https://www.opentable.com/r/monkeypod-kitchen-by-merriman-whalers-village-lahaina-2",
               },
               {
                 name: "Leilani's on the Beach",
