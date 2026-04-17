@@ -345,6 +345,70 @@ export default function DataPage() {
         ]}
       />
 
+      {/* ── KRISTA'S MAUI RECOMMENDATIONS ── */}
+      <section style={{ marginBottom: "40px" }}>
+        <h2 style={{ fontSize: "1.4rem", borderBottom: "1px solid #ddd", paddingBottom: "6px" }}>Krista's Maui Guide 2026 — Food & Local Recs</h2>
+        <p style={{ fontSize: "14px", color: "#666", marginBottom: "16px", fontStyle: "italic" }}>
+          Updated April 17, 2026 — From Krista Chan (maui local/frequent visitor). Krista's family stays in Kaanapali every year. 
+          List focuses on Lahaina/Kaanapali area near Honua Kai. She hasn't tried all of these but keeps an active list.
+        </p>
+        
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Breakfast & Coffee</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Oyako Tei (Kahului)</strong> — Mini bento: omelet, beef teriyaki, spam, rice with furikake, ume. Large bento adds shoyu hot dog + Portuguese sausage. Great value near airport.</li>
+          <li><strong>Gazebo (Lahaina)</strong> — Breakfast and lunch. Classic spot.</li>
+          <li><strong>Bad Ass Coffee (Kapalua)</strong> — Coffee, breakfast, donuts. Opens 6am.</li>
+          <li><strong>The Coffee Store Napili (Kapalua)</strong> — Coffee, breakfast, donuts. Opens 6am.</li>
+          <li><strong>Kihei Caffe (Kihei)</strong> — Whale-shaped pancakes, super casual. Kalama Park playground across the street.</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Lunch Spots</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Honokowai Okazuya and Deli (Lahaina)</strong> — Cheap bento boxes. Krista's go-to for lunch.</li>
+          <li><strong>Aloha Mix Plate (Lahaina)</strong> — Lunch and dinner. Local plate lunch spot.</li>
+          <li><strong>Joey's Kitchen (Lahaina)</strong> — Lunch and dinner.</li>
+          <li><strong>The Fish Market (Lahaina)</strong> — Fresh fish market.</li>
+          <li><strong>Foodland (Kihei)</strong> — Grocery store with excellent poke counter.</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Dinner</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Star Noodle (Lahaina)</strong> — Dinner. Popular, make reservations.</li>
+          <li><strong>Sansei (Kapalua)</strong> — Sushi. <strong>50% off early bird special Sun/Mon 5-5:45pm dine-in only.</strong> No reservations for early bird — line up at 4:30pm. Krista's family does this every visit!</li>
+          <li><strong>Miso Phat Sushi (Kihei/Lahaina)</strong> — Tasty rolls, a bit expensive.</li>
+          <li><strong>Da Kitchen (Kihei)</strong> — Local Hawaiian food.</li>
+          <li><strong>Fabiani's (Kihei)</strong> — Italian.</li>
+          <li><strong>Nalu South Shore Grille (Kihei)</strong> —</li>
+          <li><strong>Fat Daddy Smokehouse (Kihei)</strong> — BBQ.</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Food Trucks & Casual</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Food Truck Park by OGG Airport (Kahului)</strong> — 520 Keolani Pl, across from Costco. Multiple trucks.</li>
+          <li><strong>Kina'ole Grill (Food Truck)</strong> — Local-style Hawaiian food mixed with fresh California-style cooking.</li>
+          <li><strong>Maui Fresh Streatery (Food Truck)</strong> — Locally grown ingredients, fresh, made with aloha.</li>
+          <li><strong>Braddah Hutts BBQ Grill (Hana Town)</strong> — Near 5305 Hana Highway, mile past Hasegawa General Store. Only open until 2pm — arrive early.</li>
+          <li><strong>Kihei Food Trucks at South Maui Gardens</strong> — <a href="https://www.southmauigardens.com/foodtrucks" style={{ color: "#0066cc" }}>southmauigardens.com/foodtrucks</a></li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Desserts & Treats</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Leoda's Kitchen and Pie Shop (Lahaina)</strong> — Desserts. Banana cream pie is Krista's favorite.</li>
+          <li><strong>Ululani Shaved Ice (Kihei/Wailuku/Kahului)</strong> — Krista's favorite shaved ice on Maui. Multiple locations.</li>
+          <li><strong>Maui Matcha (Lahaina/Wailea)</strong> — Matcha drinks and treats.</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Drinks</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Maui Brewing Co (Kaanapali)</strong> — Beer. Also have Kihei location.</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#2c3e50" }}>Other</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.9 }}>
+          <li><strong>Tiffany's (Wailuku)</strong> — Diner. <a href="https://tiffanysmaui.com/" style={{ color: "#0066cc" }}>tiffanysmaui.com</a></li>
+        </ul>
+      </section>
+
       {/* ── OTHER THINGS TO CONSIDER ── */}
       <section style={{ marginBottom: "40px" }}>
         <h2 style={{ fontSize: "1.4rem", borderBottom: "1px solid #ddd", paddingBottom: "6px" }}>Other Things to Consider</h2>
