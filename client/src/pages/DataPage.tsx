@@ -425,6 +425,46 @@ export default function DataPage() {
         </ul>
       </section>
 
+      {/* ── LOCAL RECOMMENDATIONS FROM KRISTA ── */}
+      <section style={{ marginBottom: "40px" }}>
+        <h2 style={{ fontSize: "1.4rem", borderBottom: "1px solid #ddd", paddingBottom: "6px" }}>Local Recommendations from Krista Chan</h2>
+        <p style={{ fontSize: "14px", color: "#666", marginBottom: "16px", fontStyle: "italic" }}>
+          Krista's family stays in Ka'anapali every year and keeps a running list of favorites. Updated April 2026.
+        </p>
+        
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#0A4A5C" }}>🍽️ Food & Drink</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.8 }}>
+          <li><strong>Honokowai Okazuya and Deli</strong> (Lahaina) — Cheap bento boxes, Krista's go-to for lunch</li>
+          <li><strong>Leoda's Kitchen and Pie Shop</strong> (Lahaina) — Banana cream pie is the favorite</li>
+          <li><strong>Sansei</strong> (Kapalua) — Sushi, 50% off early bird Sun/Mon 5–5:45pm (dine-in only, no reservations — line up at 4:30pm)</li>
+          <li><strong>Ululani Shaved Ice</strong> (Kihei / Wailuku / Kahului) — Favorite shaved ice on Maui</li>
+          <li><strong>Miso Phat Sushi</strong> (Kihei / Lahaina) — A bit expensive but tasty rolls</li>
+          <li><strong>Food Truck Park by OGG Airport</strong> (Kahului, 520 Keolani Pl) — Across from Costco, great options</li>
+          <li><strong>Bad Ass Coffee</strong> (Kapalua) & <strong>The Coffee Store Napili</strong> — Both open at 6am for early coffee</li>
+          <li><strong>Oyako Tei</strong> (Kahului) — Breakfast bentos with omelet, beef teriyaki, spam, rice</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#0A4A5C" }}>🏖️ Beaches (Kid-Friendly)</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.8 }}>
+          <li><strong>Kapalua Bay</strong> — Calm waters, great for families</li>
+          <li><strong>Napili Beach</strong> — Protected cove, gentle waves</li>
+          <li><strong>Kahekili Beach Park</strong> — Also known as Airport Beach, good facilities</li>
+          <li><strong>Kamaole Beach Park II</strong> — Good for snorkeling, south Maui</li>
+        </ul>
+
+        <h3 style={{ fontSize: "1.1rem", marginTop: "20px", marginBottom: "8px", color: "#0A4A5C" }}>🌳 Parks & Playgrounds</h3>
+        <ul style={{ paddingLeft: "20px", lineHeight: 1.8 }}>
+          <li><strong>Napili Park</strong> — Playground near Napili Beach</li>
+          <li><strong>Hui Aloha Playground</strong> — Local favorite</li>
+          <li><strong>Honokōwai Beach Park</strong> — Beach access with facilities</li>
+          <li><strong>Aoao O Na Loko Ia O Maui</strong> — Beach/park area</li>
+        </ul>
+
+        <p style={{ fontSize: "13px", color: "#888", marginTop: "12px", fontStyle: "italic" }}>
+          Source: Krista Chan's Maui Guide 2026, shared April 17, 2026. Krista's brother and Kimber have visited these beaches and parks with kids.
+        </p>
+      </section>
+
       {/* ── PRACTICAL TIPS ── */}
       <section style={{ marginBottom: "40px" }}>
         <h2 style={{ fontSize: "1.4rem", borderBottom: "1px solid #ddd", paddingBottom: "6px" }}>Practical Tips</h2>
