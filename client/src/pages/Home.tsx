@@ -1915,6 +1915,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── KRISTA'S MAUI GUIDE ─── */}
+      <section className="py-20" style={{ background: "#FDF7F0" }}>
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "#E8714A", fontFamily: "'Lato', sans-serif" }}>
+                Local Intel
+              </p>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>
+                Krista's Maui Guide 2026
+              </h2>
+              <p className="text-base max-w-2xl mx-auto" style={{ color: "#6B5D4F", fontFamily: "'Lato', sans-serif", fontWeight: 300, lineHeight: 1.7 }}>
+                Krista Chan's family stays in Ka'anapali every year. She keeps a running list of favorites near Honua Kai — 
+                updated April 2026 from her latest trip. "I haven't tried all of these but I keep adding to the list!"
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {[
+                {
+                  icon: "🥐",
+                  title: "Breakfast & Coffee",
+                  items: [
+                    "Bad Ass Coffee (Kapalua) — Opens 6am",
+                    "The Coffee Store Napili — Opens 6am", 
+                    "Gazebo (Lahaina) — Breakfast & lunch",
+                    "Oyako Tei (Kahului) — Bento boxes with ume & furikake",
+                  ]
+                },
+                {
+                  icon: "🍱",
+                  title: "Lunch Spots",
+                  items: [
+                    "Honokowai Okazuya — Krista's go-to for cheap bentos",
+                    "Aloha Mix Plate — Lunch & dinner",
+                    "Joey's Kitchen — Local favorite",
+                    "Foodland Poke — Best poke in Kihei",
+                  ]
+                },
+                {
+                  icon: "🍣",
+                  title: "Dinner",
+                  items: [
+                    "Sansei (Kapalua) — 50% off Sun/Mon 5-5:45pm",
+                    "Star Noodle (Lahaina) — No reservations needed",
+                    "Miso Phat Sushi — Tasty but pricey",
+                    "Maui Brewing Co — Great beer selection",
+                  ]
+                },
+              ].map((cat, i) => (
+                <div key={i} className="p-6 rounded-sm" style={{ background: "#FFFFFF", border: "1px solid #E8D5B0" }}>
+                  <div className="text-3xl mb-3">{cat.icon}</div>
+                  <h3 className="text-lg font-bold mb-4" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>
+                    {cat.title}
+                  </h3>
+                  <ul className="space-y-2">
+                    {cat.items.map((item, j) => (
+                      <li key={j} className="text-sm" style={{ color: "#4A3728", fontFamily: "'Lato', sans-serif", lineHeight: 1.6 }}>
+                        • {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 rounded-sm" style={{ background: "#FFFFFF", borderLeft: "4px solid #E8714A" }}>
+                <h4 className="font-bold mb-3 flex items-center gap-2" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>
+                  <span>🍦</span> Don't Miss
+                </h4>
+                <ul className="space-y-2 text-sm" style={{ color: "#4A3728", fontFamily: "'Lato', sans-serif" }}>
+                  <li>• <strong>Leoda's Pies</strong> — Banana cream is Krista's favorite</li>
+                  <li>• <strong>Ululani's Shave Ice</strong> — Best on island, multiple locations</li>
+                  <li>• <strong>Food Truck Park at OGG</strong> — 520 Keolani Pl, across from Costco</li>
+                </ul>
+              </div>
+              <div className="p-6 rounded-sm" style={{ background: "#FFFFFF", borderLeft: "4px solid #0A4A5C" }}>
+                <h4 className="font-bold mb-3 flex items-center gap-2" style={{ fontFamily: "'Playfair Display', serif", color: "#0A4A5C" }}>
+                  <span>🏖️</span> Beaches & Parks
+                </h4>
+                <ul className="space-y-2 text-sm" style={{ color: "#4A3728", fontFamily: "'Lato', sans-serif" }}>
+                  <li>• <strong>Kapalua Bay</strong> — Calm, great for kids</li>
+                  <li>• <strong>Napili Beach</strong> — Protected cove</li>
+                  <li>• <strong>Kahekili Beach Park</strong> — Good facilities</li>
+                  <li>• <strong>Napili Park</strong> — Playground near the beach</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-center text-xs mt-8" style={{ color: "#9B8B7A", fontFamily: "'Lato', sans-serif", fontStyle: "italic" }}>
+              Shared via Caitlin • Krista's brother and Kimber have visited these spots with kids
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ─── FOOTER ─── */}
       <footer className="py-12 text-center" style={{ background: "#2C1A0E" }}>
         <p className="text-2xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif", color: "#F4A07A" }}>
