@@ -245,7 +245,137 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   .day-nav { display: none; }
   .hero { height: 200px; }
   .activity { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+  .guide-section { break-before: page; }
 }
+
+/* Guide Section */
+.guide-section {
+  padding: 56px 0 32px;
+}
+.guide-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.guide-section-header h2 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+.guide-section-header p {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.guide-category {
+  margin-bottom: 40px;
+}
+.guide-category h3 {
+  font-size: 1.3rem;
+  color: var(--teal);
+  border-bottom: 2px solid var(--coral);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .guide-grid { grid-template-columns: 1fr; }
+}
+.guide-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: default;
+}
+.guide-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.guide-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.guide-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.guide-card-name a {
+  color: var(--text);
+  text-decoration: none;
+}
+.guide-card-name a:hover { color: var(--teal); }
+.guide-card-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.pill {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.pill-area { background: #E3F2FD; color: #1565C0; }
+.pill-price { background: #E8F5E9; color: #2E7D32; }
+.pill-free { background: #FFF3E0; color: #E65100; }
+.pill-day { background: var(--coral); color: var(--white); }
+.pill-vibe { background: #F3E5F5; color: #7B1FA2; }
+.pill-booking { background: #FFF8E1; color: #F57F17; }
+.guide-card-vibe {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--teal-light);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.guide-card-desc {
+  font-size: 0.85rem;
+  color: var(--warm-gray);
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+.guide-card-tip {
+  padding: 8px 12px;
+  background: var(--sand);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: var(--teal);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.guide-card-tip::before { content: '💡 '; }
+.guide-card-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.guide-card-meta a {
+  font-size: 0.78rem;
+  color: var(--teal-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+.guide-card-meta a:hover { text-decoration: underline; }
+
 </style>
 </head>
 <body>
@@ -275,6 +405,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   <a href="#day7">Day 7</a>
   <a href="#day8">Day 8</a>
   <a href="#day9">Day 9</a>
+  <a href="#guide" style="color:var(--coral); opacity:1;">📖 Guide</a>
 </nav>
 
 <div class="main">
@@ -860,6 +991,593 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 
 </div>
 
+<!-- ═══════════════════ GUIDE SECTION ═══════════════════ -->
+<div class="main">
+<section class="guide-section" id="guide">
+  <div class="guide-section-header">
+    <h2>📖 The Maui Guide</h2>
+    <p>Every restaurant, beach, and activity we researched — organized by category. Tap the day badge to jump to the itinerary.</p>
+  </div>
+
+  <!-- ═══ RESTAURANTS ═══ -->
+  <div class="guide-category">
+    <h3>🍽️ Restaurants &amp; Dining</h3>
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Dukes+Beach+House+Maui" target="_blank">Duke's Beach House</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$80–120</span>
+            <a href="#day1" class="pill pill-day">📅 Day 1</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Oceanfront Hawaiian • Live music • Walk from resort</div>
+        <div class="guide-card-desc">Right on the sand at Honua Kai — literally walk from your suite. Fresh island fish, mai tais, great kids' menu, and live Hawaiian music every night. Famous for the hula pie. Beachside tables have toes-in-the-sand vibes at sunset.</div>
+        <div class="guide-card-tip">Walk-in beachside dining. Get the fresh catch, fish tacos, and hula pie. No driving needed — huge win on arrival night.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Dukes+Beach+House+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Castaway+Cafe+Maui" target="_blank">Castaway Café</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$40–60</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Casual ocean-view breakfast • Local favorite</div>
+        <div class="guide-card-desc">Relaxed ocean-view breakfast spot right by Ka'anapali Beach. Solid macadamia nut pancakes, eggs Benedict, and local plate lunches. Nothing fancy, just good food with a view.</div>
+        <div class="guide-card-tip">Arrive 7:30am to beat the crowd. Walk-in only, no reservations.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Castaway+Cafe+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Hula+Grill+Kaanapali+Maui" target="_blank">Hula Grill Barefoot Bar</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$80–120</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Iconic beachfront • Sunset views • Barefoot dining</div>
+        <div class="guide-card-desc">Iconic Ka'anapali beachfront restaurant at Whaler's Village. The Barefoot Bar has sand-floor seating, killer sunset views, craft cocktails, and a solid keiki menu. Think fish tacos, coconut shrimp, and macadamia-crusted mahi.</div>
+        <div class="guide-card-tip">No reservations. Put your name on Yelp Waitlist at 4:30pm to avoid a 60+ min wait with tired kids. Barefoot Bar is more casual than the main dining room.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in / Yelp Waitlist</span>
+          <a href="https://maps.google.com/?q=Hula+Grill+Kaanapali+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Star+Noodle+Lahaina+Maui" target="_blank">Star Noodle</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Lāhainā</span>
+            <span class="pill pill-price">$80–120</span>
+            <a href="#day3" class="pill pill-day">📅 Day 3</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Asian-fusion • Buzzy & popular • Craft cocktails</div>
+        <div class="guide-card-desc">One of the most popular restaurants on Maui. Incredible Asian-fusion: garlic noodles, Lahaina fried soup, pork belly bao, and creative craft cocktails. Communal tables, energetic atmosphere. A must-do dinner.</div>
+        <div class="guide-card-tip">Reservations open exactly 30 days before your date and sell out same-day. Book at 6am HST on April 30 for May 30 dinner. This is not optional — set a reminder!</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Reservation required</span>
+          <a href="https://maps.google.com/?q=Star+Noodle+Lahaina+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Leilanis+on+the+Beach+Maui" target="_blank">Leilani's on the Beach</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$80–120</span>
+            <a href="#day4" class="pill pill-day">📅 Day 4</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Beachfront fine-casual • Sunset spot • Whaler's Village</div>
+        <div class="guide-card-desc">Oceanfront dining at Whaler's Village with stunning sunset views. Steak, seafood, and island-inspired dishes. The dining room is more upscale; the beach bar is relaxed with a similar menu.</div>
+        <div class="guide-card-tip">Book the dining room on OpenTable for 5pm — otherwise you'll wait 60+ min at the beach bar with tired kids. Reserve early for summer dates.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Reservation recommended</span>
+          <a href="https://maps.google.com/?q=Leilanis+on+the+Beach+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Bad+Ass+Coffee+Kapalua+Maui" target="_blank">Bad Ass Coffee</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Kapalua</span>
+            <span class="pill pill-price">$10–15</span>
+            <a href="#day5" class="pill pill-day">📅 Day 5</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">100% Kona coffee • Quick grab-and-go • Opens 6am</div>
+        <div class="guide-card-desc">Hawaiian coffee chain right in Kapalua. Great 100% Kona and Maui-blend coffee, plus pastries and light breakfast. Opens at 6am — perfect grab-and-go fuel before the Kahekili Highway scenic drive.</div>
+        <div class="guide-card-tip">Get the 100% Kona or Maui blend. Pastries are solid. Quick in-and-out — you want to hit the road by 8am.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Bad+Ass+Coffee+Kapalua+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Taverna+Kapalua+Maui" target="_blank">Taverna</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Kapalua</span>
+            <span class="pill pill-price">$60–80</span>
+            <a href="#day5" class="pill pill-day">📅 Day 5</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Italian-Mediterranean • Garden patio • Relaxed upscale</div>
+        <div class="guide-card-desc">Italian restaurant in the Kapalua area with a beautiful garden patio. Wood-fired pizzas, fresh pasta, and Mediterranean-inspired seafood. Great wine list. Relaxed enough for kids but feels upscale.</div>
+        <div class="guide-card-tip">Lunch is easier than dinner with toddlers. The patio is lovely — request outdoor seating.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Reservation recommended</span>
+          <a href="https://maps.google.com/?q=Taverna+Kapalua+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Monkeypod+Kitchen+Wailea+Maui" target="_blank">Monkeypod Kitchen</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali / Wailea</span>
+            <span class="pill pill-price">$80–120</span>
+            <a href="#day5" class="pill pill-day">📅 Day 5</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Farm-to-table • Craft cocktails • Live music • Happy hour</div>
+        <div class="guide-card-desc">One of the hardest reservations on Maui. Peter Merriman's farm-to-table restaurant with incredible craft cocktails (the Mai Tai is legendary), wood-fired pizzas, and live music. Two locations: Ka'anapali and Wailea.</div>
+        <div class="guide-card-tip">Book on OpenTable ASAP — tables go fast for summer. Happy hour 3–5:30pm is the move: half-price pizzas and $8 cocktails. Arrive right at 3pm.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Reservation required</span>
+          <a href="https://maps.google.com/?q=Monkeypod+Kitchen+Wailea+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Slappy+Cakes+Kaanapali+Maui" target="_blank">Slappy Cakes</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$40–60</span>
+            <a href="#day6" class="pill pill-day">📅 Day 6</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">DIY griddle pancakes • Kid paradise • Across from resort</div>
+        <div class="guide-card-desc">Kids make their own pancakes on a griddle built into the table! Batter squeeze bottles, toppings galore. Jordan will be in heaven. Right across the street from Honua Kai — no driving.</div>
+        <div class="guide-card-tip">Arrive at 7am to beat the crowd. Walk-in only. The mess is half the fun.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Slappy+Cakes+Kaanapali+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Cafe+OLei+Plantation+Maui" target="_blank">Café O'Lei at the Plantation</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Waikapu</span>
+            <span class="pill pill-price">$40–60</span>
+            <a href="#day8" class="pill pill-day">📅 Day 8</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Shaded garden café • Relaxed parents' lunch</div>
+        <div class="guide-card-desc">Shaded café at the Maui Tropical Plantation with garden views. Good food and relaxed atmosphere — perfect for refueling after the tram tour while the kids are still entertained by the grounds.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Cafe+OLei+Plantation+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Joeys+Kitchen+Napili+Maui" target="_blank">Joey's Kitchen</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Napili</span>
+            <span class="pill pill-price">$30–50</span>
+            <a href="#day8" class="pill pill-day">📅 Day 8</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Filipino-Hawaiian comfort • Generous portions • Casual</div>
+        <div class="guide-card-desc">Krista's pick — Filipino-Hawaiian comfort food in Napili Plaza. Garlic shrimp, chicken adobo, lumpia, and pancit. Generous portions, super casual, easy with kids. Hidden gem that locals love.</div>
+        <div class="guide-card-tip">Order the garlic shrimp and lumpia. Portions are big — share a couple plates family-style. No reservations needed. 5 min from resort.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Joeys+Kitchen+Napili+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Gazebo+Restaurant+Napili+Maui" target="_blank">The Gazebo</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Napili</span>
+            <span class="pill pill-price">$30–50</span>
+            <a href="#day4" class="pill pill-day">📅 Day 4</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Famous oceanfront breakfast • Mac nut pancakes</div>
+        <div class="guide-card-desc">Possibly the most famous breakfast spot on Maui. Tiny oceanfront gazebo with macadamia nut pancakes, white chocolate mac nut pancakes, and fresh papaya. Whales visible from the tables in season.</div>
+        <div class="guide-card-tip">Line forms before 7am — arrive early! No reservations. Cash and card accepted. Worth the wait.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in (expect a line)</span>
+          <a href="https://maps.google.com/?q=Gazebo+Restaurant+Napili+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Mamas+Fish+House+Maui" target="_blank">Mama's Fish House</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Paia (North Shore)</span>
+            <span class="pill pill-price">$150–200</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Legendary fine dining • Top-10 US restaurant • Splurge</div>
+        <div class="guide-card-desc">One of the top restaurants in the US. Every fish dish lists the fisherman who caught it and where. Polynesian decor, beachfront tables, impeccable service. A once-in-a-lifetime dining experience. Expensive but unforgettable.</div>
+        <div class="guide-card-tip">Book 2–3 months ahead at mamasfishhouse.com. Lunch is slightly easier to get than dinner. Worth the splurge for a special occasion.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Reservation required (months ahead)</span>
+          <a href="https://maps.google.com/?q=Mamas+Fish+House+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Sansei+Seafood+Kapalua+Maui" target="_blank">Sansei Kapalua</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Kapalua</span>
+            <span class="pill pill-price">$60–80</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Award-winning sushi • 50% off early bird • 5 min from resort</div>
+        <div class="guide-card-desc">Award-winning sushi and Asian-fusion. Famous for the 50% off early-bird special: Sun/Mon 5–5:45pm, all sushi and appetizers half price. Creative rolls, tempura, and Asian-glazed short ribs. Packed atmosphere.</div>
+        <div class="guide-card-tip">First-come for the 50% off window — arrive by 4:30pm. Only 5 min from the resort. Great value if you time it right.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in (early bird first-come)</span>
+          <a href="https://maps.google.com/?q=Sansei+Seafood+Kapalua+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Kihei+Caffe+Maui" target="_blank">Kihei Caffé</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Kihei</span>
+            <span class="pill pill-price">$30–40</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Beloved local breakfast • Whale pancakes • Playground nearby</div>
+        <div class="guide-card-desc">One of Maui's most beloved breakfast spots. Famous for whale-shaped pancakes the kids will love. Generous portions, friendly staff. Kalama Park playground is directly across the street — perfect post-breakfast burn-off.</div>
+        <div class="guide-card-tip">Cash-friendly, opens early (5am). Note: 35 min drive from Ka'anapali. Worth it for a South Maui day.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-in</span>
+          <a href="https://maps.google.com/?q=Kihei+Caffe+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Honokowai+Okazuya+Maui" target="_blank">Honokowai Okazuya</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Honokowai</span>
+            <span class="pill pill-price">$10–20</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Old-school counter serve • Japanese-Hawaiian deli • Locals only</div>
+        <div class="guide-card-desc">Tiny local deli with Japanese-Hawaiian plate lunch staples: musubi, tempura, fried chicken, and teri beef. Authentic, cheap, no-frills. Grab a few items to go for a beach picnic. Cash only.</div>
+        <div class="guide-card-tip">Opens early, sells out fast. Great grab-and-go for a Napili Bay picnic. 5 min south of Kapalua.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Counter serve</span>
+          <a href="https://maps.google.com/?q=Honokowai+Okazuya+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Whalers+Village+Maui" target="_blank">Whaler's Village</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Ka'anapali</span>
+            <span class="pill pill-price">$40–60</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Beachfront shopping mall • Multiple dining options</div>
+        <div class="guide-card-desc">Open-air beachfront mall with multiple restaurants, shops, and a whale museum. Good option for a casual lunch when you don't want to drive anywhere. Home to Hula Grill and Leilani's.</div>
+        <div class="guide-card-tip">Free hula show Tue/Thu 5:30pm on the main stage. Walking distance from Honua Kai.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Whalers+Village+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=520+Keolani+Pl+Kahului+Maui" target="_blank">Food Truck Park (OGG)</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-area">Kahului</span>
+            <span class="pill pill-price">$15–25</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Quick & cheap • Near airport • Departure-day option</div>
+        <div class="guide-card-desc">520 Keolani Pl, across from Costco near OGG. Multiple food trucks with plate lunches, açaí bowls, and coffee. Good fallback for a quick departure-day breakfast if you skip the sunrise walk.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-up</span>
+          <a href="https://maps.google.com/?q=520+Keolani+Pl+Kahului+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ BEACHES & ACTIVITIES ═══ -->
+  <div class="guide-category">
+    <h3>🏖️ Beaches &amp; Activities</h3>
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Kapalua+Bay+Beach+Maui" target="_blank">Kapalua Bay Beach</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">Kapalua</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2, 4</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Maui's #1 beach • Protected cove • Perfect for toddlers</div>
+        <div class="guide-card-desc">Consistently rated one of the best beaches in the US. A protected crescent-shaped cove with calm, crystal-clear water — perfect for toddlers. Excellent snorkeling along the rocky edges. Shaded areas under trees.</div>
+        <div class="guide-card-tip">Parking lot fills by 10am in summer — arrive by 8:30am. $10–15/day parking. Bring snorkel gear for the left side of the bay.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-vibe">👶 Great for toddlers</span>
+          <a href="https://maps.google.com/?q=Kapalua+Bay+Beach+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Big+Beach+Makena+State+Park+Maui" target="_blank">Big Beach (Makena)</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">South Maui</span>
+            <a href="#day7" class="pill pill-day">📅 Day 7</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Dramatic golden sand • Turquoise water • Most photogenic beach</div>
+        <div class="guide-card-desc">Wide golden sand beach with turquoise water and dramatic views of Molokini crater. One of Maui's most photogenic beaches. Can have big shore break — more of a "wow" experience than a swimming beach for little ones.</div>
+        <div class="guide-card-tip">Can have big waves — keep toddlers close to shore or at the calmer north end. Arrive early for parking. No facilities — bring everything.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-vibe">⚠️ Watch waves with toddlers</span>
+          <a href="https://maps.google.com/?q=Big+Beach+Makena+State+Park+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Napili+Bay+Maui" target="_blank">Napili Bay</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">Napili</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Protected cove • Picnic-friendly • Sea turtles</div>
+        <div class="guide-card-desc">Beautiful protected cove with gentle waves, great for kids. Pack a picnic from the resort kitchen or grab takeout from Honokowai Okazuya. Sea turtles often surface here in the afternoon.</div>
+        <div class="guide-card-tip">Street parking only, limited spaces. Baby Beach Lahaina is a calm backup if Napili is full. 10 min from resort.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-vibe">👶 Great for toddlers</span>
+          <a href="https://maps.google.com/?q=Napili+Bay+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Baby+Beach+Lahaina+Maui" target="_blank">Baby Beach (Lāhainā)</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">Lāhainā</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Dead-calm lagoon • Ideal for 2-year-old • Shallow water</div>
+        <div class="guide-card-desc">Calm, shallow lagoon protected by a breakwater — the water is completely flat, like a swimming pool. Not the most scenic beach, but absolutely perfect for Connor (2yo). Feels safe and contained.</div>
+        <div class="guide-card-tip">Small and not scenic, but the water is ideal for very young kids. Good backup option for any day when you want zero-stress water time. ~10 min from resort.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-vibe">👶 Perfect for toddlers</span>
+          <a href="https://maps.google.com/?q=Baby+Beach+Lahaina+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Kahekili+Beach+Park+Maui" target="_blank">Kahekili Beach Park</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">Ka'anapali</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Less crowded • Good snorkeling • Full facilities</div>
+        <div class="guide-card-desc">Less crowded alternative to Kapalua Bay, right at the north end of Ka'anapali. Good snorkeling, restrooms, showers, and picnic tables. Walking distance from the resort if you head north along the beach.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-vibe">👶 Kid-friendly</span>
+          <a href="https://maps.google.com/?q=Kahekili+Beach+Park+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Black+Rock+Kaanapali+Maui" target="_blank">Black Rock Cliff Dive Ceremony</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">Ka'anapali</span>
+            <a href="#day2" class="pill pill-day">📅 Day 2</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Nightly sunset tradition • Torch-lighting • Iconic</div>
+        <div class="guide-card-desc">Every evening at sunset, a traditional torch-lighting and cliff dive ceremony at Pu'u Keka'a (Black Rock). A performer lights torches along the cliff, chants, then dives into the ocean. Free, kid-friendly, and one of Ka'anapali's most iconic traditions.</div>
+        <div class="guide-card-tip">Gather on the beach around 6pm. Walk south from Hula Grill along the beachfront path. Jordan will love the torch-lighting. Honu (sea turtles) often rest nearby.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Black+Rock+Kaanapali+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Maui+Ocean+Center+Maui" target="_blank">Maui Ocean Center</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">~$40/adult</span>
+            <span class="pill pill-area">Ma'alaea</span>
+            <a href="#day3" class="pill pill-day">📅 Day 3</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">World-class aquarium • Sea turtles & sharks • Kids under 3 free</div>
+        <div class="guide-card-desc">World-class aquarium featuring sea turtles, sharks, rays, and incredible reef exhibits. The Sphere immersive experience is mind-blowing. Open Ocean tunnel is the highlight. Stroller-friendly throughout.</div>
+        <div class="guide-card-tip">Buy timed entry tickets online to skip the line — much easier with toddlers. Kids under 3 are free. Allow 2–3 hours. Gift shop has great souvenirs.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Book timed tickets online</span>
+          <a href="https://maps.google.com/?q=Maui+Ocean+Center+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Banyan+Tree+Lahaina+Maui" target="_blank">Lāhainā Banyan Tree + Shave Ice</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">~$15</span>
+            <span class="pill pill-area">Lāhainā</span>
+            <a href="#day3" class="pill pill-day">📅 Day 3</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Historic landmark • Ululani's shave ice • Easy walking</div>
+        <div class="guide-card-desc">Walk under the famous 150-year-old banyan tree that covers an entire block. Then grab Ululani's Hawaiian Shave Ice — the gold standard on Maui. Kids love running around under the massive canopy of aerial roots.</div>
+        <div class="guide-card-tip">Order with mochi balls and condensed milk on top. The kids will love it. Good photo op with the tree.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Banyan+Tree+Lahaina+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Royal+Lahaina+Resort+Maui" target="_blank">Myths of Maui Lūʻau</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">$200–300</span>
+            <span class="pill pill-area">Ka'anapali</span>
+            <a href="#day6" class="pill pill-day">📅 Day 6</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Traditional Hawaiian feast • Fire dancing • Cultural performance</div>
+        <div class="guide-card-desc">Traditional Hawaiian lūʻau at the Royal Lāhainā Resort. Hawaiian feast with kalua pig, poi, poke, haupia. Fire knife dancing finale. One of Maui's most authentic lūʻau experiences. Great for the whole family.</div>
+        <div class="guide-card-tip">Already booked ✅ for June 2. Just confirm reservation details when the email arrives.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-day">✅ BOOKED</span>
+          <a href="https://maps.google.com/?q=Royal+Lahaina+Resort+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Kahekili+Highway+Maui" target="_blank">Kahekili Highway (Rte 340)</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-free">Free</span>
+            <span class="pill pill-area">West Maui</span>
+            <a href="#day5" class="pill pill-day">📅 Day 5</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Scenic coastal drive • Dramatic cliffs • Hidden gem</div>
+        <div class="guide-card-desc">Scenic drive along West Maui's dramatic coastline — narrow, winding, and one of the island's hidden gems. Stunning ocean views, sea cliffs, and the remote Kahakuloa village. Turn around at the overlook.</div>
+        <div class="guide-card-tip">Not for the faint of heart — narrow one-lane sections with sharp turns. But stunning views. Don't go past Kahakuloa with a rental car. Kids may nap in the car.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Kahekili+Highway+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Maui+Tropical+Plantation+Maui" target="_blank">Maui Tropical Plantation</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">$30–40</span>
+            <span class="pill pill-area">Waikapu</span>
+            <a href="#day8" class="pill pill-day">📅 Day 8</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Tram tour • Duck ponds • Koi feeding • Kid paradise</div>
+        <div class="guide-card-desc">Narrated tram ride through tropical orchards (coconut, mango, pineapple, coffee). Plus duck ponds, koi feeding, and wide-open grounds for toddlers to roam. Stroller-accessible. Clean restrooms.</div>
+        <div class="guide-card-tip">Book tram at mauiexplore.com — sells out on weekends. First tour 10am. The ducks and koi are the real kid magnets.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">⚠️ Book tram online</span>
+          <span class="pill pill-vibe">👶 Perfect for toddlers</span>
+          <a href="https://maps.google.com/?q=Maui+Tropical+Plantation+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Paia+Town+Maui" target="_blank">Paia Town</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">$30–50</span>
+            <span class="pill pill-area">North Shore</span>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Quirky surf town • Boutiques & galleries • North Shore vibes</div>
+        <div class="guide-card-desc">Funky, colorful surf town on the North Shore. Browse boutiques, galleries, and grab lunch at a local spot. More of a detour than a destination for families with toddlers, but unique Maui character.</div>
+        <div class="guide-card-tip">More adventurous option — adds 45+ min driving from Ka'anapali. Cool for a half-day if you want a change of scenery.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Paia+Town+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Foodland+Farms+Lahaina+Maui" target="_blank">Foodland Farms</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">$150–200</span>
+            <span class="pill pill-area">Lāhainā / Kihei</span>
+            <a href="#day1" class="pill pill-day">📅 Day 1, 7</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Grocery run • Poke counter • Save $400+ on the trip</div>
+        <div class="guide-card-desc">Two locations: Lāhainā (near resort, Day 1 grocery run) and Kihei (Day 7 poke bowls). The poke counter is incredible — build-your-own bowls with ahi, tako, and shoyu poke. Stock up on snacks, fruit, milk, and easy lunches to save hundreds vs. eating out every meal.</div>
+        <div class="guide-card-tip">Skip Costco on arrival — it's a 40-min ordeal with tired kids. Hit Foodland Farms Ka'anapali instead (5 min from resort). The poke alone is worth a trip.</div>
+        <div class="guide-card-meta">
+          <a href="https://maps.google.com/?q=Foodland+Farms+Lahaina+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-card-header">
+          <div class="guide-card-name"><a href="https://maps.google.com/?q=Ululanis+Hawaiian+Shave+Ice+Maui" target="_blank">Ululani's Shave Ice</a></div>
+          <div class="guide-card-pills">
+            <span class="pill pill-price">$5–10</span>
+            <span class="pill pill-area">Multiple locations</span>
+            <a href="#day7" class="pill pill-day">📅 Day 3, 7</a>
+          </div>
+        </div>
+        <div class="guide-card-vibe">Maui's best shave ice • Mochi balls • Must-do treat</div>
+        <div class="guide-card-desc">The gold standard of Hawaiian shave ice. Finely shaved, fluffy ice with real-fruit syrups, optional mochi balls, azuki beans, and condensed milk. Locations in Lāhainā, Kihei, and Ka'anapali. A mandatory Maui experience.</div>
+        <div class="guide-card-tip">Get it with mochi balls and condensed milk. The Lāhainā location is near the Banyan Tree. Kihei location perfect after a South Maui beach day.</div>
+        <div class="guide-card-meta">
+          <span class="pill pill-booking">🚶 Walk-up</span>
+          <a href="https://maps.google.com/?q=Ululanis+Hawaiian+Shave+Ice+Maui" target="_blank">📍 Google Maps</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+</div>
+
 <footer class="footer">
   <div class="mahalo">Mahalo, Maui 🌺</div>
   <p>Last updated: July 2025 · Built with aloha for the M family</p>
@@ -867,7 +1585,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 
 <script>
 // Sticky nav active state on scroll
-const sections = document.querySelectorAll('.day-section');
+const sections = document.querySelectorAll('.day-section, .guide-section');
 const navLinks = document.querySelectorAll('.day-nav a');
 const nav = document.getElementById('dayNav');
 
