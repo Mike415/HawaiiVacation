@@ -1607,7 +1607,11 @@ const observer = new IntersectionObserver(entries => {
       const active = nav.querySelector(`a[href="#${id}"]`);
       if (active) {
         active.classList.add('active');
-        active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        // Scroll nav horizontally only — don't move the page
+        const navRect = nav.getBoundingClientRect();
+        const activeRect = active.getBoundingClientRect();
+        const scrollLeft = nav.scrollLeft + (activeRect.left - navRect.left) - (navRect.width / 2) + (activeRect.width / 2);
+        nav.scrollTo({ left: scrollLeft, behavior: 'smooth' });
       }
     }
   });
