@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maui Family Trip 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sand: #F5F0E8;
+  --sand-dark: #E8DFD0;
+  --teal: #0A4A5C;
+  --teal-light: #1A6A7C;
+  --coral: #E8714A;
+  --warm-gray: #6B6560;
+  --white: #FFFFFF;
+  --text: #2C2825;
+  --text-light: #8A8580;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--sand);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663317271153/ST6JyvESCqw6urLu3fwLqo/kaanapali_sunset_bd11ada1.jpg') center/cover;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(transparent 30%, rgba(10,74,92,0.85));
+}
+.hero-content {
+  position: relative; z-index: 1;
+  text-align: center;
+  padding: 0 24px 48px;
+  color: var(--white);
+}
+.hero-content h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.hero-subtitle {
+  font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+  font-weight: 300;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-meta {
+  margin-top: 16px;
+  display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+  font-size: 0.85rem; font-weight: 400; opacity: 0.85;
+}
+.hero-meta span { display: flex; align-items: center; gap: 4px; }
+
+/* Day Nav */
+.day-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--teal);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  padding: 0 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+.day-nav::-webkit-scrollbar { display: none; }
+.day-nav a {
+  flex-shrink: 0;
+  padding: 12px 16px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+.day-nav a:hover, .day-nav a.active {
+  color: var(--white);
+  border-bottom-color: var(--coral);
+}
+
+/* Main */
+.main { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+/* Day Section */
+.day-section { padding: 48px 0 32px; border-bottom: 1px solid var(--sand-dark); }
+.day-section:last-child { border-bottom: none; }
+.day-header { margin-bottom: 28px; }
+.day-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--coral);
+  margin-bottom: 4px;
+}
+.day-label .emoji { font-size: 1.2rem; }
+.day-header h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700; color: var(--teal);
+  margin-bottom: 4px;
+}
+.day-date {
+  font-size: 0.9rem; color: var(--text-light);
+  font-weight: 400;
+}
+
+/* Timeline */
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before {
+  content: ''; position: absolute;
+  left: 8px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--sand-dark);
+  border-radius: 1px;
+}
+.activity {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s;
+}
+.activity:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.activity::before {
+  content: '';
+  position: absolute;
+  left: -24px; top: 22px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--teal);
+  background: var(--sand);
+}
+.activity.cat-meal::before { background: var(--coral); border-color: var(--coral); }
+.activity.cat-rest::before { background: #C4A97D; border-color: #C4A97D; }
+.activity.cat-transport::before { background: var(--teal-light); border-color: var(--teal-light); }
+.activity-top {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.activity-time {
+  font-size: 0.8rem; font-weight: 700; color: var(--teal);
+  white-space: nowrap; min-width: 70px;
+}
+.activity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 600; color: var(--text);
+}
+.activity-badges {
+  display: flex; gap: 6px; flex-wrap: wrap;
+  margin-left: auto;
+}
+.badge {
+  font-size: 0.65rem; font-weight: 700;
+  padding: 2px 8px; border-radius: 10px;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.badge-cost { background: #E8F5E9; color: #2E7D32; }
+.badge-drive { background: #E3F2FD; color: #1565C0; }
+.badge-free { background: #FFF3E0; color: #E65100; }
+.activity-desc {
+  font-size: 0.88rem; color: var(--warm-gray);
+  margin-top: 4px; line-height: 1.55;
+}
+.activity-tip {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: var(--sand);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--teal);
+  line-height: 1.5;
+}
+.activity-tip::before {
+  content: '💡 ';
+}
+.activity-location {
+  margin-top: 6px;
+}
+.activity-location a {
+  font-size: 0.78rem;
+  color: var(--teal-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+.activity-location a:hover { text-decoration: underline; }
+.drive-connector {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 0 4px 4px;
+  font-size: 0.75rem; color: var(--text-light);
+  margin-left: -4px;
+}
+.drive-connector::before {
+  content: '🚗'; font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 20px 60px;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+.footer .mahalo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero { height: 55vh; min-height: 350px; }
+  .hero-content { padding-bottom: 32px; }
+  .day-section { padding: 32px 0 24px; }
+  .timeline { padding-left: 24px; }
+  .activity { padding: 12px 14px; }
+  .activity-top { gap: 6px; }
+  .activity-badges { margin-left: 0; margin-top: 4px; width: 100%; }
+}
+
+/* Print */
+@media print {
+  .day-nav { display: none; }
+  .hero { height: 200px; }
+  .activity { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Maui Family Trip 2026</h1>
+    <p class="hero-subtitle">9 days of sun, sand & aloha on West Maui — designed for a family of four with two toddlers</p>
+    <div class="hero-meta">
+      <span>📅 May 28 – Jun 5</span>
+      <span>🏨 OUTRIGGER Honua Kai</span>
+      <span>✈️ Alaska SFO ↔ OGG</span>
+      <span>👨‍👩‍👧‍👦 Family of 4</span>
+    </div>
+  </div>
+</div>
+
+<nav class="day-nav" id="dayNav">
+  <a href="#day1">Day 1</a>
+  <a href="#day2">Day 2</a>
+  <a href="#day3">Day 3</a>
+  <a href="#day4">Day 4</a>
+  <a href="#day5">Day 5</a>
+  <a href="#day6">Day 6</a>
+  <a href="#day7">Day 7</a>
+  <a href="#day8">Day 8</a>
+  <a href="#day9">Day 9</a>
+</nav>
+
+<div class="main">
+
+<!-- ===== DAY 1 ===== -->
+<section class="day-section" id="day1">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">✈️</span> Day 1 — Wednesday</div>
+    <h2>Arrival & First Taste of Paradise</h2>
+    <div class="day-date">May 28, 2026 · OGG Arrival · Grocery Stop · Kids' Pool · Ka'anapali Beach Walk</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-transport">
+      <div class="activity-top">
+        <span class="activity-time">12:05 PM</span>
+        <span class="activity-title">Land at OGG</span>
+        <div class="activity-badges"><span class="badge badge-drive">~25 min drive</span></div>
+      </div>
+      <div class="activity-desc">Alaska AS nonstop from SFO. Baggage + Avis shuttle runs 45–60 min, plan to be at the car by 1pm.</div>
+      <div class="activity-tip">Have car seats ready. Hawaii law requires car seats/boosters to age 10.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kahului+Airport+OGG+Maui" target="_blank">📍 Kahului Airport (OGG)</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">1:30 PM</span>
+        <span class="activity-title">Foodland Farms Grocery Run</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$150–200</span><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Quick grocery stop to stock the kitchen — milk, fruit, snacks, easy lunches. This one stop saves $400–600 across the week.</div>
+      <div class="activity-tip">Skip Costco on arrival — it's a 40-min ordeal with tired kids. Hit Foodland Farms Ka'anapali instead (5 min from resort).</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Foodland+Farms+Lahaina+Maui" target="_blank">📍 Foodland Farms Lāhainā</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">2:30 PM</span>
+        <span class="activity-title">Check in to Honua Kai</span>
+      </div>
+      <div class="activity-desc">1-Bedroom Partial Ocean View suite: king bed + double sofa bed, full kitchen, in-unit washer/dryer, furnished lanai. Official check-in 4pm; pool wristbands at 2pm.</div>
+      <div class="activity-tip">Request an upper-floor unit for best ocean views. Self-parking $35/day, valet $40/day.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Honua+Kai+Resort+Spa+Maui" target="_blank">📍 Honua Kai Resort & Spa</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">2:30 PM</span>
+        <span class="activity-title">Kids' Pool & Settle In</span>
+      </div>
+      <div class="activity-desc">Multiple pools including dedicated kids' pool — perfect for burning off flight energy after 5h 23m flight. Room likely ready by 4pm.</div>
+      <div class="activity-tip">Pool first, beach second — toddlers do better after a calm arrival.</div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">5:00 PM</span>
+        <span class="activity-title">Duke's Beach House Dinner</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$80–120</span></div>
+      </div>
+      <div class="activity-desc">Right on the sand at Honua Kai — walk from your suite. Fresh island fish, mai tais, great kids' menu, live Hawaiian music nightly.</div>
+      <div class="activity-tip">Walk-in beachside dining. The fresh catch, fish tacos, and Duke's famous hula pie are the move. No driving needed.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Dukes+Beach+House+Maui" target="_blank">📍 Duke's Beach House</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 2 ===== -->
+<section class="day-section" id="day2">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🏖️</span> Day 2 — Thursday</div>
+    <h2>Ka'anapali & Napili</h2>
+    <div class="day-date">May 29, 2026 · Castaway Café · Kapalua Bay Beach · Napili Bay · Hula Grill · Cliff Dive</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">7:30 AM</span>
+        <span class="activity-title">Castaway Café Breakfast</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40–60</span><span class="badge badge-drive">10 min</span></div>
+      </div>
+      <div class="activity-desc">Relaxed ocean-view breakfast before heading to Kapalua Bay.</div>
+      <div class="activity-tip">Arrive 7:30am to beat the crowd. Walk-in.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Castaway+Cafe+Maui" target="_blank">📍 Castaway Café</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">8:30 AM</span>
+        <span class="activity-title">Kapalua Bay Beach</span>
+        <div class="activity-badges"><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Arrive early to this stunning protected bay — calm water, great for toddlers. One of Maui's best beaches.</div>
+      <div class="activity-tip">Parking lot fills by 10am in summer — arrive by 8:30am. $10–15/day.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kapalua+Bay+Beach+Maui" target="_blank">📍 Kapalua Bay Beach</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">11:00 AM</span>
+        <span class="activity-title">Honokowai Okazuya</span>
+        <div class="activity-badges"><span class="badge badge-drive">3 min</span></div>
+      </div>
+      <div class="activity-desc">Old-school Japanese deli counter with bento boxes, musubi, and local plate lunches. Quick pickup for the picnic.</div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">11:15 AM</span>
+        <span class="activity-title">Napili Bay Picnic</span>
+        <div class="activity-badges"><span class="badge badge-drive">10 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Protected cove, great for kids. Pack a picnic from the resort kitchen or grab takeout.</div>
+      <div class="activity-tip">Street parking only, limited spaces. Baby Beach Lahaina is calm backup if Napili is full.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Napili+Bay+Maui" target="_blank">📍 Napili Bay</a></div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">12:30–3 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+      </div>
+      <div class="activity-desc">Back to the villa for nap time. Critical with toddlers — they'll have much better evenings.</div>
+      <div class="activity-tip">Protect the nap window! Don't overschedule mornings.</div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">5:00 PM</span>
+        <span class="activity-title">Hula Grill Barefoot Bar</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$80–120</span></div>
+      </div>
+      <div class="activity-desc">Iconic beachfront dining at Ka'anapali. Great sunset views, solid kids' menu.</div>
+      <div class="activity-tip">No reservations. Put your name on Yelp Waitlist at 4:30pm to avoid a long wait with kids.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Hula+Grill+Kaanapali+Maui" target="_blank">📍 Hula Grill Ka'anapali</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">6:15 PM</span>
+        <span class="activity-title">Cliff Dive Ceremony at Black Rock</span>
+        <div class="activity-badges"><span class="badge badge-free">Free</span></div>
+      </div>
+      <div class="activity-desc">Every evening at sunset, a traditional torch-lighting and cliff dive ceremony at Pu'u Keka'a (Black Rock). A performer lights torches along the cliff, chants, then dives into the ocean below. Free, kid-friendly, and one of the most iconic Maui traditions.</div>
+      <div class="activity-tip">Gather on the beach around 6pm. Walk south from Hula Grill after dinner — it's right along the beachfront path. Jordan will love watching the torch-lighting. Honu (sea turtles) often rest on the sand nearby too.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Black+Rock+Kaanapali+Maui" target="_blank">📍 Black Rock (Pu'u Keka'a)</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 3 ===== -->
+<section class="day-section" id="day3">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🍜</span> Day 3 — Friday</div>
+    <h2>Lāhainā & Star Noodle</h2>
+    <div class="day-date">May 30, 2026 · Maui Ocean Center · Banyan Tree · Shave Ice · Star Noodle</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">9:00 AM</span>
+        <span class="activity-title">Maui Ocean Center</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40 adults</span><span class="badge badge-drive">20 min</span></div>
+      </div>
+      <div class="activity-desc">World-class aquarium at Ma'alaea. Sea turtles, sharks, rays, reef exhibits. Kids under 3 free.</div>
+      <div class="activity-tip">Buy timed entry tickets online to skip the line. Much easier with toddlers.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Maui+Ocean+Center+Maui" target="_blank">📍 Maui Ocean Center</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">11:30 AM</span>
+        <span class="activity-title">Lāhainā Banyan Tree + Shave Ice</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$15</span><span class="badge badge-drive">2 min walk</span></div>
+      </div>
+      <div class="activity-desc">Walk under the famous banyan tree, then grab Ululani's Hawaiian Shave Ice — the gold standard on Maui.</div>
+      <div class="activity-tip">Order with mochi balls and condensed milk on top. The kids will love it.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Banyan+Tree+Lahaina+Maui" target="_blank">📍 Lāhainā Banyan Court</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">12:00 PM</span>
+        <span class="activity-title">Aloha Mix Plate</span>
+        <div class="activity-badges"><span class="badge badge-drive">10 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Local-style plate lunch in Lāhainā. Hawaiian comfort food — loco moco, kalua pork, mac salad.</div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">12:30–3 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+        <div class="activity-badges"><span class="badge badge-drive">10 min</span></div>
+      </div>
+      <div class="activity-desc">Back to resort for nap time.</div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">5:00 PM</span>
+        <span class="activity-title">Star Noodle Dinner</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$80–120</span></div>
+      </div>
+      <div class="activity-desc">One of the most popular restaurants on Maui. Asian-fusion, incredible noodles, great cocktails.</div>
+      <div class="activity-tip">Reservations open exactly 30 days before your date. Very popular — sells out same-day. Set a reminder!</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Star+Noodle+Lahaina+Maui" target="_blank">📍 Star Noodle</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 4 ===== -->
+<section class="day-section" id="day4">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🍺</span> Day 4 — Saturday</div>
+    <h2>Kapalua & Sansei</h2>
+    <div class="day-date">May 31, 2026 · Gazebo Breakfast · Kapalua Bay · Sansei 50% Off Early Bird</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">7:30 AM</span>
+        <span class="activity-title">Gazebo Breakfast</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$30–50</span><span class="badge badge-drive">3 min</span></div>
+      </div>
+      <div class="activity-desc">Famous Napili breakfast spot known for their mac nut pancakes and ocean views. Casual outdoor seating right by the beach. One of the most beloved breakfast spots on West Maui.</div>
+      <div class="activity-tip">Arrive by 7am to beat the line — this place gets packed. Mac nut pancakes are the move. Cash-friendly.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Gazebo+Restaurant+Napili+Maui" target="_blank">📍 Gazebo Restaurant</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">8:30 AM</span>
+        <span class="activity-title">Kapalua Bay Beach Morning</span>
+        <div class="activity-badges"><span class="badge badge-drive">5 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Return to this beautiful protected bay for a relaxed morning.</div>
+      <div class="activity-tip">Arrive early before the parking lot fills.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kapalua+Bay+Beach+Maui" target="_blank">📍 Kapalua Bay Beach</a></div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">12:00–3 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+        <div class="activity-badges"><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Back to resort for nap time.</div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">4:45 PM</span>
+        <span class="activity-title">Sansei 50% Off Early Bird Sushi</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40–60 (after 50% off)</span><span class="badge badge-drive">5 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Award-winning sushi by Chef DK Kodama in Kapalua. Signature Panko-Crusted Ahi, Shrimp Dynamite, Miso Butterfish, creative rolls. 50% off food 5–5:45pm — first come first served, no reservations.</div>
+      <div class="activity-tip">Arrive at 4:45pm to get seated before 5. The 50% off deal runs Sun/Mon (your Day 4 is Sunday!). Panko-Crusted Ahi and Mango Crab Hand Roll are must-orders.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Sansei+Seafood+Restaurant+Kapalua+Maui" target="_blank">📍 Sansei Kapalua</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 5 ===== -->
+<section class="day-section" id="day5">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🏔️</span> Day 5 — Sunday</div>
+    <h2>Scenic West Maui</h2>
+    <div class="day-date">Jun 1, 2026 · Bad Ass Coffee · Kahekili Highway · Kahakuloa · Taverna · Monkeypod</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">7:00 AM</span>
+        <span class="activity-title">Bad Ass Coffee (Kapalua)</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$10–15</span><span class="badge badge-drive">5 min to Kahekili Hwy</span></div>
+      </div>
+      <div class="activity-desc">Krista's pick — opens at 6am, right in Kapalua. Great Hawaiian coffee and pastries. Quick grab-and-go fuel before the scenic Kahekili Highway drive.</div>
+      <div class="activity-tip">Opens 6am. Get the 100% Kona or Maui blend. Pastries are solid too. Quick in-and-out — you want to hit the road by 8am.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Bad+Ass+Coffee+Kapalua+Maui" target="_blank">📍 Bad Ass Coffee Kapalua</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">8:00 AM</span>
+        <span class="activity-title">Kahekili Highway (Rte 340)</span>
+        <div class="activity-badges"><span class="badge badge-drive">25 min</span></div>
+      </div>
+      <div class="activity-desc">Scenic drive along West Maui's dramatic coastline. Narrow, winding — one of Maui's hidden gems.</div>
+      <div class="activity-tip">Not for the faint of heart with toddlers — but stunning views.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kahekili+Highway+Maui" target="_blank">📍 Kahekili Highway</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">8:35 AM</span>
+        <span class="activity-title">Kahakuloa Overlook</span>
+        <div class="activity-badges"><span class="badge badge-drive">35 min</span></div>
+      </div>
+      <div class="activity-desc">Stunning overlook of the remote village and coastline. Turn around here.</div>
+      <div class="activity-tip">Great photo op. Don't attempt going further with a rental car.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kahakuloa+Head+Maui" target="_blank">📍 Kahakuloa Head</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">11:00 AM</span>
+        <span class="activity-title">Taverna Lunch</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$60–80</span><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Italian restaurant in Kapalua. Good food, relaxed atmosphere.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Taverna+Kapalua+Maui" target="_blank">📍 Taverna (Kapalua)</a></div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">12:30–3 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+        <div class="activity-badges"><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Back to resort.</div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">3:00 PM</span>
+        <span class="activity-title">Monkeypod Kitchen Happy Hour + Dinner</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$80–120</span></div>
+      </div>
+      <div class="activity-desc">One of the hardest reservations on the island. Incredible craft cocktails, farm-to-table food, live music.</div>
+      <div class="activity-tip">Book on OpenTable ASAP — tables go fast for summer. Happy hour 3–5:30pm.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Monkeypod+Kitchen+Wailea+Maui" target="_blank">📍 Monkeypod Kitchen</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 6 ===== -->
+<section class="day-section" id="day6">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🌴</span> Day 6 — Monday</div>
+    <h2>Myths of Maui Lūʻau</h2>
+    <div class="day-date">Jun 2, 2026 · Slappy Cakes · Beach & Pool Day · Myths of Maui Lūʻau</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">7:30 AM</span>
+        <span class="activity-title">Slappy Cakes Breakfast</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40–60</span></div>
+      </div>
+      <div class="activity-desc">Kids make their own pancakes on the griddle table! Right across the street from the resort.</div>
+      <div class="activity-tip">Arrive at 7am to beat the crowd. Walk-in.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Slappy+Cakes+Kaanapali+Maui" target="_blank">📍 Slappy Cakes</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">Morning</span>
+        <span class="activity-title">Free Beach & Pool Day</span>
+      </div>
+      <div class="activity-desc">Relaxed morning at Ka'anapali Beach and resort pools. No rushing.</div>
+      <div class="activity-tip">Watch for honu (sea turtles) resting on the sand in the afternoon. Keep 10ft distance.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kaanapali+Beach+Maui" target="_blank">📍 Ka'anapali Beach</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">Evening</span>
+        <span class="activity-title">Myths of Maui Lūʻau — BOOKED ✓</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$200–300</span></div>
+      </div>
+      <div class="activity-desc">June 2, 2026 at Royal Lāhainā Resort. Traditional Hawaiian feast, fire dancing, cultural performance.</div>
+      <div class="activity-tip">You're all set! Just confirm reservation details when the email arrives.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Royal+Lahaina+Resort+Maui" target="_blank">📍 Royal Lāhainā Resort</a></div>
+    </div>
+
+    <div class="activity cat-transport">
+      <div class="activity-top">
+        <span class="activity-time">9:00 PM</span>
+        <span class="activity-title">Drive Back to Resort</span>
+      </div>
+      <div class="activity-desc">Short drive back to Honua Kai after the lūʻau.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 7 ===== -->
+<section class="day-section" id="day7">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🍺</span> Day 7 — Tuesday</div>
+    <h2>South Maui Day</h2>
+    <div class="day-date">Jun 3, 2026 · Kihei Caffé · Big Beach · Foodland Poke · Ululani's · Monkeypod</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">7:30 AM</span>
+        <span class="activity-title">Kihei Caffé + Kalama Park</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$25–40</span><span class="badge badge-drive">20 min to Big Beach</span></div>
+      </div>
+      <div class="activity-desc">Beloved breakfast spot famous for whale-shaped pancakes — Jordan will love them. Super casual, opens early. Kalama Park is directly across the street with a big playground, beach access, and room to run.</div>
+      <div class="activity-tip">Cash-friendly. Arrive early to beat the crowd. Let the kids burn energy at the playground across the street before the drive south.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kihei+Caffe+Maui" target="_blank">📍 Kihei Caffé</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">9:00 AM</span>
+        <span class="activity-title">Big Beach (Makena State Park)</span>
+        <div class="activity-badges"><span class="badge badge-drive">15 min to Kihei</span></div>
+      </div>
+      <div class="activity-desc">Wide golden sand, turquoise water, dramatic views. One of Maui's most photogenic beaches.</div>
+      <div class="activity-tip">Can have big waves — keep toddlers close to shore. Arrive early for parking.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Big+Beach+Makena+State+Park+Maui" target="_blank">📍 Big Beach</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">11:00 AM</span>
+        <span class="activity-title">Foodland Poke (Kihei)</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$15–25</span><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Krista's pick for best poke in Kihei. Grab fresh poke bowls to go — perfect beach snack or light lunch.</div>
+      <div class="activity-tip">The poke counter has rotating daily specials. Grab and go — easy with the kids.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Foodland+Farms+Kihei+Maui" target="_blank">📍 Foodland Farms Kihei</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">11:30 AM</span>
+        <span class="activity-title">Ululani's Shave Ice (Kihei)</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$8–12</span><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">The gold standard of Hawaiian shave ice. Order with mochi balls and condensed milk on top. Multiple Maui locations — hit the Kihei one since you're in the area.</div>
+      <div class="activity-tip">Get the combo with mochi and haupia cream. The kids will be covered in it — bring extra napkins.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Ululanis+Shave+Ice+Kihei+Maui" target="_blank">📍 Ululani's Kihei</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">12:00 PM</span>
+        <span class="activity-title">Monkeypod Kitchen Lunch</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$60–80</span><span class="badge badge-drive">35 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Second Monkeypod visit — Wailea location. Great craft cocktails and farm-to-table lunch menu.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Monkeypod+Kitchen+Wailea+Maui" target="_blank">📍 Monkeypod Kitchen (Wailea)</a></div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">1:00–3 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+      </div>
+      <div class="activity-desc">Back to resort for nap time.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 8 ===== -->
+<section class="day-section" id="day8">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🦆</span> Day 8 — Wednesday</div>
+    <h2>Maui Tropical Plantation</h2>
+    <div class="day-date">Jun 4, 2026 · Tram Tour · Duck Pond · Café O'Lei · Final Sunset Walk · Joey's Kitchen</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-transport">
+      <div class="activity-top">
+        <span class="activity-time">9:30 AM</span>
+        <span class="activity-title">Drive to Maui Tropical Plantation</span>
+        <div class="activity-badges"><span class="badge badge-drive">20 min</span></div>
+      </div>
+      <div class="activity-desc">20-min drive south to Waikapū. Toddler-friendly, low-key.</div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">10:00 AM</span>
+        <span class="activity-title">Tram Tour Through Orchards</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$30–40</span></div>
+      </div>
+      <div class="activity-desc">Narrated tram ride through tropical crops. Stroller-accessible.</div>
+      <div class="activity-tip">Book at mauiexplore.com — sells out on weekends. First tour 10am.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Maui+Tropical+Plantation+Maui" target="_blank">📍 Maui Tropical Plantation</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">11:00 AM</span>
+        <span class="activity-title">Duck Pond & Koi Feeding</span>
+      </div>
+      <div class="activity-desc">Ducks and koi ponds the kids will love. Plenty of open space to toddle around. Clean bathrooms.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Maui+Tropical+Plantation+Maui" target="_blank">📍 Maui Tropical Plantation</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">12:00 PM</span>
+        <span class="activity-title">Café O'Lei Lunch</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40–60</span><span class="badge badge-drive">20 min</span></div>
+      </div>
+      <div class="activity-desc">Shaded café at the plantation. Good food, relaxed atmosphere for parents.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Cafe+OLei+Plantation+Maui" target="_blank">📍 Café O'Lei at the Plantation</a></div>
+    </div>
+
+    <div class="activity cat-rest">
+      <div class="activity-top">
+        <span class="activity-time">2:00–4 PM</span>
+        <span class="activity-title">🛏 Nap Window</span>
+      </div>
+      <div class="activity-desc">Back to resort for final nap window.</div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">5:00 PM</span>
+        <span class="activity-title">Final Ka'anapali Sunset Walk</span>
+        <div class="activity-badges"><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Last sunset walk along the beachfront. Black Rock cliff dive ceremony, honu on the sand.</div>
+      <div class="activity-tip">Bring a camera. This is the last evening.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kaanapali+Beach+Maui" target="_blank">📍 Ka'anapali Beach</a></div>
+    </div>
+
+    <div class="activity cat-meal">
+      <div class="activity-top">
+        <span class="activity-time">6:00 PM</span>
+        <span class="activity-title">Joey's Kitchen Dinner</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$30–50</span><span class="badge badge-drive">5 min to resort</span></div>
+      </div>
+      <div class="activity-desc">Krista's pick — Filipino-Hawaiian comfort food in Napili Plaza. Garlic shrimp, chicken adobo, lumpia, pancit. Generous portions, super casual, and easy with kids. Perfect low-key last dinner night.</div>
+      <div class="activity-tip">Order the garlic shrimp and lumpia. Portions are big — consider sharing a couple plates family-style. No reservations needed.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Joeys+Kitchen+Napili+Maui" target="_blank">📍 Joey's Kitchen Napili</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DAY 9 ===== -->
+<section class="day-section" id="day9">
+  <div class="day-header">
+    <div class="day-label"><span class="emoji">🌅</span> Day 9 — Thursday</div>
+    <h2>Departure Day</h2>
+    <div class="day-date">Jun 5, 2026 · Final Sunrise · Checkout · Costco Gas · Fly Home</div>
+  </div>
+  <div class="timeline">
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">6:00 AM</span>
+        <span class="activity-title">Final Sunrise Walk</span>
+      </div>
+      <div class="activity-desc">Early morning walk on Ka'anapali Beach — almost empty, golden light, honu on the sand.</div>
+      <div class="activity-tip">Bring coffee from the villa. Let the kids splash at the water's edge.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kaanapali+Beach+Maui" target="_blank">📍 Ka'anapali Beach</a></div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">7:00 AM</span>
+        <span class="activity-title">Checkout & Pack</span>
+        <div class="activity-badges"><span class="badge badge-drive">35 min</span></div>
+      </div>
+      <div class="activity-desc">Pack up, load the car. Check out of Honua Kai.</div>
+    </div>
+
+    <div class="activity cat-activity">
+      <div class="activity-top">
+        <span class="activity-time">7:45 AM</span>
+        <span class="activity-title">Fill Gas at Costco Kahului</span>
+        <div class="activity-badges"><span class="badge badge-cost">~$40</span><span class="badge badge-drive">5 min</span></div>
+      </div>
+      <div class="activity-desc">Cheapest gas on the island. Right near the airport.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Costco+Gas+Kahului+Maui" target="_blank">📍 Costco Gas Kahului</a></div>
+    </div>
+
+    <div class="activity cat-transport">
+      <div class="activity-top">
+        <span class="activity-time">8:45 AM</span>
+        <span class="activity-title">Return Car → Security</span>
+      </div>
+      <div class="activity-desc">Return rental at OGG. Through security by 9am.</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kahului+Airport+OGG+Maui" target="_blank">📍 Kahului Airport (OGG)</a></div>
+    </div>
+
+    <div class="activity cat-transport">
+      <div class="activity-top">
+        <span class="activity-time">10:33 AM</span>
+        <span class="activity-title">Depart OGG → SFO</span>
+      </div>
+      <div class="activity-desc">Alaska nonstop home. Mahalo, Maui! 🌺</div>
+      <div class="activity-location"><a href="https://maps.google.com/?q=Kahului+Airport+OGG+Maui" target="_blank">📍 Kahului Airport (OGG)</a></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer class="footer">
+  <div class="mahalo">Mahalo, Maui 🌺</div>
+  <p>Last updated: July 2025 · Built with aloha for the M family</p>
+</footer>
+
+<script>
+// Sticky nav active state on scroll
+const sections = document.querySelectorAll('.day-section');
+const navLinks = document.querySelectorAll('.day-nav a');
+const nav = document.getElementById('dayNav');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.id;
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = nav.querySelector(`a[href="#${id}"]`);
+      if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+
+sections.forEach(s => observer.observe(s));
+
+// Smooth scroll
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      const offset = nav.offsetHeight + 8;
+      window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
